@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/do_s"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/green"
+                    android:textSize="22dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/when_the_fever_goes_up_take_paracetamol_and_relax"
+                        android:textSize="16dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/the_body_should_be_kept_warm_let_it_sweat_canary_should_be_taken_drink_soup"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/allow_the_body_time_to_recover"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/water_bars_should_be_kept"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_ts"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/red"
+                    android:textSize="22dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/if_there_is_no_appetite_do_not_eat"
+                        android:textSize="16dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/if_there_is_no_fever_above_7_do_not_go_down"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_not_take_antibiotics_without_the_doctor_s_advice_to_rush_the_fever"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medicine"
+                    android:textColor="@color/dark_purple"
+                    android:textStyle="bold"
+                    android:textSize="22dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_1_homeopathy"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark_purple"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ferrum_fosses_6x_per_hour"
+                        android:textColor="@color/purple"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2_ayurvedic"
+                        android:textColor="@color/dark_purple"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="@string/sunshmani_vati_according_to_the_age"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:textStyle="bold"
+                        android:text="@string/drugs_to_be_followed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="@string/medications_in_the_group_nsaid_e_g_medications_such_as_ibuprofen_nimesulide_can_cause_fever_however_they_cannot_remove_the_cause_of_the_fever_severe_diseases_such_as_pneumonia_can_be_overlooked_due_to_fever_these_drugs_can_cause_acidity_and_cause_stomach_ache_vomiting"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

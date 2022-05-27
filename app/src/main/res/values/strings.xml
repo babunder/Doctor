@@ -1,0 +1,538 @@
+<resources>
+    <string name="app_name" translatable="false">MediWise</string>
+    <string name="enter_name" translatable="false"><font size="14">Enter Name</font></string>
+    <string name="enter_mobile" translatable="false"><font size="14">Enter Mobile</font></string>
+    <string name="enter_age" translatable="false"><font size="14">Enter Age</font></string>
+    <string name="enter_address" translatable="false"><font size="14">Enter Address</font></string>
+    <string name="enter_mobile_number" translatable="false"><font size="14">Enter Mobile Number</font></string>
+    <string name="enter_password" translatable="false"><font size="14">Enter Password</font></string>
+    <string name="enter_otp" translatable="false"><font size="14">Enter OTP</font></string>
+    <string name="password" translatable="false"><font size="14">Password</font></string>
+
+    <string name="cough_cold">Cough Cold</string>
+    <string name="_1_do_you_have_fever_more_than_7_days">1) Do you have fever more than 3 days ?</string>
+    <string name="_2_do_you_have_high_grade_fever">2) Do you have high grade fever ?</string>
+    <string name="_3_do_you_have_difficulties_in_breathing">3) do you have difficulties in breathing ?</string>
+    <string name="_4_do_you_have_difficulties_in_swallowing">4)Do you have difficulties in swallowing ?</string>
+    <string name="_5_do_you_have_chest_pain">5) do you have chest pain ?</string>
+    <string name="_6_is_your_sputum_red">6) Is your sputum red ?</string>
+    <string name="_7_is_there_bleeding_in_eyes">7) Is there bleeding in eyes ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="please_immediate_visit_your_near_doctor">Start following treatment and see your doctor.</string>
+    <string name="do_s">Do\'s :</string>
+    <string name="take_rest">Take rest.</string>
+    <string name="drink_hot_liquid_frequently">Drink hot soup,rice,kanji frequently.</string>
+    <string name="drink_ginger_tea">Drink ginger tea.</string>
+    <string name="don_ts">Don\'ts :</string>
+    <string name="avoid_cold_food_and_drink">Avoid cold food and Drink.</string>
+    <string name="avoid_existing_unless_hungry">Avoid Eating unless hungry.</string>
+    <string name="avoid_exention_and_journey">Avoid exertion and journey.</string>
+    <string name="avoid_food_item_like_dalda_shrikhand_etc">Avoid food item like dahi,shrikhand,lassi etc.</string>
+    <string name="medicine">Medicine :</string>
+    <string name="_1_homeopathy">1) Homeopathy :</string>
+    <string name="_2_ayurvedic">2) Ayurvedic : </string>
+    <string name="recurring">Recurring</string>
+    <string name="yoga">Yoga :</string>
+    <string name="ujjayi_pranayam">ujjayi pranayam</string>
+    <string name="uddiyana_bandh">Uddiyana bandh</string>
+    <string name="loose_motion">Loose Motion</string>
+    <string name="do_you_have_loose_motion_for_more_than_7_days">1) Do you have loose motion for more than 7 days?</string>
+    <string name="_2_do_you_have_sever_pain">2) Do you have severe pain?</string>
+    <string name="_3_do_you_have_sever_vomitting">3) Do you have severe vomitting?</string>
+    <string name="_4_are_you_able_to_pass_the_urine">4) Are you able to pass the urine?</string>
+    <string name="_5_is_your_tummy_distended">5) Is your tummy distended?</string>
+    <string name="_6_is_their_blood_in_your_stool">6) Is their blood in your stool?</string>
+    <string name="drink_rice_kanji_daal_soup_butter_milk">Drink rice kanji,daal soup,butter milk.</string>
+    <string name="who_ors_drink">WHO ORS Drink</string>
+    <string name="if_hungry_then_eat_item_made_by_old_rice_moong_daal">If hungry then eat item made from old rice,moong daal</string>
+    <string name="eat_fruit_like_pomogranate_orange_apple">Eat fruit like pomogranate,orange,apple</string>
+    <string name="avoid_saline_id_urine_is_passing_easily">Avoid intravenous saline if you are passing urine freely.</string>
+    <string name="don_t_eat_till_you_are_hungry">Don\'t eat till you are hungry.</string>
+    <string name="don_t_eat_foods_made_by_besan_mava_spices">Don\'t eat foods made by besan,mava,spices.</string>
+    <string name="avoid_non_veg_food">Avoid Non veg food.</string>
+    <string name="if_small_volume_stool_with_mucus_and_blood">a)If small volume stool with mucus and fresh blood.</string>
+    <string name="if_stool_with_mucus_and_smell_dirty">b)If stool with mucus and foul smell.</string>
+    <string name="saline_is_necessary_when_dehydration_is_present">Saline is necessary when dehydration is present.</string>
+    <string name="this_app_is_not_a_substitute_for_professional_medical_advice_diagnosis_or_treatment_because_of_something_you_feel_this_app_adviser_if_you_think_you_have_a_medical_emergency_please_visit_professional_adviser">1.	This app is basically for health education. This app will suggest remedial measures to be taken when no doctor is available. This app is not a substitute for professional medical advice diagnosis and treatment. The user has to take responsibility for checking whether the remedial measures or the drugs suggested in this app can be safely used in his particular case .By proceeding further the user agrees not to hold the the app or the appmakers for any damage direct or indirect which the user may incur on following suggestions in the app.</string>
+    <string name="ok">OK</string>
+    <string name="knee_ache">Knee ache</string>
+    <string name="back_ache">Backache</string>
+    <string name="fever">Fever</string>
+    <string name="general_information">General Information</string>
+    <string name="do_the_knee_aache_even_after_rest">Does the knee ache even after rest?</string>
+    <string name="is_knee_skin_red">Is knee red and warm?</string>
+    <string name="do_you_have_fever">Do you have fever?</string>
+    <string name="can_you_lift_the_leg">can you lift the leg?</string>
+    <string name="do_you_have_wealiness_of_leg">do you have wealiness of leg?</string>
+    <string name="do_you_have_sensation">Do you have Sensation?</string>
+    <string name="is_there_fever_for_more_than_three_days">Is there fever for more than three days?</string>
+    <string name="does_the_patient_feel_very_sick">Does the patient feel very sick?</string>
+    <string name="is_the_fever_same_after_using_simple_measures">Is the fever same after using simple measures?</string>
+    <string name="when_the_fever_goes_up_take_paracetamol_and_relax">When you feel disturbed, take Paracetamol and relax.</string>
+    <string name="the_body_should_be_kept_warm_let_it_sweat_canary_should_be_taken_drink_soup">The body should be kept warm. Let it sweat. Drink soup</string>
+    <string name="allow_the_body_time_to_recover">Allow the body time to recover</string>
+    <string name="water_bars_should_be_kept">Moist packs should be kept.</string>
+    <string name="if_there_is_no_appetite_do_not_eat">If there is no appetite, do not eat</string>
+    <string name="if_there_is_no_fever_above_7_do_not_go_down">If there is no fever above 103, do not go down.</string>
+    <string name="do_not_take_antibiotics_without_the_doctor_s_advice_to_rush_the_fever">Do not take antibiotics without the doctor\'s advice to reduce the fever</string>
+    <string name="ferrum_fosses_6x_per_hour">Ferrum fosses 6x 2 pills every hour </string>
+    <string name="sunshmani_vati_according_to_the_age">Sunshmani vati According to the age</string>
+    <string name="drugs_to_be_followed">Drugs to be avoided</string>
+    <string name="medications_in_the_group_nsaid_e_g_medications_such_as_ibuprofen_nimesulide_can_cause_fever_however_they_cannot_remove_the_cause_of_the_fever_severe_diseases_such_as_pneumonia_can_be_overlooked_due_to_fever_these_drugs_can_cause_acidity_and_cause_stomach_ache_vomiting">Medications in the group NSAID E.g. Medications such as Ibuprofen Nimesulide can reduce fever. However, they cannot remove the cause of the fever. Severe diseases such as pneumonia can be overlooked. These drugs can cause acidity and cause stomach ache, vomiting</string>
+    <string name="keep_the_weight_down">Keep the weight down</string>
+    <string name="lift_the_pillow_and_place_the_pillow_under_the_rug">Place a pillow under your knees when at rest.</string>
+    <string name="on_the_go_do_knee_and_knee_exercises_while_sitting_in_a_chair">On the go, do knee and knee exercises while sitting in a chair</string>
+    <string name="when_in_the_back_walk_in_reverse">When in the back, walk in reverse.</string>
+    <string name="add_sun_salutations">Add sun salutations.</string>
+    <string name="walk_on_the_flat">Walk on the flat terrain.</string>
+    <string name="walk_in_water_all_over_your_waist">Walk in a pool with water waist.</string>
+    <string name="don_t_let_the_weight_gain">Don\'t let the weight gain.</string>
+    <string name="avoid_exercising_like_badminton_ropes">Avoid deep impact exercises like badminton, ropes.</string>
+    <string name="avoid_walking_too_far">Skipping walking too far.</string>
+    <string name="don_t_go_downhill">Don\'t go downhill.</string>
+    <string name="do_not_hurt_the_body_too_much_during_exercise">Do not hurt the body too much during exercise.</string>
+    <string name="do_not_take_painkillers">Do not take painkillers for more than 5 days Calcium tablets are of no use.</string>
+    <string name="sign_of_dangerous_illness">Sign of dangerous illness.</string>
+    <string name="a_person_with_one_or_more_of_the_following_signs_needs_urgent_skilled_medical_help">A person with one or more of the following signs needs urgent skilled medical help.</string>
+    <string name="pregnancy">pregnancy</string>
+    <string name="dental_trouble">Dental Trouble</string>
+    <string name="ppregnancy">Pregnancy</string>
+    <string name="ensuring_pregnancy">Ensuring Pregnancy</string>
+    <string name="a_1_urine_test_it_is_best_to_check_your_first_urine_in_the_morning">A) 1) Urine test - It is best to check your first urine in the morning</string>
+    <string name="_2_two_lines_should_be_highlighted_immediately_this_test_is_5_percent_true">2) Two lines should be highlighted immediately. This test is 99 percent true.</string>
+    <string name="b_sonography_after_six_weeks_a_fetus_can_be_seen_with_a_simple_abdominal_sonography">B) Sonography - After six weeks, a fetus can be seen with a simple abdominal sonography.</string>
+    <string name="when_to_go_to_the_doctor_right_away">When to go to the doctor right away?</string>
+    <string name="very_severe_pain_in_stomach">Dizziness with  pain in abdomen.</string>
+    <string name="bleeding">Bleeding</string>
+    <string name="no_urination">No urination.</string>
+    <string name="dizziness_in_the_stomach">Dizziness In The Stomach.</string>
+    <string name="if_you_have_to_urinate_for_2_3_hours_at_night">If you have to urinate for 2-3 hours at night</string>
+    <string name="having_a_child_with_a_prior_disability_a_prior_disability_or_a_severe_disability"></string>
+    <string name="if_you_have_had_an_abortion_or_a_child_with_a_disability_in_the_past"></string>
+    <string name="the_following_problems_can_occur_during_pregnancy">The following problems can occur during pregnancy</string>
+    <string name="feeling_like_a_fever">Feeling feverish.</string>
+    <string name="feel_thick_but_thick_in_breasts"></string>
+    <string name="to_go_a_little_white_from_the_limbs"></string>
+    <string name="feeling_tired">Feeling tired and sleepy.</string>
+    <string name="get_more_sleep">Heaviness of breasts while discharge.</string>
+    <string name="nausea_and_vomiting">Nausea and vomiting.</string>
+    <string name="what_to_do">What to do</string>
+    <string name="in_order_to_reduce_the_pain_of_vomiting_use_the_ginger_blossom">In order to reduce the vomiting, use the ginger and dried amla.</string>
+    <string name="when_you_wake_up_in_the_morning_eat_the_fruit_eat_dry_bread_and_chapatis">When you wake up in the morning, eat a fruit. Eat dry bread toast or chapatis.</string>
+    <string name="eat_a_lot_of_fruits">Eat a lot of fruits.</string>
+    <string name="eat_home_made_easy_to_digest_food">Eat home-made, easy-to-digest food.</string>
+    <string name="there_should_be_plenty_of_green_red_colors_in_the_diet">There should be plenty of green, red eatables in the diet.</string>
+    <string name="if_you_feel_tired_you_should_rest_so_much_work_must_be_done_with_happiness">If you feel tired, you should rest.</string>
+    <string name="while_sleeping_the_room_should_be_supported_while_sitting">Support the small of the back with a folded sheet.</string>
+    -->
+    <string name="yoga_should_be_done">Yoga is very helpful.</string>
+    <string name="what_not_to_do">What not to do</string>
+    <string name="do_not_work_too_much_asthma_do_not_lift_weights">Do not over work , do not lift weights.</string>
+    <string name="avoid_eating_outdoors">Avoid eating outdoors.</string>
+    <string name="avoid_eating_bread_biscuits_chinese_chili_fried_foods">Avoid eating bread biscuits, Chinese, chili, fried foods.</string>
+    <string name="drugs_should_be_avoided">Drugs should be avoided in minor illnes or discomfort.</string>
+    <string name="avoid_eating_outdoorss">Avoid sleeping immediately after food.</string>
+    <string name="about_abortion">About abortion</string>
+    <string name="in_the_first_three_and_a_half_months_nature_causes_abortions_due_to_severe_defects_in_the_fetus">In the first three and a half months, nature causes abortions if there are defects in the fetus.</string>
+    <string name="an_abortion_can_occur_if_a_pregnant_woman_has_a_serious_illness">An abortion can occur if a pregnant woman has a serious illness.</string>
+    <string name="a_fetus_that_is_good_tries_to_protect_nature_with_full_force">A Nature fully protects a normal baby.</string>
+    <string name="to_prevent_abortion">To prevent abortion.</string>
+    <string name="do_not_marry_in_a_close_relationship">Do not marry in a close relationship.</string>
+    <string name="food_should_be_pure_water">Avoid constipation and strainuous work.</string>
+    <string name="do_not_pick_up_too_thick_objects">Do not pick up too thick objects.</string>
+    <string name="chemical_contact_should_be_avoided_e_g_lipstick_cream_for_nail_polish_deodorant_whites_drugs_should_be_avoided_pills_for_the_diagnosis_of_tuberculosis_pills_taken_during_the_menstrual_cycle_can_cause_defects_in_the_fetus">Chemical contact should be avoided. E.g. Lipstick, cream for nail polish deodorant fairness creams. Drugs should be avoided. Pills for the diagnosis of tuberculosis, pills taken during the menstrual cycle, can cause defects in the fetus.</string>
+    <string name="if_the_mouth_of_the_fetus_is_weak_after_the_fourth_month_it_should_be_done">If the mouth of the womb is weak it should be supported with a cervical stitch.</string>
+    <string name="care_in_the_ninth_month">Care in the ninth month</string>
+    <string name="if_there_is_any_problem_like_slowing_down_of_the_baby_getting_soaked_with_water_or_soaking_blood_causing_a_lot_of_headaches_difficulty_in_vision_then_go_to_the_doctor_immediately">If there is any problem like slowing down of the baby, getting soaked with water or soaking blood, causing a lot of headaches, difficulty in vision, then go to the doctor immediately.</string>
+    <string name="if_the_nipples_are_deepened_the_syringe_should_be_pulled_out_to_prevent_the_baby_from_breastfeeding">If the nipples are deepened, the syringe should be pulled out to prevent the baby from breastfeeding.</string>
+    <string name="the_baby_should_always_be_on_the_cushion">The baby should always be on the cushion.</string>
+    <string name="keep_warm">Keep warm.</string>
+    <string name="only_breastfeed_water_honey_cow_s_milk_should_be_avoided">Only breastfeed. Water, honey, cow\'s milk should be avoided.</string>
+    <string name="two_men_should_touch_the_baby">Two men should touch the baby. \n\n\n
+    Common discomforts in pregnancy \n
+●	Nausea and vomiting \n
+●	Feeling feverish \n
+●	Feeling tired and sleepy \n
+●	Heaviness in breasts \n
+●	White discharge
+
+    </string>
+
+
+    <string name="is_there_sudden_swelling_on_the_side_of_the_teeth_or_on_the_face">Is there sudden swelling on the side of the teeth or on the face?</string>
+    <string name="swelling_of_the_chin_and_near_the_throat_have_trouble_swallowing">Swelling of the chin and near the throat. Have trouble swallowing?</string>
+    <string name="doesn_t_the_jaw_shut">Doesn\'t the jaw shut?</string>
+    <string name="is_your_tooth_broken_by_accident_or_bite">Is your tooth broken by accident or bite?</string>
+    <string name="has_the_bone_skin_teeth_gums_been_damaged_in_the_face">Has the bone, skin, teeth, gums been damaged in the face?</string>
+    <string name="loss_of_large_amount_of_blood_from_anywhere_in_the_body">loss of large amount of blood from anywhere in the body.</string>
+    <string name="coughing_up_blood">Coughing up blood.</string>
+    <string name="diffuculty_in_breathing">Diffuculty in breathing.</string>
+    <string name="the_person_can_not_be_awakaned">The person can not be awakaned.</string>
+    <string name="the_person_is_so_weak_he_faunts_when_he_stands">The person is so weak he can not stand.</string>
+    <string name="a_day_without_being_able_to_urinate">A day without being able to urinate.</string>
+    <string name="a_day_without_being_able_to_drink_any_liquid">A day without being able to drink any liquid.</string>
+    <string name="heavy_omitting_oe_sever_diarrhea_that_last_for_one_day_in_adult_or_few_hours_in_a_baby">Heavy vomiting or severe diarrhea that last for one day in adult or few hours in a baby.</string>
+    <string name="strong_stomach_pain_with_omitting_without_diarrhea">Strong stomach pain with vomiting without diarrhea.</string>
+    <string name="black_tar_like_stools">Black tar like stools.</string>
+    <string name="any_continous_pain_that_last_for_more_than_2_days">Any continuous pain that last for more than 2 days.</string>
+    <string name="high_fever_which_cannot_be_brought_down_or_last_over_extended_period">High fever which cannot be brought down or lasts over extended period.</string>
+    <string name="blood_in_urine_without_pain">Blood in urine without pain.</string>
+    <string name="vaginal_bleeding_which_persists_after_treatment">Vaginal bleeding which persists after treatment.</string>
+    <string name="vaginal_bleeding_with_foul_smelling_discharge">Vaginal bleeding with foul smelling discharge.</string>
+    <string name="lose_weight">Lose weight.</string>
+    <string name="take_a_pillow_under_the_hood_while_wearing_a_mandi">Use a pillow to raise your buttocks when sitting.Let your knees be at a lower level than the buttocks.</string>
+    <string name="sit_back_and_sleep">Sit back and sleep.</string>
+    <string name="take_the_pillow_under_the_head_to_the_shoulders_while_sleeping">Take the pillow under the head to the shoulders while sleeping.</string>
+    <string name="take_the_pillow_under_the_knee">Take the pillow under the knee.</string>
+    <string name="exercise_sunshine_and_exercise_that_will_make_you_happy">Exercise sunshine and exercise that will make you happy.</string>
+    <string name="use_tools_like_back_aid">Use tools like Back aid.</string>
+    <string name="do_not_hurt_the_body_too_much_during_exercisee">Do not hurt the body too much during exercise.</string>
+    <string name="do_not_take_pillss">Do not take pills.</string>
+    <string name="don_t_sit_on_your_stomach">Don\'t sit on your stomach.</string>
+    <string name="check_your_teeth_every_six_months">Check your teeth every six months.</string>
+    <string name="brush_your_teeth_twice_daily_and_use_a_flask_once">Brush your teeth twice daily and use a flask once.</string>
+    <string name="increase_intake_of_fiber_content_in_meals">Increase intake of fiber content in meals.</string>
+    <string name="brush_after_eating_the_sticky_material">Brush after eating the sticky material.</string>
+    <string name="use_of_toothpaste_containing_fluoride">Use of toothpaste containing fluoride.</string>
+    <string name="toothpaste_is_more_beneficial_than_tooth_powder_teeth_checking_and_treatment_should_always_be_done_by_a_registered_doctor">Toothpaste is more beneficial than tooth powder, teeth checking and treatment should always be done by a registered doctor.</string>
+    <string name="use_a_soft_hair_brush">Use a soft hair brush.</string>
+    <string name="if_the_wound_in_the_mouth_has_not_healed_for_more_than_a_week_see_a_doctor_right_away">If the wound in the mouth has not healed for more than a week, see a doctor right away.</string>
+    <string name="do_not_open_the_sealed_closed_bottles_cans_with_teeth">Do not open the sealed closed bottles, cans with teeth.</string>
+    <string name="if_you_have_any_teeth_or_oral_problems_see_a_doctor_right_away">If you have any teeth or oral problems, see a dentist right away.</string>
+    <string name="avoid_eating_sticky_foods_or_at_the_beginning_of_the_meal">Avoid eating sticky foods, or at the beginning of the meal.</string>
+    <string name="avoid_sweet_cold_drinks_that_have_bubbles">Avoid sweet cold drinks that have bubbles.</string>
+    <string name="avoid_eating_tobacco_gutka_foods">Avoid eating tobacco gutka.</string>
+    <string name="do_not_use_candy_toothpaste_or_toothpaste_or_toothpaste_damage_to_gums"></string>
+    <string name="there_should_be_no_wrong_home_remedy_such_as_nail_polish_on_the_toothache">Avoid wrong home remedy such as nail polish for toothache.</string>
+    <string name="do_not_take_or_use_medicines_without_medical_advice_from_a_doctor">Do not take or use medicines without medical advice from a dentist.</string>
+    <string name="submit">submit</string>
+    <string name="begin_the_next_treatment_after_3_4_days_see_a_doctor_if_the_pain_does_not_subside">Begin the next treatment After 3-4 days, see a doctor if the compliants do not subside.</string>
+    <string name="ferrum_phos_2x2x2_6">Ferrum phos (6x2 pills 3 times in day)</string>
+    <string name="tribhuvan_kirti_sitopaladhi_2x2x2_6">Tribhuvan Kirti , Sitopaladhi (2 tablets 3 times in a day).</string>
+
+    <!-- Added By Babunder Prajapati on 26-05-2020-->
+    <string name="lbl_language_english">English</string>
+    <string name="lbl_language_Hindi">Hindi</string>
+    <string name="lbl_language_Marathi">Marathi</string>
+    <string name="lbl_language_selection">Select your suitable language.</string>
+    <string name="lbl_disclaimer_right_reserve">Subject to karjat Jurisdiction All rights reserved.</string>
+    <!-- <string name="activity_about_us_details">Designed by: <u>Dr Neelkanth Fadake</u> \n9822533646 \n\n\nDeveloped by: <u>Sameer Gharlute</u> \n9881131154.</string>-->
+    <string name="activity_about_us_details">Email-id and Number: \n<u>mediwise.nsp@gmail.com</u> \n7588106741</string>
+
+    <!-- FeedBack Screen Hint-->
+    <string name="hint_feedback_name">Enter name (optional)</string>
+    <string name="hint_feedback_contact_number">Enter contact number</string>
+    <string name="hint_feedback_email_id">Enter email-address</string>
+    <string name="hint_feedback_description">Enter description</string>
+    <string name="hint_feedback_submit">Submit</string>
+
+    <!--General Information-->
+    <string name="lbl_gi_home_medicine_kit">Home Medicine Kit</string>
+
+    <!-- Gas Adkane-->
+    <string name="lbl_food_choking">Emergency -Choking</string>
+    <string name="lbl_food_choking_info">If the victim is conscious ask him to remove food or loose false teeth.
+        Make him cough.If this fails help him bend over the head lower than the chest. He can be either sitting or standing.
+        Slap him between the shoulder blades smartly with the heel of the hand up to 4 times.
+        Each slap should be strong enough to dislodge the blockage.</string>
+
+    <string name="lbl_home_medicine_kit">Amoxicillin  \n nInfection  \n 1 pill every 8 hours \n 20 \n Diarrhea and itching of limbs
+    \n\n\n
+    Paracetamol \nBody pain and fever \n 1 pill every 8 hours\n20\n Cold
+    \n\n\n
+    Aquatic life WHO\n Dehydration \nDissolve 3 packets in 1 liter of water many times
+    \n\n\n
+    avil \nSe Trizin itching allergy \n 1 pill every 8 hours \n10 \nDo not drive to sleep
+    \n\n\n
+     Ondansentron\n vomiting 1 pill every 8 hours \n 10
+        \n\n\n
+    Promethazine \nVomiting Itching Allergies \n 1 pill every 8 hours \n 10 \nDo not drive
+        \n\n\n
+    Dicyclomine \n Abdominal pain \n 1 pill every 8 hours
+        \n\n\n
+Calendula ointment \nItchy minor wounds</string>
+
+    <string name="ac_name_image_gallery">Image Gallery Example</string>
+    <string name="ac_name_image_pager">Image Pager Example</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="signs_of_dangerous_illness">Signs of dangerous illness</string>
+    <string name="home_medicine_kit">Home medicine kit</string>
+    <string name="ayurveda">Ayurveda</string>
+    <string name="homeopathy">Homeopathy</string>
+    <string name="resuources">Resources</string>
+    <string name="feed_back">feedback</string>
+    <string name="contact_us">contact us</string>
+    <string name="about_us">About us</string>
+    <string name="language">Language</string>
+
+    <string name="emergency_postop_care">Emergency PostOp Care</string>
+    <string name="head_neck">Head and Neck</string>
+    <string name="chect_trouble">chest Troubles</string>
+    <string name="tummy_trouble">Tummy Troubles</string>
+    <string name="gallery">Gallery</string>
+    <string name="women_health">Womens Health</string>
+    <string name="gynaecology">Gynaecology</string>
+    <string name="troublesome_test">Troublesome Tests</string>
+    <string name="troublesome_drug">Troublesome Drugs</string>
+
+    <string name="emergency_choking">Emergency</string>
+    <string name="choking">Choking</string>
+    <string name="heart_attack">Heart Attack</string>
+    <string name="link_for_reference">Link For Reference:</string>
+    <string name="book_reference">Books for reference:</string>
+    <string name="app_for_reference">App for reference:</string>
+    <string name="app_for_reference_data">Indian Red Cross society app for first aid</string>
+    <string name="book_reference_data">Where There is no doctor</string>
+
+
+    <string name="home_data">Good medicine does not mean taking drugs. \n\n
+Good medicine means how to stay healthy without drugs . \n\n
+A good doctor is one who gives minimum drugs and guides you how to stay healthy without drugs.</string>
+
+
+    <string name="ayurveda_data">Ayurveda texts described in detail the plastic surgery of nose and a novel way of treatment of fistula of the anus . These treatments are accepted by surgeons today .\n
+Ayurveda thinks of treatment of illnesses before they arise and before a baby is born .\n
+In many diseases such as acidity e jaundice , skin diseases like psoriasis, arthritis ayurved can be of great help.\n
+Persons of different temperament according to Ayurveda would need different lifestyle in in different climatic conditions . If we follow this advice in addition to whichever medicine that we are taking we can get better relief in many troubles</string>
+
+    <string name="homeopathy_data">Homeopathy has great capacity to go to the root cause of the disease process and alter it .\n
+It works like magic in many conditions and gives relief which is long lasting . It is of great use in conditions for example recurring common cold , premenstrual syndrome , anal fissure, fistula ,
+However in emergency situations it is commonly not the treatment of choice .\n
+In conditions where surgery is clearly necessary homeopathy should not be used</string>
+
+    <string name="troublesome_test_data">Widal Test :\n
+This test is useless if tested once. If not tested repeatedly a wrong diagnosis of typhoid is made. \n
+Thyroid Test :\n
+If T3 and T4 are normal and TSH is raised usually no treatment is necessary.\n
+Diet, exercise and managing stress are necessary.\n
+Pregnancy Test :\n
+This test is 99% accurate. If the first morning sample is used. This can be negative even if pregnancy is there in very early days or a sample later in the day is used.
+Sonography :\n
+Sonography should not be relied upon solely to diagnose appendicitis.\n
+Probe tenderness in right elia fossa doesn\'t necessarily mean appendicitis. \n
+Sonography of the uterus and ovaries :\n
+If menses are not heavy or there is no severe pain, small swelling of the uterus and ovaries are usually no reason for operation.\n
+Coronary Angiography :\n
+Finding of a blocked vessel does not necessarily mean that angioplasty or byepass surgery are necessary.\n
+Double and triple marker studies in pregnancy.\n
+These must be done if the mother is more than 35 years of age or there is history of a child with a problem right from the birth. \n
+If the sonography at 11 to 13 weeks of pregnancy is abnormal, then this test might be necessary. However, if this sonography is normal it is unlikely that the test will truly detect an abnormal pregnancy.\n
+If  done routinely a test result can be abnormal in presence of a normal pregnancy and costly and somewhat dangerous tests would be necessary\n
+</string>
+
+
+    <string name="troublesome_drug_data">NSAID (IIBUProfen , Diclofenac , Nimesulide ) etc, These are powerful medicines. They give instant relief in body ache, abdominal pain due to many diseases and post operative pain. Doctors use these medicines alot. These should be used for a limited period i.e. 4 to 5 days.\n
+These drugs can cause acidity, abdominal pain, and heavy bleeding during menses.\n
+Bleeding from stomach ulcer or perforation of stomach ulcer, can be caused by these drugs and proved dangerous to the patient\'s life. After prolonged use they are a common cause of kidney failure.\n
+Antiobiotics
+These are wonder bullets in bacterial infections and life saving. They are used in commonly causes ulcers in the mouth, loose motions, and in women white discharge with itching.\n
+Most of the common illnesses are viral or self limiting bacterial infections and antibiotics should not be used in these cases.\n
+1) used unnecessarily 2) Not completing the course when necessary  these drugs will reduce body\'s fighting power.\n
+Steroids :\n
+Steroids are potent and life saving in diseases like asthama, drug reaction or shock They give magical relief in cough, fever, joint pains and skin diseases.\n
+When a doctor\'s treatment gives immediate benefit in a chronic diseases and the trouble returns after the medicine is stopped, it possibly means that the doctor is using steroid drugs.\n
+Some doctors use them inappropriately to increase appetite\n
+Sometimes these steroid drugs are blended with herbal powder and the patient does not know that he is taking steroids.\n
+These drugs reduce immunity of the body caused swellings in the body. They also can cause blood pressure, Tuberculosis,\n
+Difficulty in diagnosing the illness can occur after use of these drugs, and a serious illness like pneumonia can be missed and prove dangerous.\n
+Antacid drugs :\n
+Repeated use can make a patient prone to stomach infection, these drugs can also cause anemia and very rarely a heart attack.\n
+Calcium tablets :\n
+Calcium tablets hardly ever result in strong bones but aid in formation of a kidney stone.\n
+Thyroid supplements :\n
+These can cause high blood pressure and rarely some cardiac illness.\n
+Heavy metals :\n
+Some ayurvedic doctors use drug containing heavy metals like arsenic. These can give temporary benefit in a disease, but can cause irreparable damage to the body. Drugs manufactured by reputed companies and purchased from medical store will not cause such side effects.\n
+</string>
+
+    <string name="breast">Breast</string>
+    <string name="breast_data">To prevent breast problems after delivery please learn how to breast feed a baby in pregnancy. \n
+1) The baby\'s mouth should fully cover the arieola the black part of the breast.\n
+2) The nipple can be damaged if the baby\'s mouth grips the nipple.\n
+3) If the nipple is retracted or flat please use a 10/20 ml. syringe as shown in the picture to draw the nipple out in the 9th month of pregnancy. \n
+During Lactation : \n
+If a painful breast lump does not subside in 48 hours, it\'s better to operate and let the pus out. \n
+Non-pregnant state :\n
+If the breast feel lumpy before menses and are OK after the menses, this is no cause for worry. \n
+Painless firm lumps should be seen by a specialist right away. \n
+</string>
+
+    <string name="menses">Menses </string>
+    <string name="menses_data">Scanty and/or late menses :\n
+If the pregnancy is not desired or excluded  this is not serious in absence of any other complaint like fever, weight loss, obesity, or hairy face or painful periods. \n
+Life style changes are needed to adjust these problems of scanty or late menses in young girls. \n
+1) Avoid junk food.\n
+2) Do exercises.\n
+3) Avoid late night exposure to bright light. e.g. mobile or a PC\n
+4) Manage stress\n
+5) Maintain a proper weight.\n
+
+Heavy Menses :\n
+This is a common problem and to find out a cause thyroid function test, blood sugar estimation and an ultrasound are necessary.\n
+If the problem persists after simple drugs, a D &amp; C and cervix biopsy are necessary to rule out serious causes.\n
+To avoid hysterectomy please -\n
+1)   Control your weight\n
+2) Do active exercises\n
+3) Avoid drugging for trivial illnesses\n
+4) Consider use of progesterone eluting intrauterine device.  \n
+
+</string>
+
+    <string name="choking_data">If you are alone and choking please don\'t panic. \n
+        Bend down and try to cough. If there are people around please signal that you are choking by putting your hand across your throat. <u>(Figure 1)</u>\n
+        If the obstruction is not relieved use something like back of chair to press the area above your umbilicus. <u>(Figure 2)</u>\n
+If your are helping someone who is choking please see if he can talk or cough. Observe him. If he cannot remove the obstruction himself stand behind his back and thump vigorously five times between his shoulders. <u>(Figure 3)</u>\n
+If this doesn\'t relieve the obstruction stand behind his back, put your fist between his umbilicus and the rickage and shove upwards. Repeat this five times, if necessary. <u>(Figure 4)</u>\n
+</string>
+
+    <string name="figure1">(Figure 1)</string>
+    <string name="figure2">(Figure 2)</string>
+    <string name="figure3">(Figure 3)</string>
+    <string name="figure4">(Figure 4)</string>
+
+    <string name="chest_trouble_data">Severe pain at the site shown in the diagram Cold profuse sweating, difficulty in taking breath, feeling of pressure on chest, great uneasiness. \n
+If any time these symptoms are noticed : \n
+1) Call for help immediately.\n
+2) Reach an ICCU within an hour.\n
+3) Take Disprin 300 mg. tablet till you reach the hospital.\n
+</string>
+
+    <string name="wound_bleeding">Wound-Bleeding</string>
+    <string name="wound_bleeding_data">press with a clean cloth on the wound for 5 minutes by clock .\n
+raise the wounded part above heart level if possible .\n
+wash the wound with clean water or if available sterile saline\n
+cover with a clean cloth or a dressing and apply a bandage .\n
+go to a health care facility .\n
+take arnica mont 6 ,3times a day for 3 days for pain relief\n
+if more pain relief is needed,take paracetamol 500 mg according to age \n
+</string>
+
+    <string name="care_after_delivery">Care After Delivery</string>
+    <string name="care_after_delivery_data">1) Please give the baby nothing but the breast milk for the first six months.\n
+2) Always nurse the baby on its side and not on its back.  If the baby vomits the baby is at risk of drowning in it\'s own vomit, if the baby is nursed on its back. \n
+3) The mother and only one other person should come in close contact with the baby.  A crowd of onlookers disturbs the mother, interferes with the breast feeding and is a dangerous source of infection for the new born.\n
+4) The mother should do post natal exercises to keep fit. \n
+5) The mother should see that her weight does not increase and avoid high calorie food stuffs.\n
+6) The mother should sparingly use her mobile phone as this would interfere with the bonding with the baby and breast feeding.\n
+7) Pregnancy can occur without getting menses three months after a delivery. So if spacing is desired please consider Condom or a copper T or depot progesteron injection every three months. \n
+8) Six months after the delivery oral contraceptive pills can be used.\n
+</string>
+
+    <string name="epilepsy">Epilepsy</string>
+    <string name="epilepsy_data">Clear the area around the patient.\n
+ Keep something soft below his head. \n
+Don\'t try to stop his movements.\n
+ Don\'t try to put something in his mouth.\n
+If his breathing is adequate turn him on his side. Call for help. \n
+Take the patient to the nearest health care facility. \n
+If the patient recovers please check whether he has skipped his epilepsy medication\n
+
+</string>
+
+    <string name="bleeding_from_the_nose">Bleeding from the nose</string>
+    <string name="bleeding_from_the_nose_data">Bleeding from Nose :\n
+Make the person in sitting position and pinch his nose with index finger and thumb. \n
+He should lean forward and breathe from his nose.\n
+If the person cannot pinch himself, you can pinch his nose. Use gloves or a plastic bag to cover your hand.\n
+In 10-15 minutes the bleeding will stop. \n
+If the bleeding doesn\'t stop please put a lubricated cloth in his nostrils and pinch and seek urgent medical help.\n
+</string>
+
+    <string name="uncommon_wisdom">Uncommon Wisdom</string>
+    <string name="uncommon_wisdom_data">Migraine Headache\n
+Late Acharya Sri S.N.Goenka was the richest man of Myanmar then. He had severe migraine headache for which  he had to take very strong pain killers like morphine which was the strongest pain killer available then. His doctor suggested that he should tour the world to seek cure. He failed to find any medicine that would stop his headache other than morphine.\n
+A friend suggested that he learn "VIPASSANA"  which he learnt from Sayyagi U Ba Khin. His migraine disappeared. Acharya Goenkaji later came to India and started teaching this Art of Meditation to young and old alike.\n
+For diseases like headache, blood pressure , acidity, joint pains, psychological disturbances thousands over the world have benefitted from this powerful treatment, which cures without any drugs.\n
+website : www.virdhamma,org\n\n
+
+Backache\n
+Dr. Esther Gokhale (Ph.D.) suffered severe backache.  She underwent many surgeries to treat her backache which failed to give her relief. She started studying her backache and toured extensively. She studied yoga in India and did a Ph.D. in Stanford University U.S.A. for her backache. She has written a book describing various exercises and posture corrections that cured her backache. She has written a book on backache.\n
+website : www.gokhalemethod.com\n\n
+
+Incurable debilitating ADDISONS DISEASE\n
+Mr. Shrikrishna Marathe suffered from debilitating addisons disease from 1972 to 1993. He had to take heavy drugs like cortisone and protect himself from infections and exertions by avoiding crowds.  He had to take repeated course of antibiotics to protect himself.  All these had serious side effects and his life was a torture. He started YOGA and OMKAR therapy at Vivekanand Kendra, Kanyakumari and then at Bangalore. And over the years he had a miraculous cure certified by a panel of eminent doctors. His cure was termed as a miracle by the doctors also.\n
+website : www.svyasa.edu.in\n\n
+
+</string>
+
+    <string name="link_data1"><u>http://vhai.org</u></string>
+    <string name="link_data2"><u>http://clinicalpediatrics.in</u></string>
+    <string name="link_data3"><u>http://svyasa.edu.in</u></string>
+    <string name="link_data4"><u>http://dhamma.vri.org</u></string>
+
+    <string name="common_problems_and_danger_operation">Common problems and dangers after an operation</string>
+    <string name="common_problems">Common problems</string>
+    <string name="common_problems_and_danger_operation_data">Very common :\n\n
+Pain at the Operative site - Treatment : Tablets, or injections\n
+Swelling at stitches and numbness   - Treatment : Cures itself.\n
+Vomiting, gidiness, shivering  - Treatment : Tablets, Injections,  saline \n
+Swelling at the site of needle prick  - Treatment : Cures itself.\n
+Backache  - Treatment : Support to the back, exercises.\n
+
+Uncommon problems : \n\n
+Little amount of water discharge, pus, or bleeding from the stitches  - Treatment : Lying face down position, keep a clean cloth. Cures on its own.\n
+Headache  - Treatment : ORS, saline \n
+
+Rare Problems  :\n\n
+Heavy amount of watery or pus discharge or bleeding  - Treatment : May need second operation.\n
+Damage to urinary tract or the intestines  - Treatment : May need second operation.\n
+
+Post-Op. bleeding in significant amount  - Treatment : May need blood transfusion\n
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="others">Others</string>
+
+    <string name="click_here_for_more_info">Clink here for more info</string>
+
+    <string name="cough_cold_info">Cold and cough section
+\n\n If you have the following complaints you need to see a doctor early.
+\n\n 1.	Fever for more than 5 days.
+\n 2.	Fever more than 103 degrees
+\n 3.	Difficulty in breathing .
+\n 4.	Blood in your sputum (cough )
+\n 5.	Chest pain.
+\n 6.	Blood in the eyes.
+\n 7.	Difficulty in swallowing .
+\n\n If you are quite comfortable then please try the following measures
+</string>
+
+
+    <string name="loose_motion_info">Please meet your doctor early in case you have the following symptoms,
+\n\n 1.	Loose motions for 7 days or more
+\n 2.	The abdominal pain is severe.
+\n 3.	There is severe vomiting .
+\n 4.	Abdomen feels bloated .
+\n 5.	Blood in stools .
+\n 6.	There is blood in the eyes .
+\n 7.	Urine is in less amount .
+</string>
+
+    <string name="Knee_info">If you have the following symptoms please meet your doctor urgently .
+\n\n 1.	The knee is red .
+\n 2.	The knee pains even at rest .
+\n 3.	You have fever .
+</string>
+
+    <string name="back_info">If you have backache and the following symptoms please meet your doctor early.
+\n\n 1.	The back pains when you lift your leg.
+\n 2.	The leg feels weak .
+\n 3.	There is a loss of sensation .
+</string>
+
+    <string name="fever_info">Please visit your doctor urgently if
+\n\n 1.	There is any symptom listed in
+ dangerous symptoms.
+\n 2.	The fever is for more than 3 days
+\n 3.	The temperature is 103 or more
+\n 4.	The patient feels very sick
+\n 5.	The fever is not reduced after giving paracetamol.
+</string>
+
+</resources>

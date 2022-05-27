@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold"
+            tools:text="@string/hint_feedback_description"></TextView>
+
+        <TextView
+            android:id="@+id/ivGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:drawableLeft="@drawable/ic_image_gallery"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="Gallery"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/ivVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:drawableLeft="@drawable/ic_play_action"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="Video"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

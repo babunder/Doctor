@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/do_s"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/green"
+                    android:textSize="22dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_your_teeth_every_six_months"
+                        android:textSize="16dp"
+                        android:textColor="@color/green"
+                        android:padding="6dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brush_your_teeth_twice_daily_and_use_a_flask_once"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/increase_intake_of_fiber_content_in_meals"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brush_after_eating_the_sticky_material"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/use_of_toothpaste_containing_fluoride"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/toothpaste_is_more_beneficial_than_tooth_powder_teeth_checking_and_treatment_should_always_be_done_by_a_registered_doctor"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/use_a_soft_hair_brush"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/if_the_wound_in_the_mouth_has_not_healed_for_more_than_a_week_see_a_doctor_right_away"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_not_open_the_sealed_closed_bottles_cans_with_teeth"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/if_you_have_any_teeth_or_oral_problems_see_a_doctor_right_away"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_ts"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/red"
+                    android:textSize="22dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoid_eating_sticky_foods_or_at_the_beginning_of_the_meal"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoid_sweet_cold_drinks_that_have_bubbles"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoid_eating_tobacco_gutka_foods"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_not_use_candy_toothpaste_or_toothpaste_or_toothpaste_damage_to_gums"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/there_should_be_no_wrong_home_remedy_such_as_nail_polish_on_the_toothache"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_not_take_or_use_medicines_without_medical_advice_from_a_doctor"
+                        android:textSize="16dp"
+                        android:padding="6dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+
+
+
+
+
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Avoid dinner."-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/red"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

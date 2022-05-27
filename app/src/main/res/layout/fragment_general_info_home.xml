@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        layout="@layout/layout_action_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonSignDangerous"
+            style="@style/PrimaryButtonFancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_of_dangerous_illness"></Button>
+
+        <Button
+            android:id="@+id/buttonHomeMedKit"
+            style="@style/PrimaryButtonFancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_gi_home_medicine_kit"></Button>
+    </LinearLayout>
+</LinearLayout>

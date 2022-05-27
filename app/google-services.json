@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "53113559251",
+    "firebase_url": "https://mediwise-f0d61.firebaseio.com",
+    "project_id": "mediwise-f0d61",
+    "storage_bucket": "mediwise-f0d61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53113559251:android:b0d9d500c06322f4a91c26",
+        "android_client_info": {
+          "package_name": "demo.com.mydoctors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53113559251-7cnhe0ajin7p4cmeujj6580c48u7ekt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ6-Y_Ud7U8b1Kjjh64JhAq14lKS5icFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53113559251-7cnhe0ajin7p4cmeujj6580c48u7ekt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

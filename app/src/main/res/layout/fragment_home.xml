@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_emergency_postop_care"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_emergency_care">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/emergency_choking"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_head_neck"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_uncommon_wisdom">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/home_medicine_kit"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_cought_cold"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_cough_cold">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/cough_cold"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                                >
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_loose_motion"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_loosemotion">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/loose_motion"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_fever"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_weight="1"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/ic_fever">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/fever"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_backache_new">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/back_ache"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Knee && pregnancy-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_knee"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_knee_ache">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/knee_ache"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linear_womens_health"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_pregnancy"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/pregnancy"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linear_chect_trouble"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:background="@drawable/ic_chest_trouble_new">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/chect_trouble"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linear_tummy_trouble"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_launcher_background"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/tummy_trouble"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_gynacology"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_women_health"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/gynaecology"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_breast"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/breast">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/breast"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_dentist"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:background="@drawable/ic_denatl_issue">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/dental_trouble"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_pregnancy"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/pregnancy1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/pregnancy"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_gas_adakne"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/img_food_choking"
+                            android:visibility="invisible">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/lbl_food_choking"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_general"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_launcher_background"
+                            android:visibility="invisible">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/women_health"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/linear_troublesome_test"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_troublesome_test">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/troublesome_test"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_troublessome_drugs"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/home_fever_type_size"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_troublesome_drug">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/backgound_border_gray">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/light_gray"
+                                    android:gravity="center"
+                                    android:text="@string/troublesome_drug"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

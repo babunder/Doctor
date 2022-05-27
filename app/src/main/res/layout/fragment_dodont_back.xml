@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/do_s"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/green"
+                    android:textSize="22dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lose_weight"
+                        android:textSize="16dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/take_a_pillow_under_the_hood_while_wearing_a_mandi"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sit_back_and_sleep"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/take_the_pillow_under_the_head_to_the_shoulders_while_sleeping"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/take_the_pillow_under_the_knee"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/exercise_sunshine_and_exercise_that_will_make_you_happy"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/use_tools_like_back_aid"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_ts"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/red"
+                    android:textSize="22dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_not_hurt_the_body_too_much_during_exercisee"
+                        android:textSize="16dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_not_take_pillss"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/don_t_sit_on_your_stomach"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Avoid dinner."-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/red"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

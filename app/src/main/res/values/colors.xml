@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#ffffff</color>
+    <color name="dark_green">#00574B</color>
+
+    <color name="faint_black1">#77000000</color>
+
+    <color name="gray">#616161 </color>
+    <color name="light_gray">#99616161 </color>
+    <color name="red">#E74C3C</color>
+
+    <color name="faint_red">#99a0251c</color>
+
+    <color name="back_ground">#f9f4f4</color>
+    <color name="back_ground_1">#99f9f4f4</color>
+    <color name="green">#15851D</color>
+    <color name="faint_black">#99000000</color>
+
+    <color name="faint_blue">#ECEFF1</color>
+
+    <color name="deep_purple">#311b92</color>
+    <color name="purple">#8e24aa</color>
+
+    <color name="faint_white">#dddddd</color>
+
+    <color name="colorPrimary1">#a0251c</color>
+
+    <color name="brown">#998D6E63</color>
+
+    <color name="faint_gray">#E0E0E0</color>
+
+    <color name="new_gray">#bcb7b7</color>
+    <color name="faint_green">#47A64A</color>
+    <color name="deep_orange">#FF5722</color>
+
+    <color name="orange">#FF6E40</color>
+
+    <color name="deep_red">#6e1812</color>
+    <color name="hyper_link">#231074</color>
+    <color name="cream_color">#77fffdd0</color>
+    <color name="sky_blue">#5587CEFA</color>
+
+    <color name="faint_sky_blue">#5788D5</color>
+    <color name="dark_purple">#4d007d</color>
+    <color name="light_green_blue">#B7FDF1</color>
+    <color name="lightgray">#66D3D3D3</color>
+    <color name="blue_primary">#044a70</color>
+
+    <color name="tomato_red">#b85850</color>
+    <color name="metalic_gold">#D4AF37</color>
+    <color name="limegreen">#32CD32</color>
+    <color name="navy_blue">#021645</color>
+    <color name="mopishi">#007366</color>
+    <color name="black_orange">#9C640C </color>
+    <color name="nav_back">#8000574B</color>
+    <color name="seekbar_background">#23000000</color>
+</resources>

@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        layout="@layout/layout_action_bar"></include>
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        android:layout_below="@+id/actionBar"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/carouselView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/ppregnancy"
+                    android:textColor="@color/red"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/hyper_link"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="4dp"
+                    android:text="@string/ensuring_pregnancy"
+                    android:textColor="@color/red"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/a_1_urine_test_it_is_best_to_check_your_first_urine_in_the_morning"
+                    android:textColor="@color/deep_red"
+                    android:textSize="20dp"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/_2_two_lines_should_be_highlighted_immediately_this_test_is_5_percent_true"
+                    android:textColor="@color/deep_red"
+                    android:textSize="20dp"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="6dp"
+                    android:text="@string/b_sonography_after_six_weeks_a_fetus_can_be_seen_with_a_simple_abdominal_sonography"
+                    android:textColor="@color/deep_red"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/when_to_go_to_the_doctor_right_away"
+                    android:textColor="@color/red"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/hyper_link"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="6dp"
+                    android:text="@string/very_severe_pain_in_stomach"
+                    android:textColor="@color/deep_red"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/bleeding"
+                    android:padding="6dp"
+                    android:textColor="@color/deep_red"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="6dp"
+                    android:text="@string/no_urination"
+                    android:textColor="@color/deep_red"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="6dp"
+                    android:text="@string/dizziness_in_the_stomach"
+                    android:textColor="@color/deep_red"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/if_you_have_to_urinate_for_2_3_hours_at_night"
+                    android:textColor="@color/deep_red"
+                    android:padding="6dp"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/having_a_child_with_a_prior_disability_a_prior_disability_or_a_severe_disability"
+                    android:textColor="@color/deep_red"
+                    android:padding="6dp"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/if_you_have_had_an_abortion_or_a_child_with_a_disability_in_the_past"
+                    android:textColor="@color/deep_red"
+                    android:padding="6dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/the_following_problems_can_occur_during_pregnancy"
+                    android:textColor="@color/red"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:padding="6dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/hyper_link"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/feeling_like_a_fever"
+                    android:textColor="@color/deep_red"
+                    android:padding="6dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/feel_thick_but_thick_in_breasts"
+                    android:textColor="@color/deep_red"
+                    android:padding="6dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/to_go_a_little_white_from_the_limbs"
+                    android:textColor="@color/deep_red"
+                    android:padding="6dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/feeling_tired"
+                    android:padding="6dp"
+                    android:textColor="@color/deep_red"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/get_more_sleep"
+                    android:textColor="@color/deep_red"
+                    android:padding="6dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/nausea_and_vomiting"
+                    android:textColor="@color/deep_red"
+                    android:padding="6dp"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_to_do"
+                    android:textColor="@color/green"
+                    android:textSize="22dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/in_order_to_reduce_the_pain_of_vomiting_use_the_ginger_blossom"
+                    android:textColor="@color/green"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/when_you_wake_up_in_the_morning_eat_the_fruit_eat_dry_bread_and_chapatis"
+                    android:textColor="@color/green"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eat_a_lot_of_fruits"
+                    android:textColor="@color/green"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eat_home_made_easy_to_digest_food"
+                    android:textColor="@color/green"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/there_should_be_plenty_of_green_red_colors_in_the_diet"
+                    android:textColor="@color/green"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/if_you_feel_tired_you_should_rest_so_much_work_must_be_done_with_happiness"
+                    android:textColor="@color/green"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/while_sleeping_the_room_should_be_supported_while_sitting"
+                    android:textColor="@color/green"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yoga_should_be_done"
+                    android:textColor="@color/green"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_not_to_do"
+                    android:textColor="@color/red"
+                    android:textSize="22dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/do_not_work_too_much_asthma_do_not_lift_weights"
+                    android:textColor="@color/red"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avoid_eating_outdoors"
+                    android:textColor="@color/red"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avoid_eating_bread_biscuits_chinese_chili_fried_foods"
+                    android:textColor="@color/red"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drugs_should_be_avoided"
+                    android:textColor="@color/red"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avoid_eating_outdoorss"
+                    android:textColor="@color/red"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_abortion"
+                    android:textColor="@color/black_orange"
+                    android:textSize="22dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/in_the_first_three_and_a_half_months_nature_causes_abortions_due_to_severe_defects_in_the_fetus"
+                    android:textColor="@color/black_orange"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/an_abortion_can_occur_if_a_pregnant_woman_has_a_serious_illness"
+                    android:textColor="@color/black_orange"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_fetus_that_is_good_tries_to_protect_nature_with_full_force"
+                    android:textColor="@color/black_orange"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to_prevent_abortion"
+                    android:textColor="@color/black_orange"
+                    android:textSize="22dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/if_the_mouth_of_the_fetus_is_weak_after_the_fourth_month_it_should_be_done"
+                    android:textColor="@color/black_orange"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/do_not_marry_in_a_close_relationship"
+                    android:textColor="@color/black_orange"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/food_should_be_pure_water"
+                    android:textColor="@color/black_orange"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/do_not_pick_up_too_thick_objects"
+                    android:textColor="@color/black_orange"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chemical_contact_should_be_avoided_e_g_lipstick_cream_for_nail_polish_deodorant_whites_drugs_should_be_avoided_pills_for_the_diagnosis_of_tuberculosis_pills_taken_during_the_menstrual_cycle_can_cause_defects_in_the_fetus"
+                    android:textColor="@color/black_orange"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/care_in_the_ninth_month"
+                    android:textColor="@color/dark_green"
+                    android:textSize="22dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/if_there_is_any_problem_like_slowing_down_of_the_baby_getting_soaked_with_water_or_soaking_blood_causing_a_lot_of_headaches_difficulty_in_vision_then_go_to_the_doctor_immediately"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/if_the_nipples_are_deepened_the_syringe_should_be_pulled_out_to_prevent_the_baby_from_breastfeeding"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/the_baby_should_always_be_on_the_cushion"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keep_warm"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/only_breastfeed_water_honey_cow_s_milk_should_be_avoided"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two_men_should_touch_the_baby"
+                    android:textColor="@color/dark_green"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

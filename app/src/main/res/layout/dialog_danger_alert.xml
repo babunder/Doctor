@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/new_gray">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_immediate_visit_your_near_doctor"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="@color/deep_red"
+        android:gravity="center"
+        android:layout_above="@+id/txtOK"
+        />
+
+    <TextView
+        android:id="@+id/txtOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/ok"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@color/faint_green"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+
+
+
+</LinearLayout>

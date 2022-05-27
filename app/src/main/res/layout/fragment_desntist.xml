@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        layout="@layout/layout_action_bar"></include>
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        android:layout_below="@+id/actionBar"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txtSubmit"
+        android:layout_below="@id/carouselView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/drawable_gray">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_there_sudden_swelling_on_the_side_of_the_teeth_or_on_the_face"
+                    android:textColor="@color/deep_red"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="6dp" />
+
+                <RadioGroup
+                    android:id="@+id/first_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/drawable_gray">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/swelling_of_the_chin_and_near_the_throat_have_trouble_swallowing"
+                    android:textColor="@color/deep_red"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="6dp" />
+
+                <RadioGroup
+                    android:id="@+id/second_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/drawable_gray">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/doesn_t_the_jaw_shut"
+                    android:textColor="@color/deep_red"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="6dp" />
+
+                <RadioGroup
+                    android:id="@+id/third_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/drawable_gray">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_your_tooth_broken_by_accident_or_bite"
+                    android:textColor="@color/deep_red"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="6dp" />
+
+                <RadioGroup
+                    android:id="@+id/fourth_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/drawable_gray">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/has_the_bone_skin_teeth_gums_been_damaged_in_the_face"
+                    android:textColor="@color/deep_red"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="6dp" />
+
+                <RadioGroup
+                    android:id="@+id/fifth_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/yes"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="@string/no"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:buttonTint="@color/deep_purple" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txtSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/metalic_gold"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

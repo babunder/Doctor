@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/layout_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btnChoking"
+            style="@style/PrimaryButtonFancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choking" />
+
+        <Button
+            android:id="@+id/btnEpilepsy"
+            style="@style/PrimaryButtonFancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/epilepsy" />
+
+        <Button
+            android:id="@+id/btnWoundBleeding"
+            style="@style/PrimaryButtonFancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wound_bleeding" />
+
+        <Button
+            android:id="@+id/btnNoseBleeding"
+            style="@style/PrimaryButtonFancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bleeding_from_the_nose" />
+
+        <Button
+            android:id="@+id/btnCommonProblem"
+            style="@style/PrimaryButtonFancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_problems_and_danger_operation" />
+    </LinearLayout>
+
+</LinearLayout>

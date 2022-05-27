@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cough_cold">सर्दी खांसी</string>
+    <string name="_1_do_you_have_fever_more_than_7_days">1) क्या आपको 3 दिनों से अधिक बुखार है ?</string>
+    <string name="_2_do_you_have_high_grade_fever">2) क्या बुखार १०३ f या ज्यादा  है  ?</string>
+    <string name="_3_do_you_have_difficulties_in_breathing">3) क्या आपको सांस लेने में दिक्कत है ?</string>
+    <string name="_4_do_you_have_difficulties_in_swallowing">4)क्या आपको निगलने में कठिनाई है ?</string>
+    <string name="_5_do_you_have_chest_pain">5) क्या आपको सीने में दर्द है ?</string>
+    <string name="_6_is_your_sputum_red">6) आपका बलगम लाल है ?</string>
+    <string name="_7_is_there_bleeding_in_eyes">7) क्या आँखोंमे खून है ?</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+
+    <string name="please_immediate_visit_your_near_doctor">उपचार शुरू करें और अपने चिकित्सक को मिले.</string>
+    <string name="do_s">क्या करें :</string>
+    <string name="take_rest">अराम करे.</string>
+    <string name="drink_hot_liquid_frequently">गरम पेय बार बार पीए.</string>
+    <string name="drink_ginger_tea">अदरक की चाय पिएं.</string>
+    <string name="don_ts">क्या न करें :</string>
+    <string name="avoid_cold_food_and_drink">ठंडे खाने और पीने से बचें।.</string>
+    <string name="avoid_existing_unless_hungry">भूक नाही लगी तो मत खयीए.</string>
+    <string name="avoid_exention_and_journey">परिश्रम ,प्रवास न करे.</string>
+    <string name="avoid_food_item_like_dalda_shrikhand_etc">खाने की चीजें जैसे दही, श्रीखंड,लस्सी आदि से बचें.</string>
+    <string name="medicine">दवा :</string>
+    <string name="_1_homeopathy">1) होम्योपैथी :</string>
+    <string name="_2_ayurvedic">2) आयुर्वेदिक :</string>
+    <string name="recurring"> बार बार न हो इसलिये</string>
+    <string name="yoga">योगा :</string>
+    <string name="ujjayi_pranayam">उज्जयी प्राणायाम</string>
+    <string name="uddiyana_bandh"> कपालभारती,उड्डियान बंध इनका अभ्यास करे</string>
+
+    <string name="loose_motion">जुलाब </string>
+    <string name="do_you_have_loose_motion_for_more_than_7_days">1) क्या आपको 7 दिन से  ज्यादा  दस्त  हो  रहे है ?</string>
+    <string name="_2_do_you_have_sever_pain">2) क्या आपको बहुत दर्द  है ?</string>
+    <string name="_3_do_you_have_sever_vomitting">3) काय आपको उलटीया बहुत हो रही है ?</string>
+    <string name="_4_are_you_able_to_pass_the_urine">4) क्या  पेशाब कम हो रही है ?</string>
+    <string name="_5_is_your_tummy_distended">5) क्या पेट फुल गया हैं ?</string>
+    <string name="_6_is_their_blood_in_your_stool">6) क्या आपके शौच मैं खून हैं ?</string>
+
+    <string name="drink_rice_kanji_daal_soup_butter_milk">चावलं कि कांजी ,दाल का पानी,छाच पीजीए.</string>
+    <string name="who_ors_drink">WHO ORS दिन मै 2 लिटर पीजीए.</string>
+    <string name="if_hungry_then_eat_item_made_by_old_rice_moong_daal">भूक लगनेपर पुराने चावलं,मूंग दाल से बने पदार्थ खाये.</string>
+    <string name="eat_fruit_like_pomogranate_orange_apple">अनार,सेब,मोसंबी फल खाये.</string>
+    <string name="avoid_saline_id_urine_is_passing_easily">अगर पेशाब ठीक हो रही हो तो सलाईन मत लगाइये.</string>
+    <string name="don_t_eat_till_you_are_hungry">अच्छी  भूक  लागने  तक  खाना  न  खाये.</string>
+    <string name="don_t_eat_foods_made_by_besan_mava_spices">बेसन,मावा (खोये की) चीजे ,तिखे मसालेदार व्यंजन न खाये.</string>
+    <string name="avoid_non_veg_food">नॉन व्हेज न खाये.</string>
+    <string name="if_small_volume_stool_with_mucus_and_blood">a)अगर दस्त मै  लाल रंग का खून ओर चिकनाहट.</string>
+    <string name="if_stool_with_mucus_and_smell_dirty">b)आगर दस्त मै  चिकनाहट ओर बदबू.</string>
+    <string name="saline_is_necessary_when_dehydration_is_present">शरीर मै  पाणी कम हो तो सलाईन लगाये.</string>
+    <string name="this_app_is_not_a_substitute_for_professional_medical_advice_diagnosis_or_treatment_because_of_something_you_feel_this_app_adviser_if_you_think_you_have_a_medical_emergency_please_visit_professional_adviser">यह ॲप आरोग्य शिक्षा के लिए बनाया गया है. जहा वैद्यकीय सुविधा उपलब्ध नही है वही कौन से उपचार किये जा सकते है इनका सुझाव इस ॲप मे किया गया है.डॉक्टर की सलाह परीक्षा तथा उपचार इन की जगह ये अँप नही ले सकता है.इस ॲप मे बताये गये उपचार अपने खुद के बारे मे कितने उपयुक्त या हानिकारक हो सकते है ये देखने की जिम्मेदारी केवल ॲप इस्तेमाल करनेवालों पे है.इस ॲप के सुझाव के कारण होने वाली किसी भी प्रकार की प्रत्यक्ष व अप्रत्यक्ष हानी के लिये आप इस ॲप या ॲप बनाने वालों को आप जिम्मेदार नही समझोगे.अगर ये आपको मान्य हो तोही आप इस अँप का इस्तेमाल करेंगे.</string>
+    <string name="ok">ठीक है</string>
+
+    <string name="knee_ache">घुटने का दर्द</string>
+    <string name="back_ache">पीठ दर्द</string>
+    <string name="fever">बुखार</string>
+    <string name="general_information">सामान्य जानकारी</string>
+
+    <string name="do_the_knee_aache_even_after_rest">आराम करने के बाद भी घुटने का दर्द करें.</string>
+    <string name="is_knee_skin_red">घुटने की त्वचा लाल है?</string>
+    <string name="do_you_have_fever">क्या आपको बुखार है?</string>
+    <string name="can_you_lift_the_leg">क्या आपको पैर उठाने मैं दिक्कत हैं?</string>
+    <string name="do_you_have_wealiness_of_leg">क्या आपको पैर की कमजोरी है?</string>
+    <string name="do_you_have_sensation">पैरो मैं संवेदना कम हैं?</string>
+    <string name="is_there_fever_for_more_than_three_days">क्या तीन दिनों से अधिक समय से बुखार है?</string>
+    <string name="does_the_patient_feel_very_sick">क्या रोगी बहुत बीमार महसूस करता है?</string>
+    <string name="is_the_fever_same_after_using_simple_measures">क्या साधारण उपायों का उपयोग करने के बाद बुखार समान है?</string>
+    <string name="when_the_fever_goes_up_take_paracetamol_and_relax">बुखार चढ़ जाने पर पैरासिटामोल लें और आराम करें।</string>
+    <string name="the_body_should_be_kept_warm_let_it_sweat_canary_should_be_taken_drink_soup">शरीर को गर्म रखना चाहिए। इसे पसीना आने दें। कैनरी लेनी चाहिए। सूप पिएं</string>
+    <string name="allow_the_body_time_to_recover">शरीर को ठीक होने का समय दें</string>
+    <string name="water_bars_should_be_kept">पानी की पट्टियां रखनी चाहिए</string>
+    <string name="if_there_is_no_appetite_do_not_eat">भूख न हो, तो न खाएं</string>
+    <string name="if_there_is_no_fever_above_7_do_not_go_down">अगर 103 से ऊपर बुखार नहीं है, तो नीचे मत जाओ।</string>
+    <string name="do_not_take_antibiotics_without_the_doctor_s_advice_to_rush_the_fever">बुखार को भगाने के लिए डॉक्टर की सलाह के बिना एंटीबायोटिक न लें</string>
+    <string name="ferrum_fosses_6x_per_hour">फेरम फॉस 8x प्रति घंटा</string>
+    <string name="sunshmani_vati_according_to_the_age">संशमनी वटी उम्र के अनुसार</string>
+    <string name="drugs_to_be_followed">दवाओं का पालन </string>
+
+    <string name="medications_in_the_group_nsaid_e_g_medications_such_as_ibuprofen_nimesulide_can_cause_fever_however_they_cannot_remove_the_cause_of_the_fever_severe_diseases_such_as_pneumonia_can_be_overlooked_due_to_fever_these_drugs_can_cause_acidity_and_cause_stomach_ache_vomiting">
+समूह में दवाएं NSAID
+उदाहरण के लिए। इबुप्रोफेन निमेसुलाइड जैसी दवाएं बुखार का कारण बन सकती हैं। हालांकि, वे बुखार के कारण को दूर नहीं कर सकते हैं।
+बुखार के कारण गंभीर बीमारियों जैसे निमोनिया की अनदेखी की जा सकती है।
+ये दवाएं अम्लता पैदा कर सकती हैं और पेट में दर्द, उल्टी का कारण बन सकती हैं</string>
+
+    <string name="keep_the_weight_down">वजन कम रखें</string>
+    <string name="lift_the_pillow_and_place_the_pillow_under_the_rug">तकिया उठाएं और तकिया को गलीचा के नीचे रखें।</string>
+    <string name="on_the_go_do_knee_and_knee_exercises_while_sitting_in_a_chair">चलते-फिरते, कुर्सी पर बैठकर घुटने और घुटने का व्यायाम करें</string>
+    <string name="when_in_the_back_walk_in_reverse">जब पीठ में, रिवर्स में चलें</string>
+    <string name="add_sun_salutations">सूर्य नमस्कार करे</string>
+    <string name="walk_on_the_flat">फ्लैट पर चलो.</string>
+    <string name="walk_in_water_all_over_your_waist">अपनी कमर पर पानी भर कर चलें</string>
+    <string name="don_t_let_the_weight_gain">वजन बढ़ने मत दो</string>
+    <string name="avoid_exercising_like_badminton_ropes">बैडमिंटन, रस्सियों जैसे व्यायाम से बचें</string>
+    <string name="avoid_walking_too_far">बहुत दूर चलने से बचें</string>
+    <string name="don_t_go_downhill">नीचे मत जाओ</string>
+    <string name="do_not_hurt_the_body_too_much_during_exercise">व्यायाम के दौरान शरीर को ज्यादा चोट न पहुंचाएं।</string>
+    <string name="do_not_take_painkillers">दर्द निवारक दवाएं न लें</string>
+    <string name="sign_of_dangerous_illness">गंभीर बीमारी के संकेत.</string>
+    <string name="a_person_with_one_or_more_of_the_following_signs_needs_urgent_skilled_medical_help">निम्न लिखित एक या अधिक लक्षण अगर रहे तो मरिजको तुरंत बडे दवाखाने में ले चलेनिम्न लिखित एक या अधिक लक्षण अगर रहे तो मरिजको तुरंत बडे दवाखाने में ले चले.</string>
+
+    <string name="pregnancy">प्रेग्नंसी</string>
+    <string name="dental_trouble">दांतों का दर्द</string>
+    <string name="ppregnancy">गर्भावस्था</string>
+    <string name="ensuring_pregnancy">गर्भावस्था सुनिश्चित करने के लिए</string>
+    <string name="a_1_urine_test_it_is_best_to_check_your_first_urine_in_the_morning">1. सुबह की पहेली पिशाब तपासना जरुरी है</string>
+    <string name="_2_two_lines_should_be_highlighted_immediately_this_test_is_5_percent_true">2. दो लाइन टेस्ट किट मे बताये जैसी स्पष्ट दिखनी चाहिये. </string>
+    <string name="b_sonography_after_six_weeks_a_fetus_can_be_seen_with_a_simple_abdominal_sonography">3. 6 सप्ताह के बाद सोनोग्राफी मे गर्भ देखना संभव है.</string>
+    <string name="when_to_go_to_the_doctor_right_away">डॉक्टर को तुरंत कब मिले ?</string>
+    <string name="very_severe_pain_in_stomach">1. पेट मे जोर से दर्द होना</string>
+    <string name="bleeding">2. बदन पे से खून जाना.</string>
+    <string name="no_urination">3. पिसाब रुक जाना.</string>
+    <string name="dizziness_in_the_stomach">4. सोने के बाद पाच या जादा बार पिसाब के लिए उठना.</string>
+    <string name="if_you_have_to_urinate_for_2_3_hours_at_night">5. कब्ज होना.</string>
+    <string name="having_a_child_with_a_prior_disability_a_prior_disability_or_a_severe_disability">6. नजदीकी रिश्ते मे दिव्यांग बच्चा है</string>
+    <string name="if_you_have_had_an_abortion_or_a_child_with_a_disability_in_the_past">7. इसके पहले गर्भपात हो गया हो. \n\n8.	टी बी , एपिलेप्सी, ब्लड प्रेशर , डायबिटीस जैसी बिमारी का इलाज चल रहा हो</string>
+
+    <string name="the_following_problems_can_occur_during_pregnancy"> पेट मे बच्चा हो तो ये तकलीफे होती है</string>
+    <string name="feeling_like_a_fever">1. उल्टी होना</string>
+    <string name="feel_thick_but_thick_in_breasts">2. हलकासा बुखार होना.</string>
+    <string name="to_go_a_little_white_from_the_limbs">3. स्तनो मे  बदल होना</string>
+    <string name="feeling_tired">4.	कमजोरी.</string>
+    <string name="get_more_sleep">5. सफेद पानी गिरना.</string>
+    <string name="nausea_and_vomiting"></string>
+
+
+    <string name="what_to_do">क्या करें</string>
+    <string name="in_order_to_reduce_the_pain_of_vomiting_use_the_ginger_blossom">1. उलटी कम होने के लिये सुबह उठने के बाद कुछ सुखी रोटी खाये. अद्रक आमला जामून इन का उपयोग करे.</string>
+    <string name="when_you_wake_up_in_the_morning_eat_the_fruit_eat_dry_bread_and_chapatis">2. घर मे बना हुआ साधा भोजन करे .</string>
+    <string name="eat_a_lot_of_fruits">3. खानेमे हरी, लाल रंग की चीजे ज्यादा इस्तेमाल मे लाये.</string>
+    <string name="eat_home_made_easy_to_digest_food">4.	आनंद से हो उतना ही काम करे</string>
+    <string name="there_should_be_plenty_of_green_red_colors_in_the_diet">5. आनंद से हो ऐसा व्यायाम करे. </string>
+    <string name="if_you_feel_tired_you_should_rest_so_much_work_must_be_done_with_happiness">6. बैठने सोने का उचित ढंग जान ले.</string>
+    <string name="while_sleeping_the_room_should_be_supported_while_sitting"></string>
+    <string name="yoga_should_be_done"></string>
+
+    <string name="what_not_to_do">क्या न करे</string>
+    <string name="do_not_work_too_much_asthma_do_not_lift_weights">1. ज्यादा काम कर के थक जाना. \n\n
+2.	तिखा मसाले का, बाहर बना हुआ खाना \n\n
+3.	मैदे से बनी चीजे जैसे पाव बिस्कुट खाना \n\n
+4.	संडास को जोर करना \n\n
+5.	हर  तकलीफ के लिये दवाइयों का इस्तेमाल.</string>
+
+    <string name="avoid_eating_outdoors"></string>
+    <string name="avoid_eating_bread_biscuits_chinese_chili_fried_foods"></string>
+    <string name="drugs_should_be_avoided"></string>
+    <string name="avoid_eating_outdoorss"></string>
+
+
+    <string name="about_abortion">गर्भपात के बारे में</string>
+    <string name="in_the_first_three_and_a_half_months_nature_causes_abortions_due_to_severe_defects_in_the_fetus">1. अगर गर्भ मे गंभीर दोष हो तो गर्भपात होना नैसर्गिक है , आवश्यक है.</string>
+    <string name="an_abortion_can_occur_if_a_pregnant_woman_has_a_serious_illness">2. मा को गंभीर बिमारी है हो तो गर्भपात होना नैसर्गिक है ,आवश्यक है .</string>
+    <string name="a_fetus_that_is_good_tries_to_protect_nature_with_full_force">3. कुदरत पूरी ताकत से गर्भ को सलामत रखने की कोशिश करती है</string>
+
+
+    <string name="to_prevent_abortion">गर्भपात न हो इसलिये </string>
+    <string name="do_not_marry_in_a_close_relationship">1. नजदीकी रिश्ते मे शादी ना करे.</string>
+    <string name="food_should_be_pure_water">2.	जरुरत हो तो चौथे महिने के बाद थैली के मूहको टाका ले . </string>
+    <string name="do_not_pick_up_too_thick_objects">3. केमिकल्स जैसे लिपस्टिक ,नेल पॉलिश, डिओ गोरी त्वचा के लिए मलम इस्तेमाल ना करे. </string>
+    <string name="chemical_contact_should_be_avoided_e_g_lipstick_cream_for_nail_polish_deodorant_whites_drugs_should_be_avoided_pills_for_the_diagnosis_of_tuberculosis_pills_taken_during_the_menstrual_cycle_can_cause_defects_in_the_fetus">4.	पहिले दो महिनो मे डॉक्टरी सलाह ले.</string>
+
+
+    <string name="if_the_mouth_of_the_fetus_is_weak_after_the_fourth_month_it_should_be_done"> यदि चौथे महीने के बाद गर्भस्थ शिशु का मुंह कमजोर हो, तो इसे करना चाहिए.</string>
+    <string name="care_in_the_ninth_month">नौवे महिने मे डॉक्टर को जरूर मिले </string>
+    <string name="if_there_is_any_problem_like_slowing_down_of_the_baby_getting_soaked_with_water_or_soaking_blood_causing_a_lot_of_headaches_difficulty_in_vision_then_go_to_the_doctor_immediately">1. हर हप्ते</string>
+    <string name="if_the_nipples_are_deepened_the_syringe_should_be_pulled_out_to_prevent_the_baby_from_breastfeeding">2. पेट मे दर्द. पतला पानी या खून जाना </string>
+    <string name="the_baby_should_always_be_on_the_cushion">3. जोर से सर दर्द, दृष्टी कम होना</string>
+    <string name="keep_warm">4.	पेट मे बच्चा घुमना कम होना .</string>
+    <string name="only_breastfeed_water_honey_cow_s_milk_should_be_avoided"></string>
+    <string name="two_men_should_touch_the_baby"></string>
+
+
+    <string name="is_there_sudden_swelling_on_the_side_of_the_teeth_or_on_the_face">क्या दांतों के किनारे या चेहरे पर अचानक सूजन है?</string>
+    <string name="swelling_of_the_chin_and_near_the_throat_have_trouble_swallowing">ठोड़ी और गले के पास सूजन। निगलने में परेशानी है?</string>
+    <string name="doesn_t_the_jaw_shut">क्या जबड़ा बंद नहीं होता?</string>
+    <string name="is_your_tooth_broken_by_accident_or_bite">क्या आपका दांत दुर्घटना या काटने से टूट गया है?</string>
+    <string name="has_the_bone_skin_teeth_gums_been_damaged_in_the_face">क्या चेहरे में हड्डी, त्वचा, दांत, मसूड़े खराब हो गए हैं?</string>
+    <string name="loss_of_large_amount_of_blood_from_anywhere_in_the_body">1) कहिंसेभी शरीर से गंभीर मात्रा में खून जाना.</string>
+    <string name="coughing_up_blood">2) खासिमे खून निकलना.</string>
+    <string name="diffuculty_in_breathing">3) मुह खुला रखने पर भी सांस लेनेमे दिक्कत होना.</string>
+    <string name="the_person_can_not_be_awakaned">4) रोगिको जगाया न जा पाना.</string>
+    <string name="the_person_is_so_weak_he_faunts_when_he_stands">5) वमरिजकी ताकत इतनी कम  हो की वोह खडा ना रह पाये.</string>
+    <string name="a_day_without_being_able_to_urinate">6) दिनभर पिसाब ना होना.</string>
+    <string name="a_day_without_being_able_to_drink_any_liquid">7) पूरा दिन कुछ भी ना पिया जाना.</string>
+    <string name="heavy_omitting_oe_sever_diarrhea_that_last_for_one_day_in_adult_or_few_hours_in_a_baby">8) बडोमे एक दिन तथा बच्चोमे एक या दो घंटे जोर से उलटी या दस्त होना.</string>
+    <string name="strong_stomach_pain_with_omitting_without_diarrhea">9) दस्त ना होते उलटी के साथ जोरसे पेट दर्द होना.</string>
+    <string name="black_tar_like_stools">10) डामर जैसी काली संडास होना.</string>
+    <string name="any_continous_pain_that_last_for_more_than_2_days">11) कहिकाभी दर्द दो दिन कायम रहना.</string>
+    <string name="high_fever_which_cannot_be_brought_down_or_last_over_extended_period">12) जोरोंका बूखार जो नीचे उतरा ना पाये या चार दिन कायम रह जाय .</string>
+    <string name="blood_in_urine_without_pain">13) पीसाबमें बिना दर्द खून जाना.</string>
+    <string name="vaginal_bleeding_which_persists_after_treatment">14) ईलाज करने पर भी योनी से खून जाते रहना</string>
+    <string name="vaginal_bleeding_with_foul_smelling_discharge">15) बद बू के साथ योनी से खून जाना</string>
+    <!--    <string name="lose_weight">वजन कम करें.</string>-->
+    <string name="take_a_pillow_under_the_hood_while_wearing_a_mandi"> नीचे जब बैठो तो अपनी सीट के नीचे तकिया रखें.</string>
+    <string name="sit_back_and_sleep">वापस बैठो और सो जाओ</string>
+    <string name="take_the_pillow_under_the_head_to_the_shoulders_while_sleeping">सोते समय सिर के नीचे,घुटने के नीचे,कमर के नीचे तकिया रखें या चद्दर की घडी रखें.</string>
+    <!--    <string name="take_the_pillow_under_the_knee">तकिया को घुटने के नीचे ले जाएं.</string>-->
+    <string name="exercise_sunshine_and_exercise_that_will_make_you_happy">सूर्यनमस्कार और व्यायाम करें जिससे खुशी मिलेगी</string>
+    <string name="use_tools_like_back_aid">Back aid सहायता जैसे उपकरणों का उपयोग करें.</string>
+    <string name="do_not_hurt_the_body_too_much_during_exercisee">व्यायाम के दौरान शरीर को ज्यादा चोट न पहुंचाएं.</string>
+    <string name="do_not_take_pillss"> 4-5 से दिन ज्यादा गोलियां न खाये.</string>
+    <string name="don_t_sit_on_your_stomach">झूकके ना बैठो.</string>
+    <string name="check_your_teeth_every_six_months">हर छह महीने में अपने दांतों की जांच कराएं.</string>
+    <string name="brush_your_teeth_twice_daily_and_use_a_flask_once">अपने दांतों को रोजाना दो बार ब्रश करें और एक बार फ्लास्क का इस्तेमाल करें</string>
+    <string name="increase_intake_of_fiber_content_in_meals">भोजन में फाइबर सामग्री का सेवन बढ़ाएं.</string>
+    <string name="brush_after_eating_the_sticky_material">चिपचिपी सामग्री खाने के बाद ब्रश करें.</string>
+    <string name="use_of_toothpaste_containing_fluoride">फ्लोराइड युक्त टूथपेस्ट का उपयोग.</string>
+    <string name="toothpaste_is_more_beneficial_than_tooth_powder_teeth_checking_and_treatment_should_always_be_done_by_a_registered_doctor">टूथपेस्ट टूथ पाउडर की तुलना में अधिक फायदेमंद है, दांतों की जांच और उपचार हमेशा एक पंजीकृत चिकित्सक द्वारा किया जाना चाहिए.</string>
+    <string name="use_a_soft_hair_brush">मुलायम हेयर ब्रश का इस्तेमाल करें.</string>
+    <string name="if_the_wound_in_the_mouth_has_not_healed_for_more_than_a_week_see_a_doctor_right_away">यदि मुंह में घाव एक सप्ताह से अधिक समय तक ठीक नहीं हुआ है, तो तुरंत एक डॉक्टर को देखें.</string>
+    <string name="do_not_open_the_sealed_closed_bottles_cans_with_teeth">दांतों के साथ सील बंद बोतलें, डिब्बे न खोलें.</string>
+    <string name="if_you_have_any_teeth_or_oral_problems_see_a_doctor_right_away">यदि आपको कोई दांत या मौखिक समस्याएं हैं, तो तुरंत एक डॉक्टर को देखें.</string>
+    <string name="avoid_eating_sticky_foods_or_at_the_beginning_of_the_meal">चिपचिपे खाद्य पदार्थ, या भोजन की शुरुआत में खाने से बचें.</string>
+    <string name="avoid_sweet_cold_drinks_that_have_bubbles">ऐसे मीठे कोल्ड ड्रिंक्स से बचें जिनमें बुलबुले हों.</string>
+    <string name="avoid_eating_tobacco_gutka_foods">तंबाकू गुटखा खाने से बचें.</string>
+    <string name="do_not_use_candy_toothpaste_or_toothpaste_or_toothpaste_damage_to_gums">कैंडी टूथपेस्ट या टूथपेस्ट या टूथपेस्ट का उपयोग न करें, मसूड़ों को नुकसान.</string>
+    <string name="there_should_be_no_wrong_home_remedy_such_as_nail_polish_on_the_toothache">दांत दर्द पर नेल पॉलिश जैसे कोई गलत घरेलू उपाय नहीं करना चाहिए.</string>
+    <string name="do_not_take_or_use_medicines_without_medical_advice_from_a_doctor">बिना डॉक्टरी सलाह के दवाइयों का सेवन या सेवन न करें.</string>
+    <string name="submit">सबमिट</string>
+    <string name="begin_the_next_treatment_after_3_4_days_see_a_doctor_if_the_pain_does_not_subside">अगर आप ठीक नहि है तो डॉक्टर की सलाह ले</string>
+    <string name="ferrum_phos_2x2x2_6">फेस्म फॉस (2-2-2)</string>
+    <string name="tribhuvan_kirti_sitopaladhi_2x2x2_6">त्रिभुवनकीर्ती गोली ,सितोपलादी (2-2-2).</string>
+
+    <!-- Added By Babunder Prajapati on 26-05-2020-->
+    <string name="lbl_language_english">अंग्रेज़ी</string>
+    <string name="lbl_language_Hindi">हिन्दी</string>
+    <string name="lbl_language_Marathi">मराठी</string>
+
+    <string name="lbl_language_selection">अपनी उपयुक्त भाषा का चयन करें।</string>
+    <string name="lbl_disclaimer_right_reserve">कर्ज़तं क्षेत्राधिकार के अधीन सभी अधिकार सुरक्षित।</string>
+    <!--<string name="activity_about_us_details">इनके द्वारा डिज़ाइन किया गया: <u>डॉ. नीलकंठ फड़के</u> \n9822533646 \n\n\n द्वारा अविकसित: <u>समीर घरलूट</u> \n9881131154।</string>-->
+    <string name="activity_about_us_details">ईमेल-आईडी और नंबर: \n<u>mediwise.nsp@gmail.com</u> \n7588106741</string>
+
+    <string name="hint_feedback_name">नाम दर्ज करें (वैकल्पिक)</string>
+    <string name="hint_feedback_contact_number">संपर्क नंबर दर्ज करें</string>
+    <string name="hint_feedback_email_id">ईमेल पता दर्ज</string>
+    <string name="hint_feedback_description">विवरण दर्ज करें</string>
+    <string name="hint_feedback_submit">प्रस्तुत</string>
+
+    <!--General Information-->
+    <string name="lbl_gi_home_medicine_kit">होम मेडिसिन किट</string>
+
+    <!-- Gas Adkane-->
+    <string name="lbl_food_choking">आपातकालीन घुट</string>
+    <string name="lbl_food_choking_info">अगर पीड़ित को सचेत किया जा सकता है, तो उसे अटका हुवा भोजन निकालने या झूठे दाँत निकालने को कहें।
+        यदि यह विफल रहता है तो उसे सीने से सिर झुकने में मदद मिलेगी। वह या तो बैठे या खड़े हो सकते हैं।
+        कंधे के बीच उसे थप थपाये ।
+        पीड़ित के खड़े होकर अपनी मुट्ठिया नाभि तथा सीने के बीच रख कर गर्दन की तरफ झटकेसे दबाए </string>
+
+
+    <string name="lbl_home_medicine_kit">अमोक्सिसिलीन \n इन्फेकशन \n8 घंटे में 1 गोली \n २० \n अंगों की डायरिया और खुजली
+    \n\n\n
+    पॅरासिटामोल  \nदर्द और बुखार \n8 घंटे में 1 गोली  \n२०  \n सर्द
+    \n\n\n
+    जलसंजीवनी WHO   \nनिर्जलीकरण  \n1 लीटर पानी में कई बार 3 पैकेट घोलें
+    \n\n\n
+    avil  \nया से ट्राइज़िन खुजली एलर्जी \n8 घंटे में 1 गोली   \n१०  \nसोने के लिए ड्राइव न करें
+    \n\n\n
+     ओंडानसेंट्रोन                \nउल्टी होना  \n8 घंटे में 1 गोली          \n१०
+        \n\n\n
+    प्रोमेथाझीन               \nउल्टी खुजली एलर्जी \n8 घंटे में 1 गोली         \n १०         \nसोने के लिए ड्राइव न करें
+        \n\n\n
+    डायसायक्लोमीन     \nपेट में दर्द             \n8 घंटे में 1 गोली
+        \n\n\n
+    कॅलेंडुला मलम         \nखुजली के मामूली घाव</string>
+
+
+    <string name="ac_name_image_gallery">Image Gallery Example</string>
+    <string name="ac_name_image_pager">Image Pager Example</string>
+
+    <!--<string name="navigation_drawer_open">Open navigation drawer</string>
+     <string name="navigation_drawer_close">Close navigation drawer</string>
+     <string name="disclaimer">Disclaimer</string>
+     <string name="signs_of_dangerous_illness">Signs of dangerous illness</string>
+     <string name="home_medicine_kit">Home medicine kit</string>
+     <string name="ayurveda">Ayurveda</string>
+     <string name="homeopathy">Homeopathy</string>
+     <string name="resuources">Resources</string>
+     <string name="feed_back">feedback</string>
+     <string name="contact_us">contact us</string>-->
+    <string name="women_health">स्त्री रोग</string>
+    <string name="gynaecology">स्त्री रोग</string>
+    <string name="emergency_choking">आपातकालीन सेवा </string>
+    <string name="choking">घास अटकना </string>
+    <string name="head_neck">हेड अँड नेक</string>
+    <string name="chect_trouble">Chest Trouble</string>
+    <string name="heart_attack">दिल का दौरा</string>
+    <string name="home_medicine_kit">घरगुती दवा किट</string>
+
+    <string name="troublesome_drug">दवा की तकलिफे</string>
+    <string name="troublesome_test">जांच की तकलीफे</string>
+
+
+    <string name="ayurveda_data">पाच हजार वर्ष पहहले कटे हुए नाक की प्लास्टटक सजषरी और भगंदर जसे कठीण बिमारी का ऑपरेशन आयुवेदने िताया है.\n
+मनुष्य के जनम के पहलेही उसको कुछ बिमारी ना हो इसललये क्या करना चाहहए इस का ववचार आयुवेद मे है.\n
+हमारे टवाटथ का रक्षण कैसे करे बिमारी को उत्पन्नही न होने दे इसका ववटतृत ववचार आयुवेद ने ही ककया है इतना ववटतृत ववचार दूसरे ककसी चचककत्सा प्रणाली में नही है.\n
+लभन्न प्रकृती के व्यक्ती अलग अलग हवामान प्रदेश मे अपना टवाट्य कैसे रखे इसकी मदत हमने आयुवेद से ले ली तो बिमाररयो से जल्दी छुटकारा लमलने मे मदत होगी</string>
+
+    <string name="homeopathy_data">हहोमिओपॅथी िे बीिारियों के िूल तक जा के इलाज किने की क्षिता है.
+अनेक बबिािीया जैसे बाि-बाि होनेवाली सर्दी सोिायमसस एलजी, िाहवािी के पहहले होने वाली तकलीफ इनिे होमिओपॅथी की र्दवाइयों का अच्छा असि होता है..\n
+गंभीि स्थथती िे होमिओपॅथी का उपयोग ना किे.\n
+सजजिी जब आवश्यक है तो होमिओपॅथी का उपयोग ना किे</string>
+
+
+    <string name="troublesome_test_data">विडाल टेस्ट :\n
+टाइफाइड बुखार के निदान के लिए ये टेस्ट की जाती है. अगर एक बार पॉज़िटिव आया तो कुछ दिन बाद दुबारा टेस्ट करना जरुरी है. एक ही बार  करनेसे टाइफाइड का गलत निदान किया जा सकता है. \n
+थायरॉइड टेस्ट :\n
+अगर टी ३ और टी ४ के रिपोर्ट नार्मल है और केवल TSH बढ़ गया है तब थायरॉइड की गोली लेने की आवश्यकता ज्यादातर से नहीं है. \n
+पथ्य, व्यायाम तथा तणाव नियंत्रण यही आवश्यक है. \n
+यूरिन की प्रेगनेंसी टेस्ट :\n
+अगर सुबह की पहली पिशाब टेस्ट की गयी तो ये टेस्ट ९९% बराबर रहता है. \n
+गर्भावस्था के शुरू के दिनोमे या सुबह के बाद की पिशाब टेस्ट की तो ये गलतीसे निगेटिव आ सकती है. \n
+सोनोग्राफी :\n
+सोनोग्राफी पर अपेंडिक्स का निदान करने के लिए पूरा भरवसा नहीं रखना चाहिए. \n
+सोनोग्राफी करते समय पेट के दाहिने निचले भाग में दर्द हो रहा हो इसका मतलब यह अपेंडिक्सही है ऐसा नहीं है. \n
+गर्भाशय की सोनोग्राफी :\n
+माहवारी में अगर ज्यादा खून बहता नहीं है, या पेट का दर्द ज्यादा नहीं है तो गर्भाशय तथा  अंडकोष की छोटी गांठ निकालने का ऑपरेशन करने की जरुरत नहीं होती. \n
+हार्ट की अँजिओग्राफी :\n
+अगर एखाद रक्तवाहिनी बंद हो तो अँजिओप्लास्टी अथवा बायपास करनाही चाहिए ऐसा नहीं है. \n
+गर्भावस्था में मार्कर स्टडीज़ :\n
+१) अगर माता की उम्र ३५ या ज्यादा है \n
+२) परिवार में किसी बच्चे को जनमसे कुछ दोष हो, \n
+३) ११ से १३ सप्ताह की सोनोग्राफी में अगर कुछ दोष निकले तो \n
+गर्भावस्था में डबल या ट्रिपल मार्कर स्टडीज़ बहुत जरुरी है. \n
+अगर सबके ये रिपोर्ट करे तो गर्भ नार्मल होते हुए भी इन मार्कर स्टडीज़ में दोष दिखाया जा सकता है और कुछ महंगे और धोकादायक तपास करना जरुरी हो सकता है.
+</string>
+
+    <string name="troublesome_drug_data">NSAID (IIBUProfen , Diclofenac , Nimesulide )  ये ताकदवर दवाइया है. बदन का दर्द, चमक, पेशाब की पथरी, माहवारी के दरम्यान का पेट का दर्द, ऑपरेशन के बाद का तीव्र दर्द, इनके लिए ये दवाइया इस्तेमाल होती है और इनसे तुरंत आराम मिलता है. इसलिए डॉक्टर बहोत बार इनका इस्तेमाल करते है. \n
+इन दवाइयोंसे एसिडिटी, पेट दर्द, पेट में जलन होना, माहवारी का खून बढ़ना ये तकलीफे बहुत बार होती है. \n
+कभी कभी पेट के अल्सर से खून का बहाव, तथा पेट का अल्सर फुटनेसे जान खतरेमें आ सकती है. \n
+बहुत दिन इस्तेमाल के बाद किडनी फेल होता है. \n
+डेंगू करोना जैसे बीमारियेमे इनका इस्तेमाल बुखार काम करने के लिए किया हो तो इनका इस्तेमाल जानलेवा हो सकता है. \n
+एंटीबायोटिक्स :\n
+बैक्टीरियल इंफेक्शन में एंटीबायोटिक दवाइया जादू जैसा परिणाम देकर जान बचाती है. \n
+इनके इस्तेमाल के बाद मुँह में छाले आना, जुलाब, तथा योनि मार्ग से खुजली होकर सफ़ेद पानी जाना ये तकलीफे बहुत बार होती है. \n
+सर्दी, खांसी जैसी बहुतसी बीमारिया ये वायरल होती है और इनमे एंटीबायोटिक्स का कुछ भी फायदा नहीं होता है. इनकी आवश्यकता न होनेपर इनका इस्तेमाल किये जानेसे तथा आवश्यकता होनेपर इनका कोर्स पूरा न करनेपर इनसे हानि हो सकती है. \n
+स्टेरॉइड्स :\n
+ये दवाइया जिवरक्षक है. दमा, शॉक, और दवाइयोंका रिएक्शन में इनका इस्तेमाल जान बचाता है. \n
+खांसी, बुखार, जोड़ो का दर्द, चमड़ी के रोग इनमे स्टेरॉयड दवाइया जादू जैसा काम करती है. \n
+बहुतसे पुरानी बीमारियोंमे अगर किसी डॉक्टर के पास जानेसे तुरंत आराम मिलता है तथा दवाइया बंद करने के बाद पुराणी तकलीफ फिरसे चालू होती है इसका मतलब है की डॉक्टरोँसे स्टेरॉयड दवाइया इस्तेमाल की जा रही है. \n
+कुछ डॉक्टर भूख बढ़ने के लिए इनका गलत इस्तेमाल करते है. कई बार ये स्टेरॉयड दवाइंया पावडर करके आयुर्वेदिक चूर्ण में  मिलाके के दी जाती है. और ऐसी ताकदवर दवाइया मरीज अनजानेमें ले लेता है. \n
+इन दवाइयोंसे ब्लड प्रेशर, टी. बी. , घुटने नाजुक बनना, चेहरेको या हाथ पैर को सूजन आना ऐसी तकलीफे हो सकती है. और बीमारियोंका उचित अंदाज न आनेसे न्यूमोनिया जैसी तकलीफ जान लेवा हो सकती है. \n
+एसिडिटी की दवाइया :\n
+ये दवाइया बारबार लेनेसे पेट का इंफेक्शन होने की सम्भावना बढाती है. खून की कमी हो सकती है. \n
+कभी कभी हार्ट अटैक आ सकता है. \n
+कैल्शियम की गोलिया :\n
+इनसे हड्डियोंकी ताकद तो बिलकुल बढ़ती  नहीं है और पथरी होने में मदद होती है. \n
+थायरॉइड की गोलिया :\n
+इनसे ब्लड प्रेशर होना, तथा कुछ ह्रदय रोग हो सकता है. \n
+हैवी मेटल्स :\n
+कुछ आयुर्वेदिक दवाइयोमे आर्सेनिक जैसे हैवी मेटल्स का उपयोग होता है. \n
+ठीक तरह से न बनानेपर तथा गलत इस्तेमाल के बाद शरीर में गंभीर समस्याए पैदा  हो सकती है. \n
+कई डॉक्टर जब खुद के पास से आयुर्वेदिक दवाइया देते है, तब ये सम्भावना ज्यादा रहती है. \n
+जानेमाने कंपनियोंके डॉक्टर की चिट्टीसे दुकान से प्राप्त होनेवाली दवाइयोंसे ऐसा धोखा होने की सम्भावना बहोत काम है\n
+</string>
+
+
+    <string name="breast">स्तन परेशानी</string>
+    <string name="breast_data">प्रसूति के बाद स्तनोकि तकलीफे होनेसे बचनेके लिए गर्भवस्थामे ही बच्चे को स्तनपान करनेका योग्य तरीका सीखना चाहिए. \n
+१) स्तनका काला भाग पूरी तरहसे बच्चे के मुँह में आना चाहिए. (चित्र १)\n
+२) अगर बच्चे का मुहं केवल निपल पकड़े तो स्तन को इजा हो सकती है. (चित्र २)\n
+३) अगर निपल चपटा हो तो १०/२० सीसी सीरिंज चित्रमे बताये गए तरीकेसे इस्तेमाल करके ९ वे महिनेमेंही निपल बाहर निकलनेकी कोशिश कीजिये. \n
+
+स्तनपान के दौरान :\n
+१) अगर स्तन में दर्दनाक गाठ उत्पन हो और वो ४८ घंटेमें ठीक न हो तो ऑपरेशन करके स्तन से पित  निकालना चाहिए.\n
+
+अगर गर्भावस्था न हो तो \n
+१) माहवारी के पहले स्तन में गाठ जैसा लगे और दर्द हो और ये सब तकलीफे माहवारी के बाद ख़त्म हो जाय तो ये डरने की बात नहीं है. \n
+
+बिना दर्द की  कड़क गाठें डॉक्टारोंको तुरंत बताइ जाय  ये कैंसर हो सकता है.\n
+
+</string>
+
+    <string name="menses">माहवारी की तकलीफे </string>
+    <string name="menses_data">महावारी कम  बार आना, तथा खून का बहाव कम रहना,\n
+ अगर गर्भावस्था नहीं चाहिए तो \n
+१) गर्भावस्था नहीं है इसकी जाँच करे. \n
+२) बुखार आना, \n
+३) वजन बहुत कम या ज्यादा होना \n
+४) चेहरे पर ज्यादा बाल आना \n
+ये नहीं है तो इसके पीछे  कोई गंभीर कारण रहनेकी सम्भावना कम है.डॉक्टर की सलाह्से थाइरोइड प्रोलेक्टिन आदि तपास जरूर करें \n
+
+अगर जवान लड़कियोमे ये तकलीफे है तो उन्होंने अपनी रहनसहन बदलना आवश्यक है. \n
+१) जंक फ़ूड न खाए \n
+२) कसरत करे. \n
+३) रातको ज्यादा मोबाईल या कम्प्यूटर का इस्तेमाल न करे. \n
+४) मानसिक तनाव कम रखे. \n
+५) अपना वजन ठीक रहे इसपर ध्यान दे. \n
+
+माहवारी में ज्यादा खून जाना :\n
+१) ये तकलीफ बहुत बार देखि जाती है तो उसका कारण देखने के लिए थायरॉइड, डायबेटीस, का तपास तथा सोनोग्राफी आवश्यक है. \n
+२) इलाज करने के बाद भी ये तकलीफ होती रही तो कोई गंभीर बीमारी नहीं है इसकी जाँच क्यूरेटिंग करके करना आवश्यक है. \n
+
+थैली निकलनेसे अगर बचना हो तो :\n
+१) अपना वजन मर्यादित रखे. \n
+२) कसरत करे. \n
+३) छोटी तक्लीफोंके लिए दवाइया न ले. \n
+४) गर्भाशय में प्रोजेस्टेरोन हार्मोन छोड़नेवाले साधन का उपयोग कर सकते है.\n
+</string>
+
+    <string name="choking_data">अगर आपको निगलने के वक्त गलेमे अटके तो शांत रहिये. अपना हाथ गलेके ऊपर रखकर औरोंको सूचना करे - <u>(चित्र 1)</u>\n
+अगर आप अकेले है तो आगे झुककर जोरसे खांसने  कोशिश करे. \n
+अगर इससे फायदा न हो तो अपनी मुष्टि नाभि  के ऊपर और छातीके निचे रखकर जोरसे झटकेसे सर की तरफ दबाये. <u>(चित्र 2)</u> \n
+अगर आप दुसरेकी सहायता कर रहे है तो पेशंट को जोरसे खानसेको कहे. \n
+अगर इससे राहत नहीं मिली तो उसके पीछे खड़े हो जाइये पेशंट को थोड़ा आगे झुकाकर उसके दो कंधोंके बीच  जोरसे  थपथपाये. <u>(चित्र 3)</u>\n
+अगर इससे राहत न मिली तो उसके पीछे खड़े होकर अपनी मुष्टि उसके नाभि  के ऊपर और छातीके निचे रखकर जोरसे झटकेसे सर की तरफ दबाये.<u>(चित्र 4)</u>\n
+छोटे बच्चोंको चित्र में बताये हुए ढंगसे  उपचार करे.  (चित्र)\n
+</string>
+
+
+    <string name="figure1">(चित्र 1)</string>
+    <string name="figure2">(चित्र 2)</string>
+    <string name="figure3">(चित्र 3)</string>
+    <string name="figure4">(चित्र 4)</string>
+
+    <string name="chest_trouble_data">सीनेमें दर्द , इसके साथ , चित्रमे बताये हुए जगह ) उसके साथ पसीना छूटना, साँस लेने में तकलीफ, सीनेपे जोरसे प्रेशर महसूस करना, बहुत बैचैनी लगना अगर ऐसा हो तो \n
+१) तुरंत मदद मांगे \n
+२) एक घंटेके भीतर ICCU में पहुंचना है. \n
+३) तबतक डिस्प्रिन ३०० एमजी की गोली खाये. शांत रहे. \n
+</string>
+
+    <string name="wound_bleeding">जखम तथा रक्तस्त्राव</string>
+    <string name="wound_bleeding_data">जखम तथा रक्तस्त्राव \n
+
+●	जखम को घडी से नाम कर 5 मिनिट दबा के रखे रक्तस्त्राव बंद हो जाएगा\n
+●	जखम को साफ पानी  से अच्छी तरह धोले\n
+●	धोने के लिए नॉर्मल सलाईन का वापर करना बहुत अच्छा है.\n
+●	हो सके तो जखम की जगह हृदय से उपर की लेवल पर रखे.\n
+●	जखम को साफ कपडे से ढक ले . दवाखाना ले जा सकते है तो जखम मे हलदी तथा  कोई वनस्पती न लगाये .\n
+●	होमिओपॅथी अर्निका मॉन्ट 6 गोलीसे जखम अच्छी तरह से भर आयेगी तथा वेदना भी कम होगी\n
+●	जरूरत पडे तो वेदना के लिये पॅरा सिटमोल 500mg गोली उमर के अनुसार ले सकते है\n
+</string>
+
+    <string name="care_after_delivery">Care After Delivery</string>
+    <string name="care_after_delivery_data">1) Please give the baby nothing but the breast milk for the first six months.\n
+2) Always nurse the baby on its side and not on its back.  If the baby vomits the baby is at risk of drowning in it\'s own vomit, if the baby is nursed on its back. \n
+3) The mother and only one other person should come in close contact with the baby.  A crowd of onlookers disturbs the mother, interferes with the breast feeding and is a dangerous source of infection for the new born.\n
+4) The mother should do post natal exercises to keep fit. \n
+5) The mother should see that her weight does not increase and avoid high calorie food stuffs.\n
+6) The mother should sparingly use her mobile phone as this would interfere with the bonding with the baby and breast feeding.\n
+7) Pregnancy can occur without getting menses three months after a delivery. So if spacing is desired please consider Condom or a copper T or depot progesteron injection every three months. \n
+8) Six months after the delivery oral contraceptive pills can be used.\n
+</string>
+
+    <string name="epilepsy">एपिलेप्सी मिर्गी</string>
+    <string name="epilepsy_data">एपिलेप्सी मिर्गी\n
+इसमे पेशंट जोर से झटके देता है तथा बेशुद्ध हो जाता है\n
+•	आपके सामने किसी को इसका दौरा पडे तो ये देखे की वो गिर न जाए.\n
+•	उसको आधार दे तथा उसके सर के नीचे कुछ कपडा रखे.\n
+•	उसको जोर् से  पकड न रखे.\n
+•	उसकी आजूबाजू खुली जगा रखे .\n
+•	उसके मुःह  मे चमच जैसी कोई चीज न डाले.\n
+•	उसके मुह के पास चप्पल या प्याज लाने की जरूरत नही . डॉक्टर के पास ले जानेकी तय्यारी करे\n
+•	उसकी सास के उपर ध्यान दे.\n
+•	शरीर शांत होने पर उसे करवट पे रखे..\n
+•	अगर उसने दवा बंद करी हो तो वो ठीक जगने पर उस्को दवा दे.\n
+</string>
+
+    <string name="bleeding_from_the_nose">नाक में से खून</string>
+    <string name="bleeding_from_the_nose_data">पीड़ित व्यक्ति को बिठाके रखे. नाक को दोनो बाजूसे दबाके रखे. \n
+आगे झुकके मुँह से सास ले.\n
+१५ मिनट में खून बहना बंद न होनेपर नाकमे दोनों बाजु साफ कपडे की घडी तेल लगाकर अंदर रखे और दबाकर रखे. \n
+खून न रुकने पर डॉक्टर के पास जाइये. \n
+</string>
+
+    <!--<string name="uncommon_wisdom">असामान्य ज्ञान</string>-->
+    <string name="uncommon_wisdom_data">माइग्रेन का सरदर्द :\n
+ती.आचार्य सत्यनारायण गोयंकाजी म्यांमार के उस वक्त के सबसे आमिर आदमी थे. उनको माइग्रेन की जबरदस्त तकलीफ शुरू हो गई. अपने डॉक्टरकी सलाह से उन्होने इलाज के लिए दुनिया का सफर किया. लेकिन कहीं भी उनका इलाज संभव नहीं हुआ. वे म्यांमार घर लौट आये. एक दोस्त ने उन्हें विपश्यना विद्या सीखनेकी सलाह दी. गोयंकाजी आचार्य उ. बा. खिन के पास यह विद्या सीखे. उनका माइग्रेन चला गया. आचार्य गोयंकाजी कई दिनोबाद भारत लौट आये और छोटेबड़े सबको १० दिन का शिबिर लेके ये विपश्यना विद्या सिखाई. आज दुनियाभर ये ध्यानधारणा की विद्या फ़ैल चुकी है. और सिरदर्द, ब्लड प्रेशर, एसिडिटी, कमरदर्द, जोडोंका दर्द, मानसिक तकलीफे इनसे ग्रस्त लाखो लोगोंको इस विपश्यना विद्या से राहत मिल चुकी है. \n
+www.virdhamma.org. \n\n
+
+पीठ दर्द :\n
+डॉ.एस्थर गोखले Ph.D. इन्हे पीठदर्द की दर्दनाक व्याधि थी. अनेक ऑपरेशन करनेके बावजूद उनके दर्द को आराम नहीं मिला. उन्होंने पीठदर्द का अभ्यास शुरू किया. भारत में आके योग शिक्षा प्राप्त की. और स्टैनफोर्ड यूनिवर्सिटी यु.स. में  Ph.D. प्राप्त की. बिना किसी दवाई के अलगअलग किस्म के व्यायाम तथा उठने बैठने खड़े रहनेके योग्य तरीके अपनाकर अपनी खुदकी पीठदर्दसे कायमसे छुटकारा प्राप्त किया. इनपर उन्होंने एक किताब लिखी है. जिसमे इन तरिकोंका सविस्तर विवरण है. \n
+www.gokhalemethod.com \n\n
+
+असाध्य ADDISONS DISEASE : \n
+श्री. श्रीकृष्णजी मराठे १९७२ से इस असाध्य व्याधि से २० साल जूझते रहे. जिन्दा रहनेके लिए और अपनी नौकरी सम्भालनेके लिए उनको बहोत सहना पड़ा. कोर्टिजोन जैसी महेंगी दवा उनको अमरिकासे मंगाकर बार बार लेनी पड़ती थी. तथा एंटी बायोटिक दवा बार बार लेनी पड़ती थी. हमेशा दवाइयोंका पूरा डिब्बा साथमे लेके उनको घूमना पड़ता था. तथा इन दवाइयोंके पीड़ाजनक  साइड इफेक्ट उनको २० साल झेलने पड़े. १९९३ में वो विवेकानंद योग संस्था के सम्पर्क में आये. प्रथम कन्याकुमारी और उसके बाद बंगलुरु में योगोपचार ओमकार साधना के साथ शुरू किये. कई साल उपचार लेने के बाद उनकी सब दवाइया बंद हो गई. जो किसी डॉक्टरने सोचा भी नहीं था. विख्यात डॉक्टरोंने  ADDISONS DISEASEव्याधि से उनकी मुक्ति ये अद्भुत तथा आश्चर्यकारक मानी है. \n
+www.svyasa.edu.in. \n\n
+
+</string>
+
+    <string name="common_problems_and_danger_operation">ऑपरेशन के बाद सम्भाव्य धोखे तकलीफे</string>
+    <string name="common_problems">ऑपरेशन के बाद सम्भाव्य धोखे तकलीफे</string>
+    <string name="common_problems_and_danger_operation_data">अक्सर होनेवाले :\n\n
+ऑपरेशन की जगह दुखना  - ईलाज  : दवाइया, इंजेक्शन\n
+ऑपरेशन की जगहपर सूजन, बधिरता  - ईलाज : अपने आप ठीक हो जाता है. \n
+उलटी होना, चक्कर आना, ठंडी लगना  - ईलाज : दवाइया , इंजेक्शन कभी कभी सलाइन\n
+नस में जहां इंजेक्शन दिया है वो जगहपर सूजन आना  - ईलाज : आपसे ही ठीक हो जाता है. \n
+कमर दर्द  - ईलाज : कमर को सोते वक्त आधार देना। योगासन करना \n
+
+कभी कभी होनेवाले :\n\n
+टांको में से थोड़ा पानी, खून या पस आना  - ईलाज : पेटपर सोना, साफ कपडे की घडी रखना \n
+सरदर्द  - ईलाज : ORS लेना , सलाइन चढ़ाना \n
+
+कम बार होनेवाले :\n\n
+टांको में से ज्यादा पानी या खून, पस आना  - ईलाज : दूसरा ऑपरेशन करने लग सकता है \n
+मूत्र मार्ग या आंत को हानि पहुंचना  - ईलाज :  दूसरा ऑपरेशन करने  लग सकता है. \n
+रक्तस्त्राव होना  - ईलाज :  खून देना पड़ सकता है.\n
+</string>
+
+    <string name="others">अन्य</string>
+
+    <string name="click_here_for_more_info">अधिक जानकारी के लिए यहां क्लिक करें</string>
+
+    <string name="cough_cold_info">अगर आपको नीचे दिये हुए लक्षण है कृपया जल्द ही डॉक्टर की सलाह लीजिये.
+\n\n 1.	5 दिन से ज्यादा बुखार रहना .
+\n 2.	103 या ज्यादा बुखार होना.
+\n 3.	सांस में तकलीफ होना .
+\n 4.	निगलने में तकलीफ .
+\n 5.	बलगम में खून रहना .
+\n 6.	 सास लेने पर सिने में दर्द .
+\n 7.	आखो में खून जमा होना
+</string>
+
+    <string name="loose_motion_info">नीचे बताई हुए कुछ लक्षण है तो अपने डॉक्टर से जरूर मिल ले
+\n\n 1.	सात दिन से ज्यादा जुलाब हो रहे है .
+\n 2.	जोर से उल्टी हो रही है .
+\n 3.	पेट मे जोर से दर्द हो रहा है .
+\n 4.	संडास के रास्ते से खून गिर रहा है .
+\n 5.	पेट फुल रहा है .
+\n 6.	पिशाब कम मात्रा मे हो रही है .
+\n 7.	आखो मे खून जमा हो रहा है.
+</string>
+
+    <string name="Knee_info">अगर नीचे बताये हुवे लक्षण है तो तुरंत अपने डॉक्टर की सलाह ले .
+\n\n 1.	गुड नाल लाल हो गया है .
+\n 2.	आराम करने पर भी दर्द है .
+\n 3.	बुखार है .
+</string>
+
+    <string name="back_info">अगर नीचे लिखे हुए लक्षण है तो तुरंत अपने डॉक्टर से मिल लें .
+\n\n 1.	पैर उठाने पर दर्द है .
+\n 2.	पैर कमजोर लगते है .
+\n 3.	पैर सुन पडते है.
+</string>
+
+    <string name="fever_info">अपने डॉक्टर को तुरंत मिले यदि आपको
+\n\n 1.	धोकादायक लक्षण कोई देखा गया है
+\n 2.	तीन दिन से ज्यादा बुखार है
+\n 3.	103 से उपर बुखार है
+\n 4.	पॅरासिटामॉल से बुखार नही उतरता.
+\n 5.	पेशंट को बहुत बीमार है ऐसा मेहसूस होता है.
+</string>
+
+</resources>

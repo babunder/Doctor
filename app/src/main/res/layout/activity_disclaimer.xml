@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/this_app_is_not_a_substitute_for_professional_medical_advice_diagnosis_or_treatment_because_of_something_you_feel_this_app_adviser_if_you_think_you_have_a_medical_emergency_please_visit_professional_adviser"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/dark_purple" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center|right"
+        android:layout_margin="@dimen/margin_2dp"
+        android:text="@string/lbl_disclaimer_right_reserve"
+        android:layout_height="wrap_content">
+    </TextView>
+</LinearLayout>

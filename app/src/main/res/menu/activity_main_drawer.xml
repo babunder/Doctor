@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_disclaimer"
+            android:title="@string/disclaimer" />
+        <item
+            android:id="@+id/nav_signs"
+            android:title="@string/signs_of_dangerous_illness" />
+
+        <item
+            android:id="@+id/nav_homekit"
+            android:title="@string/uncommon_wisdom" />
+
+        <item
+            android:id="@+id/nav_ayurveda"
+            android:title="@string/ayurveda" />
+
+        <item
+            android:id="@+id/nav_homeopathy"
+            android:title="HomeoPathy" />
+
+        <item
+            android:id="@+id/nav_resources"
+            android:title="@string/resuources" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="@string/feed_back"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:title="@string/contact_us"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/nav_aboutus"
+            android:title="@string/about_us"
+            android:visible="false" />
+    </group>
+</menu>

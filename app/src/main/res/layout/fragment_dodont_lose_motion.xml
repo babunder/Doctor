@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/do_s"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/green"
+                    android:textSize="22dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drink_rice_kanji_daal_soup_butter_milk"
+                        android:textSize="16dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/who_ors_drink"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/if_hungry_then_eat_item_made_by_old_rice_moong_daal"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eat_fruit_like_pomogranate_orange_apple"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_ts"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/red"
+                    android:textSize="22dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoid_saline_id_urine_is_passing_easily"
+                        android:textSize="16dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/don_t_eat_till_you_are_hungry"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/don_t_eat_foods_made_by_besan_mava_spices"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avoid_non_veg_food"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Avoid dinner."-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/red"/>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/drawable_gray"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medicine"
+                    android:textColor="@color/dark_purple"
+                    android:textStyle="bold"
+                    android:textSize="22dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_1_homeopathy"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark_purple"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/if_small_volume_stool_with_mucus_and_blood"
+                        android:textColor="@color/purple"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Merc Cor 6 (Every hour 2 pills)"
+                        android:textColor="@color/purple"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/if_stool_with_mucus_and_smell_dirty"
+                        android:textColor="@color/purple"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="IPECAC  6 (Every hour 2 pills)"
+                        android:textColor="@color/purple"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2_ayurvedic"
+                        android:textColor="@color/dark_purple"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:text="Bioquin0  6 (Every hour 2 pills)"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple"
+                        android:textStyle="bold"
+                        android:text="@string/saline_is_necessary_when_dehydration_is_present"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
