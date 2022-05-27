@@ -19,6 +19,7 @@ public class FragmentChestTrouble extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         TextUtils.hideActionBar((AppCompatActivity) getActivity());
         super.onCreate(savedInstanceState);
+        // My Check
     }
 
     @Override
