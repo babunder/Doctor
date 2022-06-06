@@ -42,6 +42,7 @@ public final class Constants {
             "drawable://" + R.drawable.cough3,
     };
 
+
     public static final String[] IMAGES_LOOSE_MOTION = new String[]{
             "drawable://" + R.drawable.stomach1,
             "drawable://" + R.drawable.stomach2,
@@ -116,6 +117,7 @@ public final class Constants {
     }
 
     public static final String FRAGMENT_SCREEN = "com.nostra13.example.universalimageloader.FRAGMENT_SCREEN";
+    public static final String ARGUMENT_VIDEO_LIST = "videos_list";
 
     public static final String FRAGMENT_SCREEN_COUGH_COLD = "Cough and cold";
     public static final String FRAGMENT_SCREEN_LOOSE_MOTION = "Loose Motion";

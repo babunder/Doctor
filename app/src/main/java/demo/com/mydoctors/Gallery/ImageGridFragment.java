@@ -2,9 +2,11 @@ package demo.com.mydoctors.Gallery;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +16,9 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
@@ -29,6 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import demo.com.mydoctors.R;
+import demo.com.mydoctors.model.DiseasesDetails;
 import demo.com.mydoctors.webutil.Webutil;
 
 public class ImageGridFragment extends AbsListViewBaseFragment {
@@ -48,55 +53,26 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
         screenName = bundle.getString("screen");
 
         diseasesId = Constants.getDiseasesId(screenName);
-        Webutil.threadGallery(getActivity(), diseasesId, new HandlerLogin());
+
+        listOfImages = Constants.ARRAY_LIST_IMAGES;
+        ((GridView) listView).setAdapter(new ImageAdapter(getActivity()));
+        listView.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                startImagePagerActivity(position, screenName);
+            }
+        });
 
         return rootView;
     }
 
-    /**
-     * Method to get the Feedback api response
-     */
-    class HandlerLogin extends Handler {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            String response = (String) msg.obj;
-            try {
-                JSONObject jsonObject = new JSONObject(response);
-                if (jsonObject.getString("error_code").equalsIgnoreCase("0")) {
-
-                    JSONArray jsonArray = jsonObject.getJSONArray("img_path");
-
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        listOfImages.add(jsonArray.getString(i));
-                    }
-                    Constants.ARRAY_LIST_IMAGES = listOfImages;
-                    ((GridView) listView).setAdapter(new ImageAdapter(getActivity()));
-                    listView.setOnItemClickListener(new OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            startImagePagerActivity(position, screenName);
-                        }
-                    });
-
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
     public class ImageAdapter extends BaseAdapter {
-
         //  private static final String[] IMAGE_URLS = Constants.IMAGES;
-
         private final LayoutInflater inflater;
-
         private final DisplayImageOptions options;
 
         ImageAdapter(Context context) {
             inflater = LayoutInflater.from(context);
-
             options = new DisplayImageOptions.Builder()
                     .showImageOnLoading(R.drawable.ic_stub)
                     .showImageForEmptyUri(R.drawable.ic_empty)

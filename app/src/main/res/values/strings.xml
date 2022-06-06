@@ -444,20 +444,21 @@ If the bleeding doesn\'t stop please put a lubricated cloth in his nostrils and 
 </string>
 
     <string name="uncommon_wisdom">Uncommon Wisdom</string>
-    <string name="uncommon_wisdom_data">Migraine Headache\n
+    <string name="uw_part1">Migraine Headache\n\n
 Late Acharya Sri S.N.Goenka was the richest man of Myanmar then. He had severe migraine headache for which  he had to take very strong pain killers like morphine which was the strongest pain killer available then. His doctor suggested that he should tour the world to seek cure. He failed to find any medicine that would stop his headache other than morphine.\n
 A friend suggested that he learn "VIPASSANA"  which he learnt from Sayyagi U Ba Khin. His migraine disappeared. Acharya Goenkaji later came to India and started teaching this Art of Meditation to young and old alike.\n
 For diseases like headache, blood pressure , acidity, joint pains, psychological disturbances thousands over the world have benefitted from this powerful treatment, which cures without any drugs.\n
-website : www.virdhamma,org\n\n
-
-Backache\n
+website : www.virdhamma,org
+    </string>
+    <string name="uw_part2">Backache\n\n
 Dr. Esther Gokhale (Ph.D.) suffered severe backache.  She underwent many surgeries to treat her backache which failed to give her relief. She started studying her backache and toured extensively. She studied yoga in India and did a Ph.D. in Stanford University U.S.A. for her backache. She has written a book describing various exercises and posture corrections that cured her backache. She has written a book on backache.\n
-website : www.gokhalemethod.com\n\n
+website : www.gokhalemethod.com
+    </string>
 
-Incurable debilitating ADDISONS DISEASE\n
+    <string name="uw_part3">
+Incurable debilitating ADDISONS DISEASE\n\n
 Mr. Shrikrishna Marathe suffered from debilitating addisons disease from 1972 to 1993. He had to take heavy drugs like cortisone and protect himself from infections and exertions by avoiding crowds.  He had to take repeated course of antibiotics to protect himself.  All these had serious side effects and his life was a torture. He started YOGA and OMKAR therapy at Vivekanand Kendra, Kanyakumari and then at Bangalore. And over the years he had a miraculous cure certified by a panel of eminent doctors. His cure was termed as a miracle by the doctors also.\n
-website : www.svyasa.edu.in\n\n
-
+website : www.svyasa.edu.in
 </string>
 
     <string name="link_data1"><u>http://vhai.org</u></string>

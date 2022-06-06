@@ -16,12 +16,15 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
+import demo.com.mydoctors.Pref;
 import demo.com.mydoctors.VolleySingleton;
 import demo.com.mydoctors.model.FeedbackParameters;
 
 public class Webutil {
-    // Added By Babunder Prajapati on 28-05-2020
     //========================= URL =============================
+    private static final String BASE_URL = "http://mediwiseapp.dineeasily.com/api/getdiseases";
+    public static final String IMAGES_BASE_URL = "http://mediwiseapp.dineeasily.com/uploads/";
+
     private static final String FEEDBACK_REQUEST_URL = "http://68.183.158.73/doctor/doctor_api/Admin_WA/insert_register";
     private static final String REGISTER_USER_REQUEST_URL = "http://www.dineeasily.com/doctorapp/Api/userRegister";
     private static final String VERIFY_OTP_REQUEST_URL = "http://www.dineeasily.com/doctorapp/Api/verifyotp";
@@ -32,6 +35,12 @@ public class Webutil {
     private static final String FEEDBACK_REQUEST_CONTACT_NUMBER = "phone";
     private static final String FEEDBACK_REQUEST_EMAIL_ID = "email";
     private static final String FEEDBACK_REQUEST_DESCRIPTION = "description";
+
+    public static final String REQUEST_CODE_COUGH = "COUGHCOLD-1";
+    public static final String REQUEST_CODE_LOOSE_MOTION = "LOOSE-MOTION";
+
+    private static final String KEY_DISEASE_CODE = "disease-code";
+    private static final String KEY_LANGUAGE_ID = "language-id";
 
     public static void registerUser(Context context, final String name, final String mobile, final String email, final String age, final String gender, final String address, final String password, final Handler handler) {
 
@@ -74,7 +83,6 @@ public class Webutil {
 
         stringRequest.setRetryPolicy(new DefaultRetryPolicy(VolleySingleton.VOLLEY_TIMEOUT, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-
     }
 
     public static void verifyOtp(Context context, final String id, final String otp, final Handler handler) {
@@ -112,7 +120,6 @@ public class Webutil {
 
         stringRequest.setRetryPolicy(new DefaultRetryPolicy(VolleySingleton.VOLLEY_TIMEOUT, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-
     }
 
     public static void threadLogin(Context context, final String username, final String password, final Handler handler) {
@@ -325,6 +332,44 @@ public class Webutil {
         };
         VolleySingleton.getInstance(context).getRequestQueue().add(stringRequest);
 
+        stringRequest.setRetryPolicy(new DefaultRetryPolicy(VolleySingleton.VOLLEY_TIMEOUT, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+    }
+
+    public static void getDiseaseDetails(final Context context, final String diseaseID, final Handler handler) {
+
+        final String languageID = Pref.getmInstance(context).getLANGUAGE();
+        final ProgressDialog progressDialog = setProgressDialog(context, "Please wait...", "Fetching Details");
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, BASE_URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Message message = new Message();
+                message.obj = response;
+                handler.sendMessage(message);
+                progressDialog.dismiss();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                progressDialog.dismiss();
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                HashMap<String, String> param = new HashMap<>();
+                param.put(KEY_DISEASE_CODE, diseaseID);
+                if (languageID != null && !languageID.isEmpty()) {
+                    param.put(KEY_LANGUAGE_ID, languageID);
+                } else {
+                    param.put(KEY_LANGUAGE_ID, "en");
+                }
+
+                return param;
+            }
+        };
+
+        VolleySingleton.getInstance(context).getRequestQueue().add(stringRequest);
         stringRequest.setRetryPolicy(new DefaultRetryPolicy(VolleySingleton.VOLLEY_TIMEOUT, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
     }

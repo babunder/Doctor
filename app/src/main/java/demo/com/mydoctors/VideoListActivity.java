@@ -45,37 +45,10 @@ public class VideoListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video);
         getSupportActionBar().setTitle(SCREEN_VIDEO_ACTIVITY);
         frScreen = getIntent().getStringExtra(Constants.FRAGMENT_SCREEN);
+        listOfVideo = getIntent().getStringArrayListExtra(Constants.ARGUMENT_VIDEO_LIST);
         diseasesId = Constants.getDiseasesId(frScreen);
 
-        Webutil.getVideos(this, diseasesId, new HandlerLogin());
-
-    }
-
-    /**
-     * Method to get the Feedback api response
-     */
-    class HandlerLogin extends Handler {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            String response = (String) msg.obj;
-            try {
-                JSONObject jsonObject = new JSONObject(response);
-                if (jsonObject.getString("error_code").equalsIgnoreCase("0")) {
-
-                    JSONArray jsonArray = jsonObject.getJSONArray("img_path");
-
-                    listOfVideo = new ArrayList<>();
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        listOfVideo.add(jsonArray.getString(i));
-                    }
-
-                    videoList();
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
+        videoList();
     }
 
     public void videoList() {
@@ -92,26 +65,15 @@ public class VideoListActivity extends AppCompatActivity {
             videoArrayList.add(getVideoModel(listOfVideo.get(i), getResources().getDrawable(R.drawable.ic_video_default)));
         }
 
-       /* VideoModel videoModel = getVideoModel("android.resource://" + getPackageName() + "/raw/ic_video1", getResources().getDrawable(R.drawable.iv_vid1));
-        VideoModel videoModel2 = getVideoModel("android.resource://" + getPackageName() + "/raw/ic_video2", getResources().getDrawable(R.drawable.iv_vid2));
-        VideoModel videoModel3 = getVideoModel("android.resource://" + getPackageName() + "/raw/ic_video3", getResources().getDrawable(R.drawable.iv_vid3));
-        videoArrayList.add(videoModel);
-        videoArrayList.add(videoModel2);
-        videoArrayList.add(videoModel3);*/
-
         VideoAdapter adapter = new VideoAdapter(this, VideoListActivity.this, videoArrayList);
         recyclerView.setAdapter(adapter);
         adapter.setOnItemClickListener(new VideoAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int pos, View v) {
-               /* Intent intent = new Intent(getApplicationContext(), VideoPlayActivity.class);
-                intent.putExtra("pos", pos);
-                startActivity(intent);*/
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(listOfVideo.get(pos)));
                 startActivity(intent);
             }
         });
-
     }
 
     @NotNull
@@ -133,7 +95,6 @@ public class VideoListActivity extends AppCompatActivity {
         time = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION);
         return time;
     }
-
 
     //time conversion
     public String timeConversion(long value) {

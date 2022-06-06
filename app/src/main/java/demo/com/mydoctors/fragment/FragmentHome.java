@@ -21,10 +21,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-//import com.synnapps.carouselview.CarouselView;
-//import com.synnapps.carouselview.ImageClickListener;
-//import com.synnapps.carouselview.ImageListener;
-
 import java.util.Locale;
 
 import demo.com.mydoctors.ActivityLanguage;
@@ -33,11 +29,6 @@ import demo.com.mydoctors.Pref;
 import demo.com.mydoctors.R;
 
 public class FragmentHome extends Fragment implements View.OnClickListener {
-
-    private final int HOME_SLIDER_LANGUAGE = 0;
-    private final int HOME_SLIDER_FEEDBACK = 1;
-    private final int HOME_SLIDER_DISCLAIMER = 2;
-    private final int HOME_SLIDER_ABOUT_US = 3;
 
     MenuItem language;
     View view;
@@ -48,14 +39,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
             linear_chect_trouble, linear_head_neck, linear_emergency_postop_care, linear_breast, linear_gynacology;
     String currentLanguage = "en", currentLang;
     Locale myLocale;
-    //CarouselView carouselView;
-    //int[] sampleImages = {R.drawable.ic_language, R.drawable.ic_feedback, R.drawable.ic_disclaimer, R.drawable.ic_aboutus};
-    //ImageListener imageListener = new ImageListener() {
-    //   @Override
-    // public void setImageForPosition(int position, ImageView imageView) {
-    //   imageView.setImageResource(sampleImages[position]);
-    //  }
-    //};
 
     @Nullable
     @Override
@@ -111,29 +94,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
         linear_breast.setOnClickListener(this);
 
         currentLanguage = getActivity().getIntent().getStringExtra(currentLang);
-
-        //  carouselView.setPageCount(sampleImages.length);
-
-        //  carouselView.setImageListener(imageListener);
-
-        //  carouselView.setImageClickListener(new ImageClickListener() {
-        //      @Override
-            /*public void onClick(int position) {
-                if (position == HOME_SLIDER_LANGUAGE) {
-                    Intent intent = new Intent(getActivity(), ActivityLanguage.class);
-                    startActivity(intent);
-                } else if (position == HOME_SLIDER_FEEDBACK) {
-                    Intent intent = new Intent(getActivity(), ActivityFeedBack.class);
-                    startActivity(intent);
-                } else if (position == HOME_SLIDER_DISCLAIMER) {
-                    Intent intent = new Intent(getActivity(), ActivityDisclaimer.class);
-                    startActivity(intent);
-                } else if (position == HOME_SLIDER_ABOUT_US) {
-                    Intent intent = new Intent(getActivity(), ActivityAboutUs.class);
-                    startActivity(intent);
-                }
-            }*/
-        // });
     }
 
     @Override
@@ -249,38 +209,8 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
                 }
             });
         }
-
         super.onCreateOptionsMenu(menu, inflater);
     }
-
-  /*  @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-*//*
-            case R.id.nav_english:
-                setLocale("en");
-                Pref.getmInstance(getActivity()).setLanguage("en");
-                break;
-
-            case R.id.nav_hindi:
-                setLocale("hi");
-                Pref.getmInstance(getActivity()).setLanguage("hi");
-                break;
-
-            case R.id.nav_marathi:
-                setLocale("mr");
-                Pref.getmInstance(getActivity()).setLanguage("mr");
-                break;*//*
-
-            case R.id.nav_language:
-                Intent intent = new Intent(getActivity(), ActivityLanguage.class);
-                startActivity(intent);
-
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }*/
-
 
     public void setLocale(String localeName) {
 
@@ -363,7 +293,7 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
                     Bundle args = new Bundle();
                     args.putString("data", getString(R.string.choking_data));
                     args.putString("title", getString(R.string.choking));
-                    args.putBoolean("isFromChoking",true);
+                    args.putBoolean("isFromChoking", true);
 
                     fragmentChoking.setArguments(args);
                     ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
@@ -388,7 +318,7 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
                     Bundle args = new Bundle();
                     args.putString("data", getString(R.string.epilepsy_data));
                     args.putString("title", getString(R.string.epilepsy));
-                    args.putBoolean("isFromChoking",false);
+                    args.putBoolean("isFromChoking", false);
                     fragmentChoking.setArguments(args);
                     ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
 
@@ -412,7 +342,7 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
                     Bundle args = new Bundle();
                     args.putString("data", getString(R.string.wound_bleeding_data));
                     args.putString("title", getString(R.string.wound_bleeding));
-                    args.putBoolean("isFromChoking",false);
+                    args.putBoolean("isFromChoking", false);
                     fragmentChoking.setArguments(args);
                     ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
                 } else {
@@ -425,12 +355,12 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
             @Override
             public void onClick(View v) {
                 alertDialogue.dismiss();
-                if(isFromEmergency){
+                if (isFromEmergency) {
                     FragmentChoking fragmentChoking = new FragmentChoking();
                     Bundle args = new Bundle();
                     args.putString("data", getString(R.string.bleeding_from_the_nose_data));
                     args.putString("title", getString(R.string.bleeding_from_the_nose));
-                    args.putBoolean("isFromChoking",false);
+                    args.putBoolean("isFromChoking", false);
                     fragmentChoking.setArguments(args);
                     ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
                 } else {
@@ -451,7 +381,7 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
                 Bundle args = new Bundle();
                 args.putString("data", getString(R.string.common_problems_and_danger_operation_data));
                 args.putString("title", getString(R.string.common_problems));
-                args.putBoolean("isFromChoking",false);
+                args.putBoolean("isFromChoking", false);
                 fragmentChoking.setArguments(args);
                 ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
             }
@@ -495,7 +425,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
                     args.putString("title", getString(R.string.heart_attack));
                     fragmentChestTrouble.setArguments(args);
                     ((ActivityMain) getActivity()).DataPassingFragment(fragmentChestTrouble);
-
                 }
             }
         });
