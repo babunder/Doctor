@@ -6,8 +6,6 @@ import android.graphics.drawable.Drawable;
 import android.media.MediaMetadataRetriever;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -15,9 +13,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import org.jetbrains.annotations.NotNull;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,18 +20,16 @@ import java.util.List;
 
 import demo.com.mydoctors.Gallery.Constants;
 import demo.com.mydoctors.model.VideoModel;
-import demo.com.mydoctors.webutil.Webutil;
 
 public class VideoListActivity extends AppCompatActivity {
 
-    public static ArrayList<VideoModel> videoArrayList;
-    RecyclerView recyclerView;
     public static final int PERMISSION_READ = 0;
+    public static ArrayList<VideoModel> videoArrayList;
+    public String frScreen = "";
+    public String diseasesId = "";
+    RecyclerView recyclerView;
     String SCREEN_VIDEO_ACTIVITY = "Video";
-    public  String frScreen = "";
-    public  String diseasesId = "";
-
-    List<String> listOfVideo = new ArrayList<>();
+    private List<String> listOfVideo = new ArrayList<>();
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -80,35 +73,8 @@ public class VideoListActivity extends AppCompatActivity {
     private VideoModel getVideoModel(String link, Drawable drawable) {
         VideoModel videoModel = new VideoModel();
         videoModel.setVideoTitle("");
-        //Uri uri = Uri.parse(uriPath);
         videoModel.setVideoDrwable(drawable);
-        videoModel.setVideoLink(link);
-        //videoModel2.setVideoDuration(timeConversion(Long.parseLong(getDuration("android.resource://" + getPackageName() + "/" + "R.raw.ic_video1"))));
-        videoModel.setVideoDuration("");
+        videoModel.setVideoLink(link); videoModel.setVideoDuration("");
         return videoModel;
-    }
-
-    public String getDuration(String video) {
-        String time;
-        MediaMetadataRetriever retriever = new MediaMetadataRetriever();
-        retriever.setDataSource(video, new HashMap<String, String>());
-        time = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION);
-        return time;
-    }
-
-    //time conversion
-    public String timeConversion(long value) {
-        String videoTime;
-        int dur = (int) value;
-        int hrs = (dur / 3600000);
-        int mns = (dur / 60000) % 60000;
-        int scs = dur % 60000 / 1000;
-
-        if (hrs > 0) {
-            videoTime = String.format("%02d:%02d:%02d", hrs, mns, scs);
-        } else {
-            videoTime = String.format("%02d:%02d", mns, scs);
-        }
-        return videoTime;
     }
 }

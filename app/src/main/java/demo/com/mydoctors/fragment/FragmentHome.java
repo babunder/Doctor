@@ -25,8 +25,10 @@ import java.util.Locale;
 
 import demo.com.mydoctors.ActivityLanguage;
 import demo.com.mydoctors.ActivityMain;
+import demo.com.mydoctors.Gallery.Constants;
 import demo.com.mydoctors.Pref;
 import demo.com.mydoctors.R;
+import demo.com.mydoctors.webutil.Webutil;
 
 public class FragmentHome extends Fragment implements View.OnClickListener {
 
@@ -34,11 +36,18 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
     View view;
 
     LinearLayout linear_cought_cold, linear_loose_motion, linear_knee, linear_back,
-            linear_fever, linear_general, linear_pregnancy, linear_dentist, linear_gas_adakne,
-            linear_troublessome_drugs, linear_troublesome_test, linear_womens_health, linear_tummy_trouble,
+            linear_fever, linear_general, linear_dentist, linear_gas_adakne,
+            linear_troublessome_drugs, linear_troublesome_test, linear_womens_health,
             linear_chect_trouble, linear_head_neck, linear_emergency_postop_care, linear_breast, linear_gynacology;
     String currentLanguage = "en", currentLang;
     Locale myLocale;
+
+    private int[] coughAndColdImages = {R.drawable.cough, R.drawable.cough1, R.drawable.cough2, R.drawable.cough3};
+    private int[] looseMotionImages = {R.drawable.stomach1, R.drawable.stomach2, R.drawable.stomach3, R.drawable.lose_motion};
+    private int[] feverImages = {R.drawable.fever, R.drawable.fever1, R.drawable.fever2, R.drawable.fever3};
+    private int[] backImages = {R.drawable.back_pain, R.drawable.back1, R.drawable.back2, R.drawable.back3};
+    private int[] kneeImages = {R.drawable.knee, R.drawable.knee1, R.drawable.knee2, R.drawable.knee3};
+    private int[] pregnancyImages = {R.drawable.pregnancy1, R.drawable.pregnancy2, R.drawable.pregnancy3, R.drawable.pregnancy4};
 
     @Nullable
     @Override
@@ -52,21 +61,19 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
     private void initView(View view) {
         setHasOptionsMenu(true);
         ((AppCompatActivity) getActivity()).getSupportActionBar().show();
-        //((AppCompatActivity) getActivity()).getSupportActionBar();
+
         linear_cought_cold = view.findViewById(R.id.linear_cought_cold);
         linear_loose_motion = view.findViewById(R.id.linear_loose_motion);
         linear_knee = view.findViewById(R.id.linear_knee);
         linear_back = view.findViewById(R.id.linear_back);
         linear_fever = view.findViewById(R.id.linear_fever);
         linear_general = view.findViewById(R.id.linear_general);
-        linear_pregnancy = view.findViewById(R.id.linear_pregnancy);
         linear_dentist = view.findViewById(R.id.linear_dentist);
         linear_gas_adakne = view.findViewById(R.id.linear_gas_adakne);
 
         linear_emergency_postop_care = view.findViewById(R.id.linear_emergency_postop_care);
         linear_head_neck = view.findViewById(R.id.linear_head_neck);
         linear_chect_trouble = view.findViewById(R.id.linear_chect_trouble);
-        linear_tummy_trouble = view.findViewById(R.id.linear_tummy_trouble);
         linear_womens_health = view.findViewById(R.id.linear_womens_health);
         linear_troublesome_test = view.findViewById(R.id.linear_troublesome_test);
         linear_troublessome_drugs = view.findViewById(R.id.linear_troublessome_drugs);
@@ -79,14 +86,12 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
         linear_back.setOnClickListener(this);
         linear_fever.setOnClickListener(this);
         linear_general.setOnClickListener(this);
-        linear_pregnancy.setOnClickListener(this);
         linear_dentist.setOnClickListener(this);
         linear_gas_adakne.setOnClickListener(this);
 
         linear_emergency_postop_care.setOnClickListener(this);
         linear_head_neck.setOnClickListener(this);
         linear_chect_trouble.setOnClickListener(this);
-        linear_tummy_trouble.setOnClickListener(this);
         linear_womens_health.setOnClickListener(this);
         linear_troublesome_test.setOnClickListener(this);
         linear_troublessome_drugs.setOnClickListener(this);
@@ -100,31 +105,57 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.linear_cought_cold:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentCoughCold());
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        coughAndColdImages, Constants.FRAGMENT_SCREEN_COUGH_COLD, Webutil.REQUEST_CODE_COUGH));
                 break;
 
             case R.id.linear_loose_motion:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentLooseMotion());
-                break;
-
-            case R.id.linear_knee:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentKnee());
-                break;
-
-            case R.id.linear_back:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentBack());
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        looseMotionImages, Constants.FRAGMENT_SCREEN_LOOSE_MOTION, Webutil.REQUEST_CODE_LOOSE_MOTION));
                 break;
 
             case R.id.linear_fever:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentFever());
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        feverImages, Constants.FRAGMENT_SCREEN_FEVER, Webutil.REQUEST_CODE_FEVER));
+                break;
+
+            case R.id.linear_back:
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        backImages, Constants.FRAGMENT_SCREEN_BACK_ACHE, Webutil.REQUEST_CODE_BACK));
+                break;
+
+            case R.id.linear_knee:
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        kneeImages, Constants.FRAGMENT_SCREEN_KNEE_ACHE, Webutil.REQUEST_CODE_KNEE));
+                break;
+
+            case R.id.linear_womens_health:
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        pregnancyImages, Constants.FRAGMENT_SCREEN_PREGNANCY, Webutil.REQUEST_CODE_PREGNANCY));
+                break;
+
+            case R.id.linear_gynacology:
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        null, Constants.FRAGMENT_SCREEN_GYNAECOLOGY, Webutil.REQUEST_CODE_GYNAECOLOGY));
+                break;
+
+            case R.id.linear_breast:
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        null, Constants.FRAGMENT_SCREEN_BREAST, Webutil.REQUEST_CODE_BREAST));
+                break;
+
+            case R.id.linear_troublesome_test:
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        null, Constants.FRAGMENT_SCREEN_TROUBLESOME_TEST, Webutil.REQUEST_CODE_TROUBLESOME_TEST));
+                break;
+
+            case R.id.linear_troublessome_drugs:
+                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                        null, Constants.FRAGMENT_SCREEN_TROUBLESOME_DRUGS, Webutil.REQUEST_CODE_TROUBLESOME_DRUGS));
                 break;
 
             case R.id.linear_general:
                 ((ActivityMain) getActivity()).replaceFragment(new FragmentGeneralInfoHome());
-                break;
-
-            case R.id.linear_pregnancy:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentPregnancy());
                 break;
 
             case R.id.linear_dentist:
@@ -147,45 +178,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
             case R.id.linear_chect_trouble:
                 showDialogForChestTroubleAndHeadNeck(true);
                 break;
-
-            case R.id.linear_tummy_trouble:
-                // ((ActivityMain) getActivity()).replaceFragment(new FragmentChoking());
-                break;
-
-            case R.id.linear_womens_health:
-                //showDialogForWomenHealth(false);
-                //((ActivityMain) getActivity()).replaceFragment(new FragmentParentWomenHealth());
-                FragmentPregnancy fragmentPregnancy = new FragmentPregnancy();
-                ((ActivityMain) getActivity()).DataPassingFragment(fragmentPregnancy);
-                break;
-
-            case R.id.linear_troublesome_test:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentTroubleSomeTest());
-                break;
-
-            case R.id.linear_troublessome_drugs:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentTroubleSomeDrug());
-                break;
-
-            case R.id.linear_breast:
-                FragmentWomensHealth fragmentBreast = new FragmentWomensHealth();
-                Bundle bundle = new Bundle();
-                bundle.putString("data", getString(R.string.breast_data));
-                bundle.putString("title", getString(R.string.breast));
-                fragmentBreast.setArguments(bundle);
-                ((ActivityMain) getActivity()).replaceFragment(fragmentBreast);
-                break;
-
-            case R.id.linear_gynacology:
-                FragmentWomensHealth fragmentGynacology = new FragmentWomensHealth();
-                Bundle bundleGynacology = new Bundle();
-                bundleGynacology.putString("data", getString(R.string.menses_data));
-                bundleGynacology.putString("title", getString(R.string.menses));
-                fragmentGynacology.setArguments(bundleGynacology);
-
-                ((ActivityMain) getActivity()).replaceFragment(fragmentGynacology);
-                break;
-
         }
     }
 
@@ -247,146 +239,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
     public void onPause() {
         super.onPause();
         Log.e("Called : ", "onPause");
-    }
-
-
-    public void showDialogForWomenHealth(final boolean isFromEmergency) {
-
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
-        LayoutInflater inflater = ((Activity) getActivity()).getLayoutInflater();
-        final View dialogView = inflater.inflate(R.layout.dialog_list, null);
-        dialogBuilder.setView(dialogView);
-        dialogBuilder.setTitle(null);
-        dialogBuilder.setMessage(null);
-        dialogBuilder.setCancelable(true);
-        final AlertDialog alertDialogue = dialogBuilder.create();
-        Button button1, button2, button3, button4, button5;
-
-        button1 = dialogView.findViewById(R.id.firsButton);
-        button2 = dialogView.findViewById(R.id.secondButton);
-        button3 = dialogView.findViewById(R.id.thirdButton);
-        button4 = dialogView.findViewById(R.id.forthButton);
-        button5 = dialogView.findViewById(R.id.fifthButton);
-
-        if (isFromEmergency) {
-            button1.setText(getString(R.string.choking));
-            button2.setText(getString(R.string.epilepsy));
-            button3.setText(getString(R.string.wound_bleeding));
-            button4.setText(getString(R.string.bleeding_from_the_nose));
-            button5.setText(getString(R.string.common_problems_and_danger_operation));
-
-        } else {
-            button1.setText(getString(R.string.breast));
-            button2.setText(getString(R.string.menses));
-            button3.setText(getString(R.string.pregnancy));
-            button4.setText(getString(R.string.care_after_delivery));
-            button5.setVisibility(View.GONE);
-        }
-
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alertDialogue.dismiss();
-                if (isFromEmergency) {
-
-                    FragmentChoking fragmentChoking = new FragmentChoking();
-                    Bundle args = new Bundle();
-                    args.putString("data", getString(R.string.choking_data));
-                    args.putString("title", getString(R.string.choking));
-                    args.putBoolean("isFromChoking", true);
-
-                    fragmentChoking.setArguments(args);
-                    ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
-
-                } else {
-                    FragmentWomensHealth fragmentWomensHealth = new FragmentWomensHealth();
-                    Bundle args = new Bundle();
-                    args.putString("data", getString(R.string.breast_data));
-                    args.putString("title", getString(R.string.breast));
-                    fragmentWomensHealth.setArguments(args);
-                    ((ActivityMain) getActivity()).DataPassingFragment(fragmentWomensHealth);
-                }
-            }
-        });
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                alertDialogue.dismiss();
-                if (isFromEmergency) {
-
-                    FragmentChoking fragmentChoking = new FragmentChoking();
-                    Bundle args = new Bundle();
-                    args.putString("data", getString(R.string.epilepsy_data));
-                    args.putString("title", getString(R.string.epilepsy));
-                    args.putBoolean("isFromChoking", false);
-                    fragmentChoking.setArguments(args);
-                    ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
-
-                } else {
-                    FragmentWomensHealth fragmentWomensHealth = new FragmentWomensHealth();
-                    Bundle args = new Bundle();
-                    args.putString("data", getString(R.string.menses_data));
-                    args.putString("title", getString(R.string.menses));
-                    fragmentWomensHealth.setArguments(args);
-                    ((ActivityMain) getActivity()).DataPassingFragment(fragmentWomensHealth);
-                }
-            }
-        });
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                alertDialogue.dismiss();
-                if (isFromEmergency) {
-                    FragmentChoking fragmentChoking = new FragmentChoking();
-                    Bundle args = new Bundle();
-                    args.putString("data", getString(R.string.wound_bleeding_data));
-                    args.putString("title", getString(R.string.wound_bleeding));
-                    args.putBoolean("isFromChoking", false);
-                    fragmentChoking.setArguments(args);
-                    ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
-                } else {
-                    FragmentPregnancy fragmentPregnancy = new FragmentPregnancy();
-                    ((ActivityMain) getActivity()).DataPassingFragment(fragmentPregnancy);
-                }
-            }
-        });
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                alertDialogue.dismiss();
-                if (isFromEmergency) {
-                    FragmentChoking fragmentChoking = new FragmentChoking();
-                    Bundle args = new Bundle();
-                    args.putString("data", getString(R.string.bleeding_from_the_nose_data));
-                    args.putString("title", getString(R.string.bleeding_from_the_nose));
-                    args.putBoolean("isFromChoking", false);
-                    fragmentChoking.setArguments(args);
-                    ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
-                } else {
-                    FragmentWomensHealth fragmentWomensHealth = new FragmentWomensHealth();
-                    Bundle args = new Bundle();
-                    args.putString("data", getString(R.string.care_after_delivery_data));
-                    args.putString("title", getString(R.string.care_after_delivery));
-                    fragmentWomensHealth.setArguments(args);
-                    ((ActivityMain) getActivity()).DataPassingFragment(fragmentWomensHealth);
-                }
-            }
-        });
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                alertDialogue.dismiss();
-                FragmentChoking fragmentChoking = new FragmentChoking();
-                Bundle args = new Bundle();
-                args.putString("data", getString(R.string.common_problems_and_danger_operation_data));
-                args.putString("title", getString(R.string.common_problems));
-                args.putBoolean("isFromChoking", false);
-                fragmentChoking.setArguments(args);
-                ((ActivityMain) getActivity()).DataPassingFragment(fragmentChoking);
-            }
-        });
-        alertDialogue.show();
     }
 
     public void showDialogForChestTroubleAndHeadNeck(final boolean isFromChestTrouble) {

@@ -11,11 +11,16 @@ import android.widget.TextView
 import demo.com.mydoctors.ActivityMain
 import demo.com.mydoctors.R
 import demo.com.mydoctors.TextUtils
+import demo.com.mydoctors.webutil.Webutil
 
 class FragmentEmergency : Fragment(), View.OnClickListener {
     private var currentView: View? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         if (currentView == null) {
             currentView = inflater.inflate(R.layout.fragment_emergency, container, false)
         }
@@ -53,52 +58,39 @@ class FragmentEmergency : Fragment(), View.OnClickListener {
     }
 
     private fun showChockingFragment() {
-        val fragmentChoking = FragmentChoking()
-        val args = Bundle()
-        args.putString("data", getString(R.string.choking_data))
-        args.putString("title", getString(R.string.choking))
-        args.putBoolean("isFromChoking", true)
-        fragmentChoking.arguments = args
-        (activity as ActivityMain?)!!.DataPassingFragment(fragmentChoking)
+        setDetails(getString(R.string.choking), Webutil.REQUEST_CODE_CHOKING)
     }
 
     private fun showEpilepsyFragment() {
-        val fragmentChoking = FragmentChoking()
-        val args = Bundle()
-        args.putString("data", getString(R.string.epilepsy_data))
-        args.putString("title", getString(R.string.epilepsy))
-        args.putBoolean("isFromChoking", false)
-        fragmentChoking.arguments = args
-        (activity as ActivityMain?)!!.DataPassingFragment(fragmentChoking)
+        setDetails(getString(R.string.epilepsy), Webutil.REQUEST_CODE_EPILEPSY)
     }
 
     private fun showWoundBleedingFragment() {
-        val fragmentChoking = FragmentChoking()
-        val args = Bundle()
-        args.putString("data", getString(R.string.wound_bleeding_data))
-        args.putString("title", getString(R.string.wound_bleeding))
-        args.putBoolean("isFromChoking", false)
-        fragmentChoking.arguments = args
-        (activity as ActivityMain?)!!.DataPassingFragment(fragmentChoking)
+        setDetails(getString(R.string.wound_bleeding), Webutil.REQUEST_CODE_WOUND_BLEEDING)
     }
 
     private fun showNoseBleedingFragment() {
-        val fragmentChoking = FragmentChoking()
-        val args = Bundle()
-        args.putString("data", getString(R.string.bleeding_from_the_nose_data))
-        args.putString("title", getString(R.string.bleeding_from_the_nose))
-        args.putBoolean("isFromChoking", false)
-        fragmentChoking.arguments = args
-        (activity as ActivityMain?)!!.DataPassingFragment(fragmentChoking)
+        setDetails(getString(R.string.bleeding_from_the_nose), Webutil.REQUEST_CODE_NOSE_BLEEDING)
     }
 
     private fun showCommonProblemFragment() {
-        val fragmentChoking = FragmentChoking()
-        val args = Bundle()
-        args.putString("data", getString(R.string.common_problems_and_danger_operation_data))
-        args.putString("title", getString(R.string.common_problems))
-        args.putBoolean("isFromChoking", false)
-        fragmentChoking.arguments = args
-        (activity as ActivityMain?)!!.DataPassingFragment(fragmentChoking)
+        setDetails(getString(R.string.common_problems), Webutil.REQUEST_CODE_COMMON_PROBLEM)
+    }
+
+    private fun setDetails(title: String, requestCode: String) {
+
+        var sampleImages = intArrayOf(
+            R.drawable.emergency_chok_one,
+            R.drawable.emergency_chok_two,
+            R.drawable.emergency_chok_three,
+            R.drawable.ic_child_heimlichmanueuver,
+            R.drawable.ic_child_heimlicmanueuver04,
+            R.drawable.ic_adult_heimlichmanueuver02,
+            R.drawable.ic_adult_heimlichmanueuver03,
+            R.drawable.ic_infant_heimlichmanueuver,
+            R.drawable.ic_infant_heimlichmanueuver01
+        )
+        val fragment = FragmentDetails(sampleImages, title, requestCode)
+        (activity as ActivityMain?)!!.DataPassingFragment(fragment)
     }
 }

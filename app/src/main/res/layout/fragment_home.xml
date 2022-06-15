@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -17,9 +18,11 @@
         app:radius="6dp"
         app:slideInterval="3000"
         app:strokeColor="#FF777777"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"
+        tools:ignore="MissingClass" />
 
     <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -195,8 +198,8 @@
                             android:id="@+id/linear_fever"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/home_fever_type_size"
-                            android:layout_weight="1"
                             android:layout_marginRight="6dp"
+                            android:layout_weight="1"
                             android:background="@drawable/ic_fever">
 
                             <RelativeLayout
@@ -292,6 +295,7 @@
                             </RelativeLayout>
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:id="@+id/linear_womens_health"
                             android:layout_width="match_parent"
@@ -327,8 +331,8 @@
                             android:layout_height="@dimen/home_fever_type_size"
                             android:layout_marginLeft="6dp"
                             android:layout_weight="1"
-                            android:visibility="gone"
-                            android:background="@drawable/ic_chest_trouble_new">
+                            android:background="@drawable/ic_chest_trouble_new"
+                            android:visibility="gone">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -348,6 +352,7 @@
                             </RelativeLayout>
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:id="@+id/linear_tummy_trouble"
                             android:layout_width="match_parent"
@@ -455,8 +460,8 @@
                             android:layout_height="@dimen/home_fever_type_size"
                             android:layout_marginLeft="6dp"
                             android:layout_weight="1"
-                            android:visibility="gone"
-                            android:background="@drawable/ic_denatl_issue">
+                            android:background="@drawable/ic_denatl_issue"
+                            android:visibility="gone">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -480,51 +485,6 @@
                     </LinearLayout>
 
                 </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:visibility="gone">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <LinearLayout
-                            android:id="@+id/linear_pregnancy"
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/home_fever_type_size"
-                            android:layout_marginLeft="6dp"
-                            android:layout_marginBottom="6dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/pregnancy1">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/backgound_border_gray">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignParentBottom="true"
-                                    android:background="@color/light_gray"
-                                    android:gravity="center"
-                                    android:text="@string/pregnancy"
-                                    android:textColor="@color/white"
-                                    android:textSize="20dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"

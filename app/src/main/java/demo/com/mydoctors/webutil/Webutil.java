@@ -2,6 +2,8 @@ package demo.com.mydoctors.webutil;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -21,24 +23,36 @@ import demo.com.mydoctors.VolleySingleton;
 import demo.com.mydoctors.model.FeedbackParameters;
 
 public class Webutil {
+    public static final String IMAGES_BASE_URL = "http://mediwiseapp.dineeasily.com/uploads/";
+    public static final String REQUEST_CODE_CHOKING = "CHOKING-1";
+    public static final String REQUEST_CODE_EPILEPSY = "EPILEPSY-1";
+    public static final String REQUEST_CODE_WOUND_BLEEDING = "WOUND_BLEEDING";
+    public static final String REQUEST_CODE_NOSE_BLEEDING = "NOSE_BLEEDING";
+    public static final String REQUEST_CODE_COMMON_PROBLEM = "COMMON_PROBLEM";
+    public static final String REQUEST_CODE_COUGH = "COUGHCOLD-1";
+    public static final String REQUEST_CODE_LOOSE_MOTION = "LOOSE-MOTION";
+    public static final String REQUEST_CODE_FEVER = "FEVER";
+    public static final String REQUEST_CODE_BACK = "BACK";
+    public static final String REQUEST_CODE_KNEE = "KNEE";
+    public static final String REQUEST_CODE_PREGNANCY = "PREGNANCY";
+    public static final String REQUEST_CODE_GYNAECOLOGY = "GYNAECOLOGY";
+    public static final String REQUEST_CODE_BREAST = "BREAST";
+    public static final String REQUEST_CODE_TROUBLESOME_TEST = "TROUBLESOME-TEST";
+    public static final String REQUEST_CODE_TROUBLESOME_DRUGS= "TROUBLESOME-DRUGS";
+
+    public static final String MSG_NO_NETWORK_AVAILABLE = "No Network Available !!";
+    public static final String MSG_SOMETHING_WENT_WRONG = "Oops.. something went wrong. \n Please try again later !!";
     //========================= URL =============================
     private static final String BASE_URL = "http://mediwiseapp.dineeasily.com/api/getdiseases";
-    public static final String IMAGES_BASE_URL = "http://mediwiseapp.dineeasily.com/uploads/";
-
     private static final String FEEDBACK_REQUEST_URL = "http://68.183.158.73/doctor/doctor_api/Admin_WA/insert_register";
     private static final String REGISTER_USER_REQUEST_URL = "http://www.dineeasily.com/doctorapp/Api/userRegister";
     private static final String VERIFY_OTP_REQUEST_URL = "http://www.dineeasily.com/doctorapp/Api/verifyotp";
     private static final String LOGIN_REQUEST_URL = "http://www.dineeasily.com/doctorapp/Api/userLoginCheck";
-
     // ========================= Parameters =========================
     private static final String FEEDBACK_REQUEST_NAME = "name";
     private static final String FEEDBACK_REQUEST_CONTACT_NUMBER = "phone";
     private static final String FEEDBACK_REQUEST_EMAIL_ID = "email";
     private static final String FEEDBACK_REQUEST_DESCRIPTION = "description";
-
-    public static final String REQUEST_CODE_COUGH = "COUGHCOLD-1";
-    public static final String REQUEST_CODE_LOOSE_MOTION = "LOOSE-MOTION";
-
     private static final String KEY_DISEASE_CODE = "disease-code";
     private static final String KEY_LANGUAGE_ID = "language-id";
 
@@ -372,5 +386,12 @@ public class Webutil {
         VolleySingleton.getInstance(context).getRequestQueue().add(stringRequest);
         stringRequest.setRetryPolicy(new DefaultRetryPolicy(VolleySingleton.VOLLEY_TIMEOUT, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+    }
+
+    public static boolean isNetworkAvailable(Context context) {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

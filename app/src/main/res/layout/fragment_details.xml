@@ -31,6 +31,19 @@
         layout="@layout/content_body"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"></include>
+        android:visibility="gone"></include>
+
+    <TextView
+        android:id="@+id/tvNoDetailsFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_5dp"
+        android:drawableLeft="@drawable/ic_baseline_error"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="40dp"
+        android:textColor="@color/faint_black"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        android:visibility="gone"></TextView>
 
 </LinearLayout>

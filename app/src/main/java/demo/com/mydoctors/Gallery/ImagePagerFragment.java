@@ -1,4 +1,3 @@
-
 package demo.com.mydoctors.Gallery;
 
 import android.content.Context;
@@ -40,7 +39,10 @@ public class ImagePagerFragment extends BaseFragment {
         Bundle bundle = this.getArguments();
         String screenName = bundle.getString("screen");
         Bundle bundlePosition = bundle.getBundle(Constants.Extra.IMAGE_POSITION);
-        listOfImages = Constants.ARRAY_LIST_IMAGES;
+
+        if (bundle.getStringArrayList(Constants.ARGUMENT_IMAGE_LIST) != null) {
+            listOfImages = bundle.getStringArrayList(Constants.ARGUMENT_IMAGE_LIST);
+        }
 
         pager.setAdapter(new ImageAdapter(getActivity()));
         pager.setCurrentItem(bundlePosition.getInt(Constants.Extra.IMAGE_POSITION, 0));

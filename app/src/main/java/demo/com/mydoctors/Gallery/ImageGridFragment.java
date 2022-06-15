@@ -2,11 +2,7 @@ package demo.com.mydoctors.Gallery;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,30 +12,21 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
-import com.google.gson.Gson;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingProgressListener;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import demo.com.mydoctors.R;
-import demo.com.mydoctors.model.DiseasesDetails;
-import demo.com.mydoctors.webutil.Webutil;
 
 public class ImageGridFragment extends AbsListViewBaseFragment {
 
     public static final int INDEX = 1;
-    // private static String[] IMAGE_URLS = null;
     String screenName;
     List<String> listOfImages = new ArrayList<>();
     String diseasesId;
@@ -53,21 +40,32 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
         screenName = bundle.getString("screen");
 
         diseasesId = Constants.getDiseasesId(screenName);
+        if (bundle.getStringArrayList(Constants.ARGUMENT_IMAGE_LIST) != null) {
+            listOfImages = bundle.getStringArrayList(Constants.ARGUMENT_IMAGE_LIST);
+        }
 
-        listOfImages = Constants.ARRAY_LIST_IMAGES;
         ((GridView) listView).setAdapter(new ImageAdapter(getActivity()));
         listView.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startImagePagerActivity(position, screenName);
+                startImagePagerActivity(position, screenName, listOfImages);
             }
         });
 
         return rootView;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    static class ViewHolder {
+        ImageView imageView;
+        ProgressBar progressBar;
+    }
+
     public class ImageAdapter extends BaseAdapter {
-        //  private static final String[] IMAGE_URLS = Constants.IMAGES;
         private final LayoutInflater inflater;
         private final DisplayImageOptions options;
 
@@ -140,15 +138,5 @@ public class ImageGridFragment extends AbsListViewBaseFragment {
 
             return view;
         }
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    static class ViewHolder {
-        ImageView imageView;
-        ProgressBar progressBar;
     }
 }

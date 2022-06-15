@@ -23,7 +23,6 @@ import demo.com.mydoctors.Gallery.SimpleImageActivity
 import demo.com.mydoctors.R
 import demo.com.mydoctors.TextUtils.hideActionBar
 
-
 /**
  * Created by Babunder Prajapati on 01/06/2020.
  * prajapatibabu58@gmail.com
@@ -32,12 +31,23 @@ class FragmentChoking : Fragment(), View.OnClickListener {
     private var ivGallery: TextView? = null
     private var currentView: View? = null
     private var carouselView: CarouselView? = null
-    var sampleImages = intArrayOf(R.drawable.emergency_chok_one, R.drawable.emergency_chok_two, R.drawable.emergency_chok_three)
-    var sampleImages2 = intArrayOf(R.drawable.emergency_chok_one, R.drawable.emergency_chok_two, R.drawable.emergency_chok_three,
-            R.drawable.ic_child_heimlichmanueuver,R.drawable.ic_child_heimlicmanueuver04,R.drawable.ic_adult_heimlichmanueuver02,R.drawable.ic_adult_heimlichmanueuver03,
-            R.drawable.ic_infant_heimlichmanueuver,R.drawable.ic_infant_heimlichmanueuver01)
+    var sampleImages2 = intArrayOf(
+        R.drawable.emergency_chok_one,
+        R.drawable.emergency_chok_two,
+        R.drawable.emergency_chok_three,
+        R.drawable.ic_child_heimlichmanueuver,
+        R.drawable.ic_child_heimlicmanueuver04,
+        R.drawable.ic_adult_heimlichmanueuver02,
+        R.drawable.ic_adult_heimlichmanueuver03,
+        R.drawable.ic_infant_heimlichmanueuver,
+        R.drawable.ic_infant_heimlichmanueuver01
+    )
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         if (currentView == null) {
             currentView = inflater.inflate(R.layout.fragment_choking, container, false)
         }
@@ -73,9 +83,7 @@ class FragmentChoking : Fragment(), View.OnClickListener {
                 val spannableString = SpannableString(this.text)
                 for (link in links) {
                     val clickableSpan = object : ClickableSpan() {
-
                         override fun updateDrawState(textPaint: TextPaint) {
-
                             textPaint.color = context!!.resources.getColor(R.color.blue_primary)
                             textPaint.isUnderlineText = true
                         }
@@ -87,26 +95,28 @@ class FragmentChoking : Fragment(), View.OnClickListener {
                         }
                     }
                     val startIndexOfLink = this.text.toString().indexOf(link.first)
-                    spannableString.setSpan(clickableSpan, startIndexOfLink, startIndexOfLink + link.first.length,
-                            Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                    spannableString.setSpan(
+                        clickableSpan, startIndexOfLink, startIndexOfLink + link.first.length,
+                        Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+                    )
                 }
-                this.movementMethod = LinkMovementMethod.getInstance() // without LinkMovementMethod, link can not click
+                this.movementMethod =
+                    LinkMovementMethod.getInstance() // without LinkMovementMethod, link can not click
                 this.setText(spannableString, TextView.BufferType.SPANNABLE)
             }
 
             tvInformation.makeLinks(
-                    Pair(context!!.resources.getString(R.string.figure1), View.OnClickListener {
-                        showDialogForImage(context!!.resources.getDrawable(R.drawable.ic_infant_heimlichmanueuver01))
-                    }),
-                    Pair(context!!.resources.getString(R.string.figure2), View.OnClickListener {
-                        showDialogForImage(context!!.resources.getDrawable(R.drawable.ic_adult_heimlichmanueuver02))
-                    })
-                    , Pair(context!!.resources.getString(R.string.figure3), View.OnClickListener {
-                showDialogForImage(context!!.resources.getDrawable(R.drawable.ic_adult_heimlichmanueuver03))
-            })
-                    , Pair(context!!.resources.getString(R.string.figure4), View.OnClickListener {
-                showDialogForImage(context!!.resources.getDrawable(R.drawable.ic_child_heimlicmanueuver04))
-            }))
+                Pair(context!!.resources.getString(R.string.figure1), View.OnClickListener {
+                    showDialogForImage(context!!.resources.getDrawable(R.drawable.ic_infant_heimlichmanueuver01))
+                }),
+                Pair(context!!.resources.getString(R.string.figure2), View.OnClickListener {
+                    showDialogForImage(context!!.resources.getDrawable(R.drawable.ic_adult_heimlichmanueuver02))
+                }), Pair(context!!.resources.getString(R.string.figure3), View.OnClickListener {
+                    showDialogForImage(context!!.resources.getDrawable(R.drawable.ic_adult_heimlichmanueuver03))
+                }), Pair(context!!.resources.getString(R.string.figure4), View.OnClickListener {
+                    showDialogForImage(context!!.resources.getDrawable(R.drawable.ic_child_heimlicmanueuver04))
+                })
+            )
 
         }
     }
@@ -117,7 +127,8 @@ class FragmentChoking : Fragment(), View.OnClickListener {
         carouselView?.setImageListener(imageListener)
     }
 
-    var imageListener = ImageListener { position, imageView -> imageView.setImageResource(sampleImages2[position]) }
+    var imageListener =
+        ImageListener { position, imageView -> imageView.setImageResource(sampleImages2[position]) }
 
     companion object {
         const val FRAGMENT_CHOCKING_TAG = "Emergency-Choking"
