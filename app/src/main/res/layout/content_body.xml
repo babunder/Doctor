@@ -6,6 +6,17 @@
     android:orientation="vertical"
     tools:ignore="MissingDefaultResource">
 
+    <Switch
+        android:id="@+id/switchTextToSpeech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:background="@drawable/backgound_border_gray"
+        android:drawableLeft="@drawable/ic_speak"
+        android:padding="@dimen/padding_2dp"></Switch>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +30,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/margin_10dp"
                 android:background="@drawable/drawable_gray"
                 android:orientation="vertical"
                 android:padding="10dp">

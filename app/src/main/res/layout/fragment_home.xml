@@ -107,7 +107,6 @@
 
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -178,7 +177,6 @@
                     </LinearLayout>
 
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -253,7 +251,6 @@
 
                 </LinearLayout>
 
-
                 <!--Knee && pregnancy-->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -321,69 +318,9 @@
                                     android:textSize="20dp"
                                     android:visibility="visible" />
                             </RelativeLayout>
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:id="@+id/linear_chect_trouble"
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/home_fever_type_size"
-                            android:layout_marginLeft="6dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/ic_chest_trouble_new"
-                            android:visibility="gone">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/backgound_border_gray">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignParentBottom="true"
-                                    android:background="@color/light_gray"
-                                    android:gravity="center"
-                                    android:text="@string/chect_trouble"
-                                    android:textColor="@color/white"
-                                    android:textSize="20dp"
-                                    android:visibility="visible" />
-                            </RelativeLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/linear_tummy_trouble"
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/home_fever_type_size"
-                            android:layout_marginLeft="6dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/ic_launcher_background"
-                            android:visibility="gone">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/backgound_border_gray">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignParentBottom="true"
-                                    android:background="@color/light_gray"
-                                    android:gravity="center"
-                                    android:text="@string/tummy_trouble"
-                                    android:textColor="@color/white"
-                                    android:textSize="20dp" />
-
-                            </RelativeLayout>
-
                         </LinearLayout>
                     </LinearLayout>
-
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -557,7 +494,6 @@
                     </LinearLayout>
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -627,7 +563,6 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
-
 
             </LinearLayout>
         </LinearLayout>

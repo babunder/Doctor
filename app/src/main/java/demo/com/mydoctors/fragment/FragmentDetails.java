@@ -1,11 +1,13 @@
 package demo.com.mydoctors.fragment;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -16,7 +18,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,9 +32,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
-import demo.com.mydoctors.ActivityMain;
 import demo.com.mydoctors.Gallery.Constants;
 import demo.com.mydoctors.Gallery.ImageGridFragment;
 import demo.com.mydoctors.Gallery.SimpleImageActivity;
@@ -56,6 +61,8 @@ public class FragmentDetails extends Fragment implements View.OnClickListener {
     private View mContainer;
     private String mScreenName, mRequestCode;
     private List<String> listOfGalleryImages = new ArrayList<>();
+    private TextToSpeech textToSpeech;
+    private Switch switchTTS;
 
     @SuppressLint("ValidFragment")
     public FragmentDetails(int[] images, String screenName, String requestCode) {
@@ -91,6 +98,8 @@ public class FragmentDetails extends Fragment implements View.OnClickListener {
         ivGallery.setOnClickListener(this);
 
         carouselView = view.findViewById(R.id.carouselView);
+        switchTTS = view.findViewById(R.id.switchTextToSpeech);
+
         if (mImages != null && mImages.length > 0) {
             carouselView.setPageCount(mImages.length);
             carouselView.setImageListener(imageListener);
@@ -108,8 +117,20 @@ public class FragmentDetails extends Fragment implements View.OnClickListener {
         } else {
             showErrorMessage(Webutil.MSG_NO_NETWORK_AVAILABLE);
         }
+
+        switchTTS.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    final String finalTextToSpeech = tvDescription.getText().toString() + tvDos.getText().toString() + tvDont.getText().toString() + tvMedicine.getText().toString();
+                    loadSpeakingLanguages(finalTextToSpeech);
+                } else {
+                    pauseTextToSpeech();
+                }
+            }
+        });
     }
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void updateDetails(final DiseasesDetails details) {
         if (details != null) {
             tvNoDetailsFound.setVisibility(View.GONE);
@@ -142,7 +163,7 @@ public class FragmentDetails extends Fragment implements View.OnClickListener {
     @SuppressLint("ResourceType")
     @Override
     public void onClick(View v) {
-        if (Webutil.isNetworkAvailable((ActivityMain) getActivity())) {
+        if (Webutil.isNetworkAvailable(getActivity())) {
             if (details != null) {
                 switch (v.getId()) {
                     case R.id.ivGallery:
@@ -161,10 +182,10 @@ public class FragmentDetails extends Fragment implements View.OnClickListener {
                         break;
                 }
             } else {
-                Toast.makeText((ActivityMain) getActivity(), Webutil.MSG_SOMETHING_WENT_WRONG, Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), Webutil.MSG_SOMETHING_WENT_WRONG, Toast.LENGTH_LONG).show();
             }
         } else {
-            Toast.makeText((ActivityMain) getActivity(), Webutil.MSG_NO_NETWORK_AVAILABLE, Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), Webutil.MSG_NO_NETWORK_AVAILABLE, Toast.LENGTH_LONG).show();
         }
     }
 
@@ -178,6 +199,59 @@ public class FragmentDetails extends Fragment implements View.OnClickListener {
         mContainer.setVisibility(View.GONE);
         tvNoDetailsFound.setText(errorMessage);
         tvNoDetailsFound.setVisibility(View.VISIBLE);
+    }
+
+    private void loadSpeakingLanguages(final String textToTranslate) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ttsGreater21(textToTranslate);
+        } else {
+            ttsUnder20(textToTranslate);
+        }
+    }
+
+    @SuppressWarnings("deprecation")
+    private void ttsUnder20(final String text) {
+        HashMap<String, String> map = new HashMap<>();
+        map.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "MessageId");
+        textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, map);
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    private void ttsGreater21(final String text) {
+        String utteranceId = this.hashCode() + "";
+        textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, utteranceId);
+    }
+
+    @Override
+    public void onResume() {
+        textToSpeech = new TextToSpeech(getActivity(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.ERROR) {
+                    textToSpeech.setLanguage(Locale.ENGLISH);
+                }
+            }
+        });
+        super.onResume();
+    }
+
+    public void onPause() {
+        pauseTextToSpeech();
+        stopTextToSpeech();
+        super.onPause();
+    }
+
+    private void pauseTextToSpeech() {
+        if (textToSpeech != null) {
+            textToSpeech.stop();
+        }
+    }
+
+    private void stopTextToSpeech() {
+        if (textToSpeech != null) {
+            textToSpeech.shutdown();
+            textToSpeech = null;
+        }
     }
 
     class HandleResponse extends Handler {

@@ -1,7 +1,5 @@
 package demo.com.mydoctors.fragment;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -18,7 +16,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
 import java.util.Locale;
@@ -37,8 +34,7 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
 
     LinearLayout linear_cought_cold, linear_loose_motion, linear_knee, linear_back,
             linear_fever, linear_general, linear_dentist, linear_gas_adakne,
-            linear_troublessome_drugs, linear_troublesome_test, linear_womens_health,
-            linear_chect_trouble, linear_head_neck, linear_emergency_postop_care, linear_breast, linear_gynacology;
+            linear_troublessome_drugs, linear_troublesome_test, linear_womens_health, linear_head_neck, linear_emergency_postop_care, linear_breast, linear_gynacology;
     String currentLanguage = "en", currentLang;
     Locale myLocale;
 
@@ -73,7 +69,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
 
         linear_emergency_postop_care = view.findViewById(R.id.linear_emergency_postop_care);
         linear_head_neck = view.findViewById(R.id.linear_head_neck);
-        linear_chect_trouble = view.findViewById(R.id.linear_chect_trouble);
         linear_womens_health = view.findViewById(R.id.linear_womens_health);
         linear_troublesome_test = view.findViewById(R.id.linear_troublesome_test);
         linear_troublessome_drugs = view.findViewById(R.id.linear_troublessome_drugs);
@@ -91,7 +86,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
 
         linear_emergency_postop_care.setOnClickListener(this);
         linear_head_neck.setOnClickListener(this);
-        linear_chect_trouble.setOnClickListener(this);
         linear_womens_health.setOnClickListener(this);
         linear_troublesome_test.setOnClickListener(this);
         linear_troublessome_drugs.setOnClickListener(this);
@@ -105,59 +99,39 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.linear_cought_cold:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        coughAndColdImages, Constants.FRAGMENT_SCREEN_COUGH_COLD, Webutil.REQUEST_CODE_COUGH));
+                showFragment(coughAndColdImages, Constants.FRAGMENT_SCREEN_COUGH_COLD, Webutil.REQUEST_CODE_COUGH);
                 break;
-
             case R.id.linear_loose_motion:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        looseMotionImages, Constants.FRAGMENT_SCREEN_LOOSE_MOTION, Webutil.REQUEST_CODE_LOOSE_MOTION));
+                showFragment(looseMotionImages, Constants.FRAGMENT_SCREEN_LOOSE_MOTION, Webutil.REQUEST_CODE_LOOSE_MOTION);
                 break;
-
             case R.id.linear_fever:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        feverImages, Constants.FRAGMENT_SCREEN_FEVER, Webutil.REQUEST_CODE_FEVER));
+                showFragment(feverImages, Constants.FRAGMENT_SCREEN_FEVER, Webutil.REQUEST_CODE_FEVER);
                 break;
-
             case R.id.linear_back:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        backImages, Constants.FRAGMENT_SCREEN_BACK_ACHE, Webutil.REQUEST_CODE_BACK));
+                showFragment(backImages, Constants.FRAGMENT_SCREEN_BACK_ACHE, Webutil.REQUEST_CODE_BACK);
                 break;
-
             case R.id.linear_knee:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        kneeImages, Constants.FRAGMENT_SCREEN_KNEE_ACHE, Webutil.REQUEST_CODE_KNEE));
+                showFragment(kneeImages, Constants.FRAGMENT_SCREEN_KNEE_ACHE, Webutil.REQUEST_CODE_KNEE);
                 break;
-
             case R.id.linear_womens_health:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        pregnancyImages, Constants.FRAGMENT_SCREEN_PREGNANCY, Webutil.REQUEST_CODE_PREGNANCY));
+                showFragment(pregnancyImages, Constants.FRAGMENT_SCREEN_PREGNANCY, Webutil.REQUEST_CODE_PREGNANCY);
                 break;
-
             case R.id.linear_gynacology:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        null, Constants.FRAGMENT_SCREEN_GYNAECOLOGY, Webutil.REQUEST_CODE_GYNAECOLOGY));
+                showFragment(null, Constants.FRAGMENT_SCREEN_GYNAECOLOGY, Webutil.REQUEST_CODE_GYNAECOLOGY);
                 break;
-
             case R.id.linear_breast:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        null, Constants.FRAGMENT_SCREEN_BREAST, Webutil.REQUEST_CODE_BREAST));
+                showFragment(null, Constants.FRAGMENT_SCREEN_BREAST, Webutil.REQUEST_CODE_BREAST);
                 break;
-
             case R.id.linear_troublesome_test:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        null, Constants.FRAGMENT_SCREEN_TROUBLESOME_TEST, Webutil.REQUEST_CODE_TROUBLESOME_TEST));
+                showFragment(null, Constants.FRAGMENT_SCREEN_TROUBLESOME_TEST, Webutil.REQUEST_CODE_TROUBLESOME_TEST);
                 break;
-
             case R.id.linear_troublessome_drugs:
-                ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
-                        null, Constants.FRAGMENT_SCREEN_TROUBLESOME_DRUGS, Webutil.REQUEST_CODE_TROUBLESOME_DRUGS));
+                showFragment(null, Constants.FRAGMENT_SCREEN_TROUBLESOME_DRUGS, Webutil.REQUEST_CODE_TROUBLESOME_DRUGS);
                 break;
 
             case R.id.linear_general:
                 ((ActivityMain) getActivity()).replaceFragment(new FragmentGeneralInfoHome());
                 break;
-
             case R.id.linear_dentist:
                 ((ActivityMain) getActivity()).replaceFragment(new FragmentDentist());
                 break;
@@ -173,10 +147,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
             case R.id.linear_head_neck:
                 //((ActivityMain) getActivity()).replaceFragment(new FragmentHeadAndNeck());
                 ((ActivityMain) getActivity()).replaceFragment(new FragmentHomeMedicineKit());
-                break;
-
-            case R.id.linear_chect_trouble:
-                showDialogForChestTroubleAndHeadNeck(true);
                 break;
         }
     }
@@ -241,45 +211,8 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
         Log.e("Called : ", "onPause");
     }
 
-    public void showDialogForChestTroubleAndHeadNeck(final boolean isFromChestTrouble) {
-
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
-        LayoutInflater inflater = ((Activity) getActivity()).getLayoutInflater();
-        final View dialogView = inflater.inflate(R.layout.dialog_list, null);
-        dialogBuilder.setView(dialogView);
-        dialogBuilder.setTitle(null);
-        dialogBuilder.setMessage(null);
-        dialogBuilder.setCancelable(true);
-        final AlertDialog alertDialogue = dialogBuilder.create();
-        Button button1, button2, button3, button4, button5;
-
-        button1 = dialogView.findViewById(R.id.firsButton);
-        button2 = dialogView.findViewById(R.id.secondButton);
-        button3 = dialogView.findViewById(R.id.thirdButton);
-        button4 = dialogView.findViewById(R.id.forthButton);
-        button5 = dialogView.findViewById(R.id.fifthButton);
-
-        if (isFromChestTrouble) {
-            button1.setText(getString(R.string.heart_attack));
-            button2.setVisibility(View.GONE);
-            button3.setVisibility(View.GONE);
-            button4.setVisibility(View.GONE);
-            button5.setVisibility(View.GONE);
-        }
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alertDialogue.dismiss();
-                if (isFromChestTrouble) {
-                    FragmentChestTrouble fragmentChestTrouble = new FragmentChestTrouble();
-                    Bundle args = new Bundle();
-                    args.putString("data", getString(R.string.chest_trouble_data));
-                    args.putString("title", getString(R.string.heart_attack));
-                    fragmentChestTrouble.setArguments(args);
-                    ((ActivityMain) getActivity()).DataPassingFragment(fragmentChestTrouble);
-                }
-            }
-        });
-        alertDialogue.show();
+    private void showFragment(int[] images, String screenName, String requestCode) {
+        ((ActivityMain) getActivity()).replaceFragment(new FragmentDetails(
+                images, screenName, requestCode));
     }
 }
