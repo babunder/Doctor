@@ -1,14 +1,18 @@
-
 package demo.com.mydoctors.Gallery;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import demo.com.mydoctors.R;
 
 public class SimpleImageActivity extends FragmentActivity {
     public static String frScreen = "";
+    private List<String> listOfImages = new ArrayList<>();
+    private Bundle mBundle = new Bundle();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -16,8 +20,7 @@ public class SimpleImageActivity extends FragmentActivity {
 
         int frIndex = getIntent().getIntExtra(Constants.Extra.FRAGMENT_INDEX, 0);
         frScreen = getIntent().getStringExtra(Constants.FRAGMENT_SCREEN);
-
-        Bundle bundle = new Bundle();
+        listOfImages = getIntent().getStringArrayListExtra(Constants.ARGUMENT_IMAGE_LIST);
 
         Fragment fr;
         String tag;
@@ -38,14 +41,15 @@ public class SimpleImageActivity extends FragmentActivity {
                 fr = getSupportFragmentManager().findFragmentByTag(tag);
                 if (fr == null) {
                     fr = new ImagePagerFragment();
-                    bundle.putBundle(Constants.Extra.IMAGE_POSITION, getIntent().getExtras());
+                    mBundle.putBundle(Constants.Extra.IMAGE_POSITION, getIntent().getExtras());
                 }
                 titleRes = R.string.ac_name_image_pager;
                 break;
         }
 
-        bundle.putString("screen", frScreen);
-        fr.setArguments(bundle);
+        mBundle.putString("screen", frScreen);
+        mBundle.putStringArrayList(Constants.ARGUMENT_IMAGE_LIST, (ArrayList<String>) listOfImages);
+        fr.setArguments(mBundle);
 
         setTitle(titleRes);
         getSupportFragmentManager().beginTransaction().replace(android.R.id.content, fr, tag).commit();

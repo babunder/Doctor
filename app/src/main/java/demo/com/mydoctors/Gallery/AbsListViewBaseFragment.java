@@ -1,4 +1,3 @@
-
 package demo.com.mydoctors.Gallery;
 
 import android.content.Intent;
@@ -8,6 +7,9 @@ import android.widget.AbsListView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import demo.com.mydoctors.R;
 
@@ -56,11 +58,12 @@ public abstract class AbsListViewBaseFragment extends BaseFragment {
         }
     }
 
-    protected void startImagePagerActivity(int position, String screenName) {
+    protected void startImagePagerActivity(int position, String screenName, List<String> listOfImages) {
         Intent intent = new Intent(getActivity(), SimpleImageActivity.class);
         intent.putExtra(Constants.Extra.FRAGMENT_INDEX, ImagePagerFragment.INDEX);
         intent.putExtra(Constants.FRAGMENT_SCREEN, screenName);
         intent.putExtra(Constants.Extra.IMAGE_POSITION, position);
+        intent.putStringArrayListExtra(Constants.ARGUMENT_IMAGE_LIST, new ArrayList<String>(listOfImages));
         startActivity(intent);
     }
 

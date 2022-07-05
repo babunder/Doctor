@@ -1,4 +1,3 @@
-
 package demo.com.mydoctors.Gallery;
 
 import java.util.ArrayList;
@@ -42,6 +41,7 @@ public final class Constants {
             "drawable://" + R.drawable.cough3,
     };
 
+
     public static final String[] IMAGES_LOOSE_MOTION = new String[]{
             "drawable://" + R.drawable.stomach1,
             "drawable://" + R.drawable.stomach2,
@@ -67,24 +67,18 @@ public final class Constants {
             "drawable://" + R.drawable.backpainimg7,
             "drawable://" + R.drawable.backpainyoga,
     };
-
-    public static List<String> ARRAY_LIST_IMAGES = new ArrayList<>();
-
     public static final String[] IMAGES_FEVER = new String[]{
             "drawable://" + R.drawable.fever,
             "drawable://" + R.drawable.fever1,
             "drawable://" + R.drawable.fever2,
             "drawable://" + R.drawable.fever3,
     };
-
     public static final String[] IMAGES_DENTIST = new String[]{
             "drawable://" + R.drawable.teeth1,
             "drawable://" + R.drawable.teeth2,
             "drawable://" + R.drawable.teeth3,
             "drawable://" + R.drawable.teeth4,
     };
-
-
     public static final String[] IMAGES_PREGNANCY = new String[]{
             "drawable://" + R.drawable.pregnancy1,
             "drawable://" + R.drawable.pregnancy2,
@@ -102,30 +96,28 @@ public final class Constants {
             "drawable://" + R.drawable.ic_infant_heimlichmanueuver,
             "drawable://" + R.drawable.ic_infant_heimlichmanueuver01,
     };
-
-    private Constants() {
-    }
-
-    public static class Config {
-        public static final boolean DEVELOPER_MODE = false;
-    }
-
-    public static class Extra {
-        public static final String FRAGMENT_INDEX = "com.nostra13.example.universalimageloader.FRAGMENT_INDEX";
-        public static final String IMAGE_POSITION = "com.nostra13.example.universalimageloader.IMAGE_POSITION";
-    }
-
     public static final String FRAGMENT_SCREEN = "com.nostra13.example.universalimageloader.FRAGMENT_SCREEN";
+    public static final String ARGUMENT_IMAGE_LIST = "image_list";
+    public static final String ARGUMENT_VIDEO_LIST = "video_list";
 
     public static final String FRAGMENT_SCREEN_COUGH_COLD = "Cough and cold";
     public static final String FRAGMENT_SCREEN_LOOSE_MOTION = "Loose Motion";
-    public static final String FRAGMENT_SCREEN_KNEE_ACHE = "Knee Ache";
-    public static final String FRAGMENT_SCREEN_BACK_ACHE = "Back Ache";
     public static final String FRAGMENT_SCREEN_FEVER = "Fever";
-    public static final String FRAGMENT_SCREEN_DENTIEST = "Dentist";
+    public static final String FRAGMENT_SCREEN_BACK_ACHE = "Back Ache";
+    public static final String FRAGMENT_SCREEN_KNEE_ACHE = "Knee Ache";
     public static final String FRAGMENT_SCREEN_PREGNANCY = "Pregnancy";
-    public static final String FRAGMENT_SCREEN_CHOCKING = "Emergency-Choking";
+    public static final String FRAGMENT_SCREEN_GYNAECOLOGY = "Gynaecology";
     public static final String FRAGMENT_SCREEN_BREAST = "Breast";
+    public static final String FRAGMENT_SCREEN_TROUBLESOME_TEST = "Troublesome Test";
+    public static final String FRAGMENT_SCREEN_TROUBLESOME_DRUGS = "Troublesome Drugs";
+
+    public static final String FRAGMENT_SCREEN_DENTIEST = "Dentist";
+    public static final String FRAGMENT_SCREEN_CHOCKING = "Emergency-Choking";
+
+    public static List<String> ARRAY_LIST_IMAGES = new ArrayList<>();
+
+    private Constants() {
+    }
 
     public static String[] getScreenName(String screenName) {
         if (screenName.equals(Constants.FRAGMENT_SCREEN_COUGH_COLD)) {
@@ -167,6 +159,15 @@ public final class Constants {
             return Constants.DISEASE_ID_CHEST;
         }
         return DISEASE_ID_BACK;
+    }
+
+    public static class Config {
+        public static final boolean DEVELOPER_MODE = false;
+    }
+
+    public static class Extra {
+        public static final String FRAGMENT_INDEX = "com.nostra13.example.universalimageloader.FRAGMENT_INDEX";
+        public static final String IMAGE_POSITION = "com.nostra13.example.universalimageloader.IMAGE_POSITION";
     }
 
 }
