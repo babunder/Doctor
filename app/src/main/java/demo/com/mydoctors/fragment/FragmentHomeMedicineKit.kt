@@ -3,13 +3,14 @@ package demo.com.mydoctors.fragment
 import android.graphics.Matrix
 import android.graphics.PointF
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.view.*
 import android.view.View.OnTouchListener
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import demo.com.mydoctors.Pref
 import demo.com.mydoctors.R
 import demo.com.mydoctors.TextUtils

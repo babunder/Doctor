@@ -2,10 +2,11 @@
 package demo.com.mydoctors.Gallery;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import androidx.fragment.app.Fragment;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 

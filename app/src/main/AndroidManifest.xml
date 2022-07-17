@@ -32,7 +32,8 @@
 
         <activity
             android:name="demo.com.mydoctors.ActivitySplash"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -72,12 +73,14 @@
             android:name="demo.com.mydoctors.Gallery.SimpleImageActivity"
             android:label="Image List" />
 
-        <service android:name="demo.com.mydoctors.FcmMessagingServce">
+        <service android:name="demo.com.mydoctors.FcmMessagingServce"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service> <!-- Widget -->
-        <receiver android:name="demo.com.mydoctors.Gallery.UILWidgetProvider">
+        <receiver android:name="demo.com.mydoctors.Gallery.UILWidgetProvider"
+            android:exported="false">
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_provider" />

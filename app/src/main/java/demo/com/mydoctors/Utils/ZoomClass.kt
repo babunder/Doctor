@@ -3,13 +3,13 @@ package demo.com.mydoctors.Utils;
 import android.content.Context
 import android.graphics.Matrix
 import android.graphics.PointF
-import android.support.annotation.Nullable
-import android.support.v7.widget.AppCompatImageView
 import android.util.AttributeSet
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
 import android.view.View
+import androidx.annotation.Nullable
+import androidx.appcompat.widget.AppCompatImageView
 
 class ZoomClass : AppCompatImageView, View.OnTouchListener,
         GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {

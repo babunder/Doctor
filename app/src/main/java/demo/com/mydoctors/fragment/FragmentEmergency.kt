@@ -1,13 +1,13 @@
 package demo.com.mydoctors.fragment
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import demo.com.mydoctors.ActivityMain
 import demo.com.mydoctors.R
 import demo.com.mydoctors.TextUtils
@@ -49,37 +49,32 @@ class FragmentEmergency : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.btnChoking -> showChockingFragment()
-            R.id.btnEpilepsy -> showEpilepsyFragment()
-            R.id.btnWoundBleeding -> showWoundBleedingFragment()
-            R.id.btnNoseBleeding -> showNoseBleedingFragment()
-            R.id.btnCommonProblem -> showCommonProblemFragment()
+            R.id.btnChoking -> showSubFragment(
+                getString(R.string.choking),
+                Webutil.REQUEST_CODE_CHOKING
+            )
+            R.id.btnEpilepsy -> showSubFragment(
+                getString(R.string.epilepsy),
+                Webutil.REQUEST_CODE_EPILEPSY
+            )
+            R.id.btnWoundBleeding -> showSubFragment(
+                getString(R.string.wound_bleeding),
+                Webutil.REQUEST_CODE_WOUND_BLEEDING
+            )
+            R.id.btnNoseBleeding -> showSubFragment(
+                getString(R.string.bleeding_from_the_nose),
+                Webutil.REQUEST_CODE_NOSE_BLEEDING
+            )
+            R.id.btnCommonProblem -> showSubFragment(
+                getString(R.string.common_problems),
+                Webutil.REQUEST_CODE_COMMON_PROBLEM
+            )
         }
     }
 
-    private fun showChockingFragment() {
-        setDetails(getString(R.string.choking), Webutil.REQUEST_CODE_CHOKING)
-    }
+    private fun showSubFragment(title: String, requestCode: String) {
 
-    private fun showEpilepsyFragment() {
-        setDetails(getString(R.string.epilepsy), Webutil.REQUEST_CODE_EPILEPSY)
-    }
-
-    private fun showWoundBleedingFragment() {
-        setDetails(getString(R.string.wound_bleeding), Webutil.REQUEST_CODE_WOUND_BLEEDING)
-    }
-
-    private fun showNoseBleedingFragment() {
-        setDetails(getString(R.string.bleeding_from_the_nose), Webutil.REQUEST_CODE_NOSE_BLEEDING)
-    }
-
-    private fun showCommonProblemFragment() {
-        setDetails(getString(R.string.common_problems), Webutil.REQUEST_CODE_COMMON_PROBLEM)
-    }
-
-    private fun setDetails(title: String, requestCode: String) {
-
-        var sampleImages = intArrayOf(
+        val sampleImages = intArrayOf(
             R.drawable.emergency_chok_one,
             R.drawable.emergency_chok_two,
             R.drawable.emergency_chok_three,

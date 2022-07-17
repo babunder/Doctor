@@ -3,7 +3,7 @@ package demo.com.mydoctors
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Paint
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Patterns
 import android.view.Gravity
 import android.widget.TextView

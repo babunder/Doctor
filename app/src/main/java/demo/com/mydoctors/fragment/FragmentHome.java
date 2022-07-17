@@ -4,10 +4,6 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +13,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import java.util.Locale;
 
@@ -140,12 +141,10 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.linear_emergency_postop_care:
-                //showDialogForWomenHealth(true);
                 ((ActivityMain) getActivity()).replaceFragment(new FragmentEmergency());
                 break;
 
             case R.id.linear_head_neck:
-                //((ActivityMain) getActivity()).replaceFragment(new FragmentHeadAndNeck());
                 ((ActivityMain) getActivity()).replaceFragment(new FragmentHomeMedicineKit());
                 break;
         }

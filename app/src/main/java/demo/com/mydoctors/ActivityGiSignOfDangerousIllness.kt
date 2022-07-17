@@ -1,7 +1,7 @@
 package demo.com.mydoctors
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 
 /**
  * Created by Babunder Prajapati on 29/05/2020.

@@ -2,13 +2,13 @@ package demo.com.mydoctors.fragment
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import demo.com.mydoctors.ActivityGiSignOfDangerousIllness
 import demo.com.mydoctors.ActivityHomeMedKit
 import demo.com.mydoctors.R
