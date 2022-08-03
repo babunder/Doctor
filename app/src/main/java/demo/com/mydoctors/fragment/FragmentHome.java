@@ -39,17 +39,16 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
     String currentLanguage = "en", currentLang;
     Locale myLocale;
 
-    private int[] coughAndColdImages = {R.drawable.cough, R.drawable.cough1, R.drawable.cough2, R.drawable.cough3};
-    private int[] looseMotionImages = {R.drawable.stomach1, R.drawable.stomach2, R.drawable.stomach3, R.drawable.lose_motion};
-    private int[] feverImages = {R.drawable.fever, R.drawable.fever1, R.drawable.fever2, R.drawable.fever3};
-    private int[] backImages = {R.drawable.back_pain, R.drawable.back1, R.drawable.back2, R.drawable.back3};
-    private int[] kneeImages = {R.drawable.knee, R.drawable.knee1, R.drawable.knee2, R.drawable.knee3};
-    private int[] pregnancyImages = {R.drawable.pregnancy1, R.drawable.pregnancy2, R.drawable.pregnancy3, R.drawable.pregnancy4};
+    private final int[] coughAndColdImages = {R.drawable.cough, R.drawable.cough1, R.drawable.cough2, R.drawable.cough3};
+    private final int[] looseMotionImages = {R.drawable.stomach1, R.drawable.stomach2, R.drawable.stomach3, R.drawable.lose_motion};
+    private final int[] feverImages = {R.drawable.fever, R.drawable.fever1, R.drawable.fever2, R.drawable.fever3};
+    private final int[] backImages = {R.drawable.back_pain, R.drawable.back1, R.drawable.back2, R.drawable.back3};
+    private final int[] kneeImages = {R.drawable.knee, R.drawable.knee1, R.drawable.knee2, R.drawable.knee3};
+    private final int[] pregnancyImages = {R.drawable.pregnancy1, R.drawable.pregnancy2, R.drawable.pregnancy3, R.drawable.pregnancy4};
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Log.e("Called : ", "onCreateView");
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         initView(view);
         return view;
@@ -150,7 +149,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
         }
     }
 
-
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 
@@ -160,13 +158,10 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
         view = language.getActionView();
 
         if (view != null) {
-            view.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (view.getId() == R.id.nav_language) {
-                        Intent intent = new Intent(getActivity(), ActivityLanguage.class);
-                        startActivity(intent);
-                    }
+            view.setOnClickListener(view -> {
+                if (view.getId() == R.id.nav_language) {
+                    Intent intent = new Intent(getActivity(), ActivityLanguage.class);
+                    startActivity(intent);
                 }
             });
         }
@@ -193,7 +188,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
 
     @Override
     public void onResume() {
-        Log.e("Called : ", "onResume");
         super.onResume();
         if (Pref.getmInstance(getActivity()).getLANGUAGE().equalsIgnoreCase("en")) {
             setLocale("en");
@@ -207,7 +201,6 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
     @Override
     public void onPause() {
         super.onPause();
-        Log.e("Called : ", "onPause");
     }
 
     private void showFragment(int[] images, String screenName, String requestCode) {

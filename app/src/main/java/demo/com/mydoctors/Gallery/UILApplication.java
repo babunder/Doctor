@@ -12,7 +12,9 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
-public class UILApplication extends Application {
+import demo.com.mydoctors.database.RoomDatabaseApplication;
+
+public class UILApplication extends RoomDatabaseApplication {
 	@TargetApi(Build.VERSION_CODES.GINGERBREAD)
 	@SuppressWarnings("unused")
 	@Override
