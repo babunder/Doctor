@@ -110,6 +110,7 @@ public final class Constants {
     public static final String FRAGMENT_SCREEN_BREAST = "Breast";
     public static final String FRAGMENT_SCREEN_TROUBLESOME_TEST = "Troublesome Test";
     public static final String FRAGMENT_SCREEN_TROUBLESOME_DRUGS = "Troublesome Drugs";
+    public static final String FRAGMENT_SCREEN_SIGN_OF_DANGER_ILLNESS = "Sign of dangerous illness";
 
     public static final String FRAGMENT_SCREEN_DENTIEST = "Dentist";
     public static final String FRAGMENT_SCREEN_CHOCKING = "Emergency-Choking";

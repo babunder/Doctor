@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import demo.com.mydoctors.ActivityMain
+import demo.com.mydoctors.Gallery.Constants
 import demo.com.mydoctors.R
 import demo.com.mydoctors.TextUtils
 import demo.com.mydoctors.webutil.Webutil
@@ -41,6 +42,7 @@ class FragmentEmergency : Fragment(), View.OnClickListener {
         view.findViewById<Button>(R.id.btnWoundBleeding).setOnClickListener(this)
         view.findViewById<Button>(R.id.btnNoseBleeding).setOnClickListener(this)
         view.findViewById<Button>(R.id.btnCommonProblem).setOnClickListener(this)
+        view.findViewById<Button>(R.id.btnSignOfDanger).setOnClickListener(this)
     }
 
     companion object {
@@ -54,6 +56,7 @@ class FragmentEmergency : Fragment(), View.OnClickListener {
             R.id.btnWoundBleeding -> showWoundBleedingFragment()
             R.id.btnNoseBleeding -> showNoseBleedingFragment()
             R.id.btnCommonProblem -> showCommonProblemFragment()
+            R.id.btnSignOfDanger -> showSignOfDangerousIllness()
         }
     }
 
@@ -77,9 +80,16 @@ class FragmentEmergency : Fragment(), View.OnClickListener {
         setDetails(getString(R.string.common_problems), Webutil.REQUEST_CODE_COMMON_PROBLEM)
     }
 
+    private fun showSignOfDangerousIllness() {
+        setDetails(
+            Constants.FRAGMENT_SCREEN_SIGN_OF_DANGER_ILLNESS,
+            Webutil.REQUEST_CODE_SIGN_OF_DANGER
+        )
+    }
+
     private fun setDetails(title: String, requestCode: String) {
 
-        var sampleImages = intArrayOf(
+        val sampleImages = intArrayOf(
             R.drawable.emergency_chok_one,
             R.drawable.emergency_chok_two,
             R.drawable.emergency_chok_three,

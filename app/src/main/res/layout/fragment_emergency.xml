@@ -53,6 +53,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/common_problems_and_danger_operation" />
+
+        <Button
+            android:id="@+id/btnSignOfDanger"
+            style="@style/PrimaryButtonFancy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_of_dangerous_illness" />
     </LinearLayout>
 
 </LinearLayout>

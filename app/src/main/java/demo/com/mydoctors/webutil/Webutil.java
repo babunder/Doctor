@@ -39,6 +39,7 @@ public class Webutil {
     public static final String REQUEST_CODE_BREAST = "BREAST";
     public static final String REQUEST_CODE_TROUBLESOME_TEST = "TROUBLESOME-TEST";
     public static final String REQUEST_CODE_TROUBLESOME_DRUGS= "TROUBLESOME-DRUGS";
+    public static final String REQUEST_CODE_SIGN_OF_DANGER= "SIGN-DANGER";
 
     public static final String MSG_NO_NETWORK_AVAILABLE = "No Network Available !!";
     public static final String MSG_SOMETHING_WENT_WRONG = "Oops.. something went wrong. \n Please try again later !!";
