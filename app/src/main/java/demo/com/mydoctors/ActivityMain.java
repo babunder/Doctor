@@ -126,9 +126,6 @@ public class ActivityMain extends AppCompatActivity implements NavigationView.On
             case R.id.nav_disclaimer:
                 i = new Intent(this, ActivityDisclaimer.class);
                 break;
-            case R.id.nav_signs:
-                i = new Intent(this, ActivityGiSignOfDangerousIllness.class);
-                break;
             case R.id.nav_homekit:
                 //i = new Intent(this, ActivityHomeMedKit.class);
                 i = new Intent(this, ActivityUncommonWisdom.class);
