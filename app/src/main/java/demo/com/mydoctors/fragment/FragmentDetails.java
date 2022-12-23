@@ -48,18 +48,19 @@ import demo.com.mydoctors.webutil.Webutil;
 @SuppressLint("ValidFragment")
 public class FragmentDetails extends Fragment implements View.OnClickListener {
 
-    private int[] mImages;
-    private ImageListener imageListener = new ImageListener() {
+    private final int[] mImages;
+    private final ImageListener imageListener = new ImageListener() {
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
             imageView.setImageResource(mImages[position]);
         }
     };
+    private final String mScreenName;
+    private final String mRequestCode;
     private TextView ivGallery, ivVideo, tvDescription, tvDos, tvDont, tvMedicine, tvNoDetailsFound;
     private CarouselView carouselView;
     private DiseasesDetails details;
     private View mContainer;
-    private String mScreenName, mRequestCode;
     private List<String> listOfGalleryImages = new ArrayList<>();
     private TextToSpeech textToSpeech;
     private Switch switchTTS;
@@ -119,15 +120,36 @@ public class FragmentDetails extends Fragment implements View.OnClickListener {
         }
 
         switchTTS.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+            @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    final String finalTextToSpeech = tvDescription.getText().toString() + tvDos.getText().toString() + tvDont.getText().toString() + tvMedicine.getText().toString();
+                    textToSpeech.setLanguage(new Locale("hi_IN"));
+                    final String finalTextToSpeech = htmlTextToPlainText(tvDescription.getText().toString()
+                            + " " + tvDos.getText().toString()
+                            + " " + tvDont.getText().toString()
+                            + " " + tvMedicine.getText().toString());
                     loadSpeakingLanguages(finalTextToSpeech);
                 } else {
                     pauseTextToSpeech();
                 }
             }
         });
+    }
+
+    /**
+     * Method to parse the HTML string to plain text
+     * @param inputString
+     * @return
+     */
+    private String htmlTextToPlainText(final String inputString) {
+        if (inputString != null) {
+            return inputString
+                    .replaceAll("(?s)<[^>]*>(\\s*<[^>]*>)*", " ")//Removes all HTML tags
+                    .replace("&nbsp;", "");
+        } else {
+            return TextUtils.EMPTY;
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
